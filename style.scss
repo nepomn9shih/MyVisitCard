@@ -1,0 +1,296 @@
+//комент не пойдет в CSS-файл
+
+@import "./nullStyles.scss";
+
+$mainColor : indigo;
+$secondaryColor :  darkorchid;
+$backgroundColor: gray;
+
+
+.wrapper {
+    min-height: 100%;
+    background-color: $backgroundColor;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.header {
+    grid-area: header;
+    padding: 15px;
+    background-color: $mainColor;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.header__logo {
+    grid-column: 2 / 3;
+}
+.header__logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+.header__menu {
+    grid-column: 3 / 4;
+}
+.header__list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: end;
+}
+.header__burger {
+    display: none;
+    color: ivory;
+}
+@media (max-width: 992px) {
+    .header__list {
+        display: none;
+    }
+    .header__burger {
+    width: 30px;
+    display: grid;
+    align-items: center;
+    grid-template: repeat(3, 8px) / 1fr;
+    }
+    .header__menu {
+        display: grid;
+        justify-items: end;
+    }
+}
+.header__list li{
+align-self: center;
+}
+.header__link {
+    color: ivory;
+    font-size: 18px;
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+.header__link img{
+    width: 70px;
+    height: 70px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.main {
+    padding: 30px 15px;
+}
+
+@media (min-width: 992px) {
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template: 1fr / 1fr minmax(auto, 250px) minmax(auto, 950px) 1fr;
+    }
+    .sidebar {
+        grid-column: 2 / 3;
+    }
+    .content {
+        grid-column: 3 / 4;
+        padding: 0px 0px 0px 30px;
+    }
+}
+
+.sidebar {
+    background-color: $secondaryColor;
+    border-radius: 10px;
+    padding: 30px 30px 15px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin: 0px 0px 20px 0px;
+}
+.sidebar__menu {
+}
+.sidebar__list {
+}
+.sidebar__list li{
+    margin: 0px 0px 15px 0px;
+    font-size: 18px;
+}
+.sidebar__link {
+    color: ivory;
+    font-size: 20px;
+    &:hover {
+        color: $mainColor;
+    }
+}
+.content {
+    margin: 0px 0px 20px 00px;
+}
+.content__title {
+    margin: 0px 0px 20px 0px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: $secondaryColor;
+    border-radius: 10px;
+    color: ivory;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.content__gallery {
+    margin: 0px 0px 30px 0px;
+}
+.gallery {
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.gallery__title {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: ivory;
+}
+.gallery__items {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery__item {
+    position: relative;
+    padding: 0px 0px 85% 0px;
+}
+.gallery__item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    &:hover {
+        border: 5px solid transparent;
+        transition: 0.5s;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.0);
+    }
+}
+@media (min-width: 992px) {
+    .gallery__item_big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+.gallery__item_big {
+    
+}
+.content__products {
+    
+}
+.products {
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.products__title {
+    padding: 20px 20px 30px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: ivory;
+}
+.products__items {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // grid-auto-rows: 1fr;
+}
+.products__item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+}
+.products__image {
+    position: relative;
+    padding: 0px 0px 90% 0px;
+}
+.products__image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: ivory;
+    padding: 15px;
+    &:hover {
+        // border: 3px solid transparent;
+        padding: 10px;
+        transition: 0.5s;
+    }
+}
+.products__name {
+    font-size: 20px;
+    color: ivory;
+    line-height: 30px;
+    margin: 0px 0px 0px 0px;
+    background-color: $backgroundColor;
+    border-bottom-left-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.products__button {
+    color: ivory;
+    background-color: $secondaryColor;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    justify-self: end;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    &:hover {
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+}
+.footer {
+    grid-area: footer;
+    background-color: $mainColor; 
+    padding: 15px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 900px) 1fr;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.footer__copy {
+    color: ivory;
+}
+.footer__menu a{
+    color: ivory;
+}
+.footer__menu {
+
+}
+@media (min-width: 550px) {
+    .footer__copy {
+        grid-column: 2 / 3;
+    }
+    .footer__menu {
+        grid-column: 3 / 4;
+    }
+}
+@media (max-width: 550px) {
+    .footer {
+        grid-template: 1fr 1fr/ 1fr;
+    }
+    .footer__copy {
+        order: 2;
+    }
+    .footer__menu {
+        order: 1;
+        padding: 15px 0px;
+    }
+}

@@ -1,2 +1,2 @@
 # GridTestStore
-Шаблон интернет-магазина (HTML/CSS/Grid). Тестирую Grid Layout.
+Шаблон интернет-магазина (HTML/CSS/Grid/React). Тестирую Grid Layout.

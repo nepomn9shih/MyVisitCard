@@ -196,6 +196,8 @@ code {
     width: 100%;
     height: 3px;
     left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .header__burger:before {
     top: 0;
@@ -238,6 +240,11 @@ code {
 
 .header__link:hover {
   color: darkorchid;
+}
+
+.header__link.active {
+  color: darkorchid;
+  font-weight: bold;
 }
 
 .header__link img {
@@ -299,6 +306,11 @@ code {
 
 .sidebar__link:hover {
   color: indigo;
+}
+
+.sidebar__link.active {
+  color: indigo;
+  font-weight: bold;
 }
 
 .content {

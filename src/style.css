@@ -276,8 +276,8 @@ code {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
-    -ms-grid-columns: 1fr minmax(auto, 250px) minmax(auto, 950px) 1fr;
-        grid-template: 1fr/1fr minmax(auto, 250px) minmax(auto, 950px) 1fr;
+    -ms-grid-columns: 1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
+        grid-template: 1fr/1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
   }
   .sidebar {
     -ms-grid-column: 2;
@@ -515,6 +515,50 @@ code {
   padding: 10px 10px 20px 10px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe {
+  background-color: indigo;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: minmax(300px, 500px) auto;
+      grid-template: auto auto/minmax(300px, 500px) auto;
+}
+
+.aboutMe__title {
+  grid-column: span 2;
+}
+
+.aboutMe__image {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+.aboutMe__image img {
+  border-radius: 20px;
+  max-height: 400px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe__text {
+  font-size: 16px;
+  background-color: ivory;
+  border-radius: 10px;
+  padding: 15px 15px 20px 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 770px) {
+  .aboutMe {
+    display: block;
+  }
 }
 
 .footer {

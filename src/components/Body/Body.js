@@ -1,7 +1,7 @@
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import About from './About'
+import AboutMe from './AboutMe'
 import Gallery from './Gallery/Gallery'
-import Products from './Products/Products'
 import Projects from './Projects/Projects'
 import Sidebar from './Sidebar'
 
@@ -11,8 +11,9 @@ const Body = () => {
             <Sidebar/>
             <section class="content">
                 <Switch>
+                <Redirect exact from="/" to="/aboutme"/>
+                    <Route path="/aboutme" component={AboutMe}/>
                     <Route path="/gallery" component={Gallery}/>
-                    <Route path="/products" component={Products}/>
                     <Route path="/about" component={About}/>
                     <Route path="/projects" component={Projects}/>
                 </Switch>

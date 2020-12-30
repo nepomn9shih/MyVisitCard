@@ -12,19 +12,29 @@ const Header = () => {
 
   return (
     <header class="header">
-      <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" class="header__logo">
+      <a href="https://github.com/nepomn9shih" class="header__logo">
         <img src={ya} alt="" />
       </a>
       <nav class="header__menu">
         <ul class={isMenuOpen ? "header__list active" : "header__list"}>
           <li>
-            <NavLink className="header__link" to="/gallery">
-              Галерея
-            </NavLink>
+          <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" class="header__link">
+              HH
+            </a>
           </li>
           <li>
-            <NavLink className="header__link" to="/products">
-              Продукты
+          <a href="https://github.com/nepomn9shih" class="header__link">
+              GitHub
+            </a>
+          </li>
+          <li>
+          <a href="https://www.linkedin.com/in/alexander-nepomnyashchikh/" class="header__link">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <NavLink className="header__link" to="/projects">
+              Мои проекты
             </NavLink>
           </li>
           <li>
@@ -33,7 +43,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#1" class="header__link">
+            <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" class="header__link">
               <img src={cart} alt="" />
             </a>
           </li>

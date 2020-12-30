@@ -6,7 +6,7 @@ const Sidebar = () => {
         <nav class="sidebar__menu">
             <ul class="sidebar__list">
                 <li>
-                    <a href="#1" class="sidebar__link">Обо мне</a>
+                <NavLink className="sidebar__link" to="/aboutme">Обо мне</NavLink>
                 </li>
                 <li>
                     <a href="#1" class="sidebar__link">Мои знания</a>
@@ -25,9 +25,6 @@ const Sidebar = () => {
                         className="sidebar__link" 
                         to="/gallery"
                     >Галерея</NavLink>
-                </li>
-                <li>
-                    <NavLink className="sidebar__link" to="/products">Продукты</NavLink>
                 </li>
             </ul>
         </nav>

@@ -4,6 +4,7 @@ import AboutMe from './AboutMe'
 import Gallery from './Gallery/Gallery'
 import Projects from './Projects/Projects'
 import Sidebar from './Sidebar'
+import Skills from './Skills/Skills'
 
 const Body = () => {
     return (
@@ -13,6 +14,7 @@ const Body = () => {
                 <Switch>
                 <Redirect exact from="/" to="/aboutme"/>
                     <Route path="/aboutme" component={AboutMe}/>
+                    <Route path="/skills" component={Skills}/>
                     <Route path="/gallery" component={Gallery}/>
                     <Route path="/about" component={About}/>
                     <Route path="/projects" component={Projects}/>

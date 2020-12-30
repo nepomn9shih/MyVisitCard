@@ -6,10 +6,10 @@ const Sidebar = () => {
         <nav class="sidebar__menu">
             <ul class="sidebar__list">
                 <li>
-                <NavLink className="sidebar__link" to="/aboutme">Обо мне</NavLink>
+                 <NavLink className="sidebar__link" to="/aboutme">Обо мне</NavLink>
                 </li>
                 <li>
-                    <a href="#1" class="sidebar__link">Мои знания</a>
+                    <NavLink className="sidebar__link" to="/skills">Мои навыки</NavLink>
                 </li>
                 <li>
                     <a href="#1" class="sidebar__link">Опыт работы</a>

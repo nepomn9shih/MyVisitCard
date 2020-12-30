@@ -6,6 +6,21 @@ const Sidebar = () => {
         <nav class="sidebar__menu">
             <ul class="sidebar__list">
                 <li>
+                    <a href="#1" class="sidebar__link">Обо мне</a>
+                </li>
+                <li>
+                    <a href="#1" class="sidebar__link">Мои знания</a>
+                </li>
+                <li>
+                    <a href="#1" class="sidebar__link">Опыт работы</a>
+                </li>
+                <li>
+                    <NavLink className="sidebar__link" to="/projects">Мои проекты</NavLink>
+                </li>
+                <li>
+                    <a href="#1" class="sidebar__link">Увлечения</a>
+                </li>
+                <li>
                     <NavLink 
                         className="sidebar__link" 
                         to="/gallery"
@@ -13,12 +28,6 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <NavLink className="sidebar__link" to="/products">Продукты</NavLink>
-                </li>
-                <li>
-                    <a href="#1" class="sidebar__link">Пункт меню</a>
-                </li>
-                <li>
-                    <a href="#1" class="sidebar__link">Пункт меню</a>
                 </li>
             </ul>
         </nav>

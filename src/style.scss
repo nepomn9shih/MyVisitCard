@@ -5,6 +5,7 @@
 $mainColor : indigo;
 $secondaryColor :  darkorchid;
 $backgroundColor: gray;
+$activeColor: goldenrod;
 
 body {
     margin: 0;
@@ -49,6 +50,7 @@ body {
             transform: scale(1.1);
             transition: 0.5s;
         }
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
 }
 .header__menu {
@@ -144,7 +146,11 @@ body {
     }
     &.active {
         color: $secondaryColor;
-        font-weight: bold;
+        background-color: ivory;
+        padding: 3px 5px 5px 5px;
+        margin: 5px 0px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
     img{
         width: 50px;
@@ -196,10 +202,13 @@ body {
     }
     &.active {
         color: $mainColor;
-        font-weight: bold;
+        background-color: ivory;
+        padding: 3px 5px 5px 5px;
+        margin: 5px 0px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
 }
-
 
 .content {
     margin: 0px 0px 20px 00px;
@@ -271,12 +280,7 @@ body {
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
-.products__title {
-    padding: 20px 20px 30px 20px;
-    font-size: 30px;
-    font-weight: bold;
-    color: ivory;
-}
+
 .products__items {
     display: grid;
     column-gap: 20px;
@@ -287,7 +291,7 @@ body {
 .products__item {
     display: grid;
     grid-auto-flow: row;
-    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+    grid-template: auto auto auto 1fr minmax(40px, auto) / 1fr;
 }
 .products__image {
     position: relative;
@@ -316,8 +320,25 @@ body {
     line-height: 30px;
     margin: 0px 0px 0px 0px;
     background-color: $backgroundColor;
-    border-bottom-left-radius: 10px;
     padding: 15px;
+    text-align: center;
+    &:hover {
+        color: $mainColor;
+    }
+}
+.products__technologies {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    background-color: $secondaryColor;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products__description {
+    font-size: 16px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    background-color: ivory;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .products__button {
@@ -331,8 +352,20 @@ body {
     &:hover {
         box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
         transition: 0.5s;
+        color: $mainColor;
     }
 }
+
+.content__about {
+}
+.about {
+    min-height: 450px;
+    background-color: ivory;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
 .footer {
     grid-area: footer;
     background-color: $mainColor; 
@@ -369,5 +402,19 @@ body {
     .footer__menu {
         order: 1;
         padding: 15px 0px;
+    }
+}
+
+.cellItem {
+    background-color: ivory;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    &:hover {
+        // padding: 5px 10px;
+        transition: 0.5s;
+        background-color: $activeColor;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     }
 }

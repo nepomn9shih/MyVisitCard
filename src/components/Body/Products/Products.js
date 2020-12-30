@@ -3,7 +3,7 @@ import productsImages from "./ProductsImages/productsImages";
 const Products = () => {
   return (
     <section class="content__products products">
-      <h2 class="products__title">Продукты</h2>
+      <h1 class="content__title">Продукты</h1>
       <div class="products__items">
         {productsImages.map((product, index) => {
           return (

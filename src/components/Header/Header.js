@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header class="header">
-      <a href="#1" class="header__logo">
+      <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" class="header__logo">
         <img src={ya} alt="" />
       </a>
       <nav class="header__menu">
@@ -28,9 +28,9 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#1" class="header__link">
-              Пункт меню
-            </a>
+          <NavLink className="header__link" to="/about">
+              О сайте
+            </NavLink>
           </li>
           <li>
             <a href="#1" class="header__link">

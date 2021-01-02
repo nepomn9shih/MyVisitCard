@@ -18,6 +18,10 @@ const skillsList = [
   "Адаптивная верстка",
   "Prop-types",
   "TypeScript",
+  "VS Code",
+  "Avocode",
+  "Adobe Photoshop",
+  "iSpring Suite 9"
 ];
 
 export default skillsList;

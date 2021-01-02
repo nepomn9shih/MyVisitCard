@@ -12,7 +12,7 @@ const Sidebar = () => {
                     <NavLink className="sidebar__link" to="/skills">Мои навыки</NavLink>
                 </li>
                 <li>
-                    <a href="#1" class="sidebar__link">Опыт работы</a>
+                <NavLink className="sidebar__link" to="work">Опыт работы</NavLink>
                 </li>
                 <li>
                     <NavLink className="sidebar__link" to="/projects">Мои проекты</NavLink>

@@ -585,6 +585,127 @@ code {
   font-size: 20px;
 }
 
+.work {
+  min-height: 500px;
+  background-color: indigo;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.work__items {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 30px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.work__item {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  text-align: center;
+  background-color: gray;
+  border-radius: 15px;
+  -ms-grid-rows: 50px 50px 200px 50px 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 50px 50px 200px 50px 1fr/ 1fr;
+}
+
+.work__date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr/ 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 0px;
+}
+
+.work__dateItem {
+  background-color: ivory;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4px 5px 6px 5px;
+  color: indigo;
+}
+
+.work__dateItem:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: goldenrod;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.work__image {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  background-color: ivory;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work__image img {
+  max-height: 180px;
+  max-width: 220px;
+  padding: 5px;
+}
+
+.work__image img:hover {
+  padding: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.work__name {
+  font-size: 20px;
+  color: ivory;
+  padding: 15px;
+  background-color: darkorchid;
+}
+
+.work__name:hover {
+  color: indigo;
+}
+
+.work__position {
+  font-size: 16px;
+  color: ivory;
+  padding: 15px;
+  background-color: darkorchid;
+}
+
+.work__description {
+  padding: 15px;
+  background-color: gray;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

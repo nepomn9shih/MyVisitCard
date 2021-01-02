@@ -5,6 +5,7 @@ import Gallery from './Gallery/Gallery'
 import Projects from './Projects/Projects'
 import Sidebar from './Sidebar'
 import Skills from './Skills/Skills'
+import Work from './Work/Work'
 
 const Body = () => {
     return (
@@ -15,6 +16,7 @@ const Body = () => {
                 <Redirect exact from="/" to="/aboutme"/>
                     <Route path="/aboutme" component={AboutMe}/>
                     <Route path="/skills" component={Skills}/>
+                    <Route path="/work" component={Work}/>
                     <Route path="/gallery" component={Gallery}/>
                     <Route path="/about" component={About}/>
                     <Route path="/projects" component={Projects}/>

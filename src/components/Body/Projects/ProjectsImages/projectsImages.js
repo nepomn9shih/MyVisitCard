@@ -3,6 +3,7 @@ import project1 from './Like.png'
 import project2 from './MobileStore.png'
 import project3 from './MaterialUIBlog.png'
 import project4 from './CatNet.png'
+import project5 from './VisitCard.png'
 
 const projectsImages = [
     {
@@ -37,8 +38,15 @@ const projectsImages = [
         img: project4, 
         name: "Социальная сеть", 
         description: "Учебный проект. Социальная сеть использует сторонний серверный API с базой пользователей. Возможности: логин/логаут пользователя, изменение имени, информации, аватара, добавление/удаление поста, отправка сообщения тестовым пользователям, просмотр всех пользователей, информации о выбранном пользователе, подписка/отписка от пользователя.",
-        technologies: ["HTML", "CSS", "JavaScript", "React", "React-router-dom", "Redux", "Redux-thunk", "redux-form", "Axios", "Bootstrap"],
+        technologies: ["HTML", "CSS", "JavaScript", "React", "React-router-dom", "Redux", "Redux-thunk", "Redux-form", "Axios", "Bootstrap"],
         link: "https://nepomn9shih.github.io/CatNet/",
+    }, 
+    {
+        img: project5, 
+        name: "Моя визитка", 
+        description: "Мой проект. Сайт-визитка, содержащий информацию обо мне, моих навыках, опыте работы, моих проектах. Здесь также присутствуют ссылки: на мой репозиторий на GitHub, на мое резюме на HH.ru, на мою страницу в LinkedIn",
+        technologies: ["HTML", "CSS", "SASS", "SCSS", "Grid", "JavaScript", "React", "React-router-dom"],
+        link: "https://github.com/nepomn9shih/MyVisitCard",
     }, 
 ]
 

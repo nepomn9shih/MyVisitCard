@@ -247,17 +247,11 @@ code {
 }
 
 .header__link:hover {
-  color: darkorchid;
+  color: goldenrod;
 }
 
 .header__link.active {
   color: darkorchid;
-  background-color: ivory;
-  padding: 3px 5px 5px 5px;
-  margin: 5px 0px;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header__link img {
@@ -315,10 +309,11 @@ code {
 .sidebar__link {
   color: ivory;
   font-size: 20px;
+  margin: 5px 0px 5px 5px;
 }
 
 .sidebar__link:hover {
-  color: indigo;
+  color: goldenrod;
 }
 
 .sidebar__link.active {
@@ -345,10 +340,6 @@ code {
   color: ivory;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.content__gallery {
-  margin: 0px 0px 30px 0px;
 }
 
 .gallery {
@@ -515,12 +506,19 @@ code {
 }
 
 .about {
-  min-height: 450px;
-  background-color: ivory;
+  min-height: 400px;
+  background-color: indigo;
   border-radius: 10px;
   padding: 10px 10px 20px 10px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about__text {
+  background-color: ivory;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  min-height: 356px;
 }
 
 .aboutMe {
@@ -568,7 +566,7 @@ code {
 }
 
 .skills {
-  min-height: 500px;
+  min-height: 476px;
   background-color: indigo;
   border-radius: 10px;
   padding: 10px 10px 20px 10px;
@@ -586,7 +584,6 @@ code {
 }
 
 .work {
-  min-height: 500px;
   background-color: indigo;
   border-radius: 10px;
   padding: 10px 10px 20px 10px;

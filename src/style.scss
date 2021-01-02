@@ -149,15 +149,10 @@ body {
     color: ivory;
     font-size: 18px;
     &:hover {
-        color: $secondaryColor;
+        color: $activeColor;
     }
     &.active {
         color: $secondaryColor;
-        background-color: ivory;
-        padding: 3px 5px 5px 5px;
-        margin: 5px 0px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
     img{
         width: 50px;
@@ -204,8 +199,9 @@ body {
 .sidebar__link {
     color: ivory;
     font-size: 20px;
+    margin: 5px 0px 5px 5px;
     &:hover {
-        color: $mainColor;
+        color: $activeColor;
     }
     &.active {
         color: $mainColor;
@@ -231,7 +227,7 @@ body {
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .content__gallery {
-    margin: 0px 0px 30px 0px;
+    
 }
 .gallery {
     background-color: $mainColor;
@@ -366,11 +362,17 @@ body {
 .content__about {
 }
 .about {
-    min-height: 450px;
-    background-color: ivory;
+    min-height: 400px;
+    background-color: $mainColor;
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.about__text {
+    background-color: ivory;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    min-height: 356px;
 }
 
 .content__aboutMe {
@@ -425,7 +427,7 @@ body {
 .content__skills {
 }
 .skills {
-    min-height: 500px;
+    min-height: 476px;
     background-color: $mainColor;
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -440,7 +442,7 @@ body {
 .content__work {
 }
 .work {
-    min-height: 500px;
+    
     background-color: $mainColor;
     border-radius: 10px;
     padding: 10px 10px 20px 10px;

@@ -33,11 +33,6 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <NavLink className="header__link" to="/projects">
-              Мои проекты
-            </NavLink>
-          </li>
-          <li>
           <NavLink className="header__link" to="/about">
               О сайте
             </NavLink>

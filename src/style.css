@@ -476,8 +476,17 @@ code {
       flex-wrap: wrap;
 }
 
+.products__technologies a {
+  color: indigo;
+}
+
+.products__technologies a:visited {
+  color: indigo;
+}
+
 .products__description {
   font-size: 16px;
+  line-height: 20px;
   padding: 15px;
   border-bottom-left-radius: 10px;
   background-color: ivory;
@@ -551,7 +560,8 @@ code {
 }
 
 .aboutMe__text {
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 22px;
   background-color: ivory;
   border-radius: 10px;
   padding: 15px 15px 20px 15px;
@@ -581,6 +591,14 @@ code {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 20px;
+}
+
+.skills__text a {
+  color: indigo;
+}
+
+.skills__text a:visited {
+  color: indigo;
 }
 
 .work {
@@ -688,6 +706,8 @@ code {
 }
 
 .work__description {
+  font-size: 16px;
+  line-height: 20px;
   padding: 15px;
   background-color: gray;
   border-bottom-right-radius: 15px;
@@ -701,6 +721,50 @@ code {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.hobby {
+  background-color: indigo;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hobby__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.hobby__items .cellItem:hover {
+  cursor: pointer;
+}
+
+.hobby__items .chosen {
+  background-color: goldenrod;
+}
+
+.hobby__image {
+  position: relative;
+  padding: 0px 0px 100% 0px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hobby__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 
 .footer {

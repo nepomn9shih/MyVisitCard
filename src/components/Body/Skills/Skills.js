@@ -6,7 +6,7 @@ const Skills = () => {
             <h1 class="content__title">Мои навыки</h1>
             <div class="skills__text">
             {skillsList.map((skill, index) => {
-                return <div class="cellItem" key={index}>{skill} </div>
+                return <a href={"https://www.google.com/search?q=" + skill} target="_blank" class="cellItem" key={index}>{skill} </a>
               })}
             </div>
         </section>  

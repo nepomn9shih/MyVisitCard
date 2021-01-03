@@ -18,6 +18,7 @@ const skillsList = [
   "Адаптивная верстка",
   "Prop-types",
   "TypeScript",
+  "БЭМ",
   "VS Code",
   "Avocode",
   "Adobe Photoshop",

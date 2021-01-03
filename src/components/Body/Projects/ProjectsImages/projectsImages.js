@@ -45,7 +45,7 @@ const projectsImages = [
         img: project5, 
         name: "Моя визитка", 
         description: "Мой проект. Сайт-визитка, содержащий информацию обо мне, моих навыках, опыте работы, моих проектах. Здесь также присутствуют ссылки: на мой репозиторий на GitHub, на мое резюме на HH.ru, на мою страницу в LinkedIn",
-        technologies: ["HTML", "CSS", "SASS", "SCSS", "Grid", "JavaScript", "React", "React-router-dom"],
+        technologies: ["HTML", "CSS", "SASS", "SCSS", "Grid", "JavaScript", "React", "React-router-dom", "БЭМ"],
         link: "https://github.com/nepomn9shih/MyVisitCard",
     }, 
 ]

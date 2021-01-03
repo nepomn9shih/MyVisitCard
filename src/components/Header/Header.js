@@ -15,6 +15,7 @@ const Header = () => {
       <a href="https://github.com/nepomn9shih" class="header__logo">
         <img src={ya} alt="" />
       </a>
+      <b class="header__name">МОЯ\\\<br/>ВИЗИТКА</b>
       <nav class="header__menu">
         <ul class={isMenuOpen ? "header__list active" : "header__list"}>
           <li>

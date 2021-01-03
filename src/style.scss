@@ -7,6 +7,11 @@ $secondaryColor :  darkorchid;
 $backgroundColor: gray;
 $activeColor: goldenrod;
 
+hr {
+    border-bottom: 2px solid $mainColor;
+    margin: 0px -20px 15px -20px;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     background: rgba(255, 255, 255, 0.0);
@@ -43,7 +48,7 @@ body {
     padding: 15px;
     background-color: $mainColor;
     display: grid;
-    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 1100px) 1fr;
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
@@ -60,8 +65,12 @@ body {
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
 }
+.header__name {
+    font-size: 30px;
+    color: ivory;
+}
 .header__menu {
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
 }
 .header__list {
     display: grid;

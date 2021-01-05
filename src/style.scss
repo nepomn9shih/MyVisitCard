@@ -9,7 +9,7 @@ $activeColor: goldenrod;
 
 hr {
     border-bottom: 2px solid $mainColor;
-    margin: 0px -20px 15px -20px;
+    margin: 0px -15px 15px -15px;
 }
 
 ::-webkit-scrollbar {
@@ -387,6 +387,13 @@ body {
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     min-height: 356px;
+    p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    b {
+        color: $mainColor
+    }
 }
 
 .content__aboutMe {
@@ -397,7 +404,7 @@ body {
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     display: grid;
-    grid-template: auto auto / minmax(300px, 500px) auto;
+    grid-template: auto auto / minmax(200px, 500px) auto;
 }
 .aboutMe__title {
     grid-column: span 2;
@@ -491,7 +498,7 @@ body {
     background-color: ivory;
     border-radius: 10px;
     margin: 5px;
-    padding: 4px 5px 6px 5px;
+    padding: 4px 5px 4px 5px;
     color:$mainColor;
     &:hover {
         // padding: 5px 10px;
@@ -590,7 +597,7 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 900px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 800px) 1fr;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .footer__copy {

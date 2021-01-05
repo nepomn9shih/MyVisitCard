@@ -8,7 +8,7 @@ import img5 from "./art.png";
 const hobbyImages = [
     {img: img0, name: "Путешествовать"},
     {img: img1, name: "Фотографировать"},
-    {img: img2, name: "Кататься на велосипеде (и не только)"},
+    {img: img2, name: "Кататься на велосипеде"},
     {img: img3, name: "Учиться и учить"},
     {img: img4, name: "Играть в страйкбол"},
     {img: img5, name: "Рисовать"},

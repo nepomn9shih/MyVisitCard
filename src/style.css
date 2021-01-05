@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 hr {
   border-bottom: 2px solid indigo;
-  margin: 0px -20px 15px -20px;
+  margin: 0px -15px 15px -15px;
 }
 
 ::-webkit-scrollbar {
@@ -540,6 +540,15 @@ code {
   min-height: 356px;
 }
 
+.about__text p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.about__text b {
+  color: indigo;
+}
+
 .aboutMe {
   background-color: indigo;
   border-radius: 10px;
@@ -549,8 +558,8 @@ code {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto;
-  -ms-grid-columns: minmax(300px, 500px) auto;
-      grid-template: auto auto/minmax(300px, 500px) auto;
+  -ms-grid-columns: minmax(200px, 500px) auto;
+      grid-template: auto auto/minmax(200px, 500px) auto;
 }
 
 .aboutMe__title {
@@ -658,7 +667,7 @@ code {
   background-color: ivory;
   border-radius: 10px;
   margin: 5px;
-  padding: 4px 5px 6px 5px;
+  padding: 4px 5px 4px 5px;
   color: indigo;
 }
 
@@ -790,8 +799,8 @@ code {
           align-items: center;
   justify-items: center;
   -ms-grid-rows: 1fr;
-  -ms-grid-columns: 1fr minmax(auto, 300px) minmax(auto, 900px) 1fr;
-      grid-template: 1fr/1fr minmax(auto, 300px) minmax(auto, 900px) 1fr;
+  -ms-grid-columns: 1fr minmax(auto, 400px) minmax(auto, 800px) 1fr;
+      grid-template: 1fr/1fr minmax(auto, 400px) minmax(auto, 800px) 1fr;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }

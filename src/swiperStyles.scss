@@ -1,0 +1,31 @@
+$mainColor : indigo;
+$secondaryColor :  darkorchid;
+$backgroundColor: gray;
+$activeColor: goldenrod;
+
+.swiper-container {
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    img {
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 550px) {
+    .swiper-container {
+        max-width: 400px;
+    }
+}
+
+.swiper-wrapper {
+    padding-inline-start: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev
+{ color: $activeColor; }
+
+.swiper-pagination-bullet {
+    background-color: goldenrod;
+}

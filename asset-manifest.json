@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MyVisitCard/static/css/main.96ffc0dc.chunk.css",
-    "main.js": "/MyVisitCard/static/js/main.6185b02e.chunk.js",
-    "main.js.map": "/MyVisitCard/static/js/main.6185b02e.chunk.js.map",
-    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.17f7c49f.js",
-    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.17f7c49f.js.map",
-    "static/js/2.41522da8.chunk.js": "/MyVisitCard/static/js/2.41522da8.chunk.js",
-    "static/js/2.41522da8.chunk.js.map": "/MyVisitCard/static/js/2.41522da8.chunk.js.map",
-    "static/js/3.b8075a07.chunk.js": "/MyVisitCard/static/js/3.b8075a07.chunk.js",
-    "static/js/3.b8075a07.chunk.js.map": "/MyVisitCard/static/js/3.b8075a07.chunk.js.map",
+    "main.css": "/MyVisitCard/static/css/main.f3d2b7c2.chunk.css",
+    "main.js": "/MyVisitCard/static/js/main.a1c09113.chunk.js",
+    "main.js.map": "/MyVisitCard/static/js/main.a1c09113.chunk.js.map",
+    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.f4bafe82.js",
+    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.f4bafe82.js.map",
+    "static/js/2.a87f1f68.chunk.js": "/MyVisitCard/static/js/2.a87f1f68.chunk.js",
+    "static/js/2.a87f1f68.chunk.js.map": "/MyVisitCard/static/js/2.a87f1f68.chunk.js.map",
+    "static/js/3.44b050b6.chunk.js": "/MyVisitCard/static/js/3.44b050b6.chunk.js",
+    "static/js/3.44b050b6.chunk.js.map": "/MyVisitCard/static/js/3.44b050b6.chunk.js.map",
     "index.html": "/MyVisitCard/index.html",
-    "static/css/main.96ffc0dc.chunk.css.map": "/MyVisitCard/static/css/main.96ffc0dc.chunk.css.map",
-    "static/js/2.41522da8.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.41522da8.chunk.js.LICENSE.txt",
+    "static/css/main.f3d2b7c2.chunk.css.map": "/MyVisitCard/static/css/main.f3d2b7c2.chunk.css.map",
+    "static/js/2.a87f1f68.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.a87f1f68.chunk.js.LICENSE.txt",
     "static/media/CatNet.21fb8a65.png": "/MyVisitCard/static/media/CatNet.21fb8a65.png",
     "static/media/DriversOfF1.4fc21b1c.png": "/MyVisitCard/static/media/DriversOfF1.4fc21b1c.png",
     "static/media/Like.dbaf7ea6.png": "/MyVisitCard/static/media/Like.dbaf7ea6.png",
@@ -32,7 +32,9 @@
     "static/media/img7.8f9f8ef0.png": "/MyVisitCard/static/media/img7.8f9f8ef0.png",
     "static/media/img8.a1e55ffd.png": "/MyVisitCard/static/media/img8.a1e55ffd.png",
     "static/media/img9.d13e1f4e.png": "/MyVisitCard/static/media/img9.d13e1f4e.png",
-    "static/media/myPhoto.10417ed2.jpg": "/MyVisitCard/static/media/myPhoto.10417ed2.jpg",
+    "static/media/myPhoto0.10417ed2.jpg": "/MyVisitCard/static/media/myPhoto0.10417ed2.jpg",
+    "static/media/myPhoto1.faeaa777.jpg": "/MyVisitCard/static/media/myPhoto1.faeaa777.jpg",
+    "static/media/myPhoto2.9f86d049.jpg": "/MyVisitCard/static/media/myPhoto2.9f86d049.jpg",
     "static/media/photo.bd1df7e9.png": "/MyVisitCard/static/media/photo.bd1df7e9.png",
     "static/media/ride.b9834f22.png": "/MyVisitCard/static/media/ride.b9834f22.png",
     "static/media/travel.d6cf7a4a.png": "/MyVisitCard/static/media/travel.d6cf7a4a.png",
@@ -41,9 +43,9 @@
     "static/media/ya.a0f1253c.png": "/MyVisitCard/static/media/ya.a0f1253c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.17f7c49f.js",
-    "static/js/2.41522da8.chunk.js",
-    "static/css/main.96ffc0dc.chunk.css",
-    "static/js/main.6185b02e.chunk.js"
+    "static/js/runtime-main.f4bafe82.js",
+    "static/js/2.a87f1f68.chunk.js",
+    "static/css/main.f3d2b7c2.chunk.css",
+    "static/js/main.a1c09113.chunk.js"
   ]
 }

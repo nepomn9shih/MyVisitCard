@@ -1,11 +1,40 @@
-import myPhoto from "../../images/myPhoto.jpg";
+import myPhoto0 from "../../images/myPhoto0.jpg";
+import myPhoto1 from "../../images/myPhoto1.jpg";
+import myPhoto2 from "../../images/myPhoto2.jpg";
+import { Swiper, SwiperSlide } from "../../../node_modules/swiper/react";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+} from "../../../node_modules/swiper";
+
+SwiperCore.use([Navigation, Pagination]);
+
+const myPhotos = [myPhoto0, myPhoto1, myPhoto2]
 
 const AboutMe = () => {
+  const mySlides = [];
+  for (let i = 0; i < 3; i++) {
+    mySlides.push(
+      <SwiperSlide key={`slide-${i}`}>
+          <img
+            src={myPhotos[i]}
+            alt={`myPhoto-${i}`}
+          />
+      </SwiperSlide>
+    );
+  }
+
   return (
     <section class="content__aboutMe aboutMe">
       <h1 class="content__title aboutMe__title">Обо мне</h1>
       <div class="aboutMe__image">
-        <img src={myPhoto} alt="" />
+      <Swiper
+        id="aboutMe"
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {mySlides}
+      </Swiper>
       </div>
       <div class="aboutMe__text">
         <p>Давно увлекаюсь программированием, и в 2020 серьезно решил поменять

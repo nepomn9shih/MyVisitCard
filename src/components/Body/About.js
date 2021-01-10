@@ -23,7 +23,7 @@ const About = () => {
     <section class="content__about about">
       <h1 class="content__title">О сайте</h1>
       <Swiper
-        id="main"
+        id="about"
         tag="section"
         wrapperTag="ul"
         navigation

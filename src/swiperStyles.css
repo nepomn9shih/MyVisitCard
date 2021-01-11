@@ -6,8 +6,26 @@
 
 .swiper-container#aboutMe {
   max-width: 100%;
-  margin: 0px 10px 20px 0px;
+  margin: 0px auto 20px auto;
   border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+  .swiper-container#about {
+    max-width: 400px;
+  }
+  .swiper-container#aboutMe {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-container#about {
+    max-width: 300px;
+  }
+  .swiper-container#aboutMe {
+    max-width: 300px;
+  }
 }
 
 .swiper-wrapper#about {
@@ -18,15 +36,6 @@
 .swiper-wrapper#aboutMe {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-}
-
-@media (max-width: 550px) {
-  .swiper-container#about {
-    max-width: 400px;
-  }
-  .swiper-container#aboutMe {
-    max-width: 400px;
-  }
 }
 
 .swiper-button-next,

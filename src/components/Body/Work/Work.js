@@ -12,14 +12,14 @@ const Work = () => {
             return <div class="work__item" key={index}>
                 <div class="work__date">
                     <div class="work__dateItem">
-                      <b>НАЧ:</b> {work.date.from}
+                      <b>Начало:</b> {work.date.from}
                     </div>
                     <div class="work__dateItem">
-                      <b>КОН:</b> {work.date.to}
+                      <b>Конец:</b> {work.date.to}
                     </div>
                 </div>
                 <div class="work__name">
-                    {work.name}
+                    <div>{work.name}</div>
                 </div>
                 <div class="work__image">
                     <img src={work.img} alt=""/>

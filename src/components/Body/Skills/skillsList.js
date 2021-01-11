@@ -14,6 +14,7 @@ const skillsList = [
   "Redux-form",
   "Redux-thunk",
   "Axios",
+  "Swiper",
   "Material UI",
   "Адаптивная верстка",
   "Prop-types",

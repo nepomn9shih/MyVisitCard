@@ -24,7 +24,7 @@ const workBase = [
   },
   {
     img: work2,
-    date: { from: "07.2020", to: "НАСТ.ВР." },
+    date: { from: "07.2020", to: "Работаю" },
     name: "Фриланс",
     position: "Дизайнер СДО",
     description: [

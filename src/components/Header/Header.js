@@ -1,5 +1,4 @@
 import ya from "../../images/ya.png";
-import cart from "../../images/cart.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -19,29 +18,29 @@ const Header = () => {
       <nav class="header__menu">
         <ul class={isMenuOpen ? "header__list active" : "header__list"}>
           <li>
-          <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" target="_blank" class="header__link">
+          <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" target="_blank" class="header__link" rel="noreferrer">
               HH
             </a>
           </li>
           <li>
-          <a href="https://github.com/nepomn9shih" target="_blank" class="header__link">
+          <a href="https://github.com/nepomn9shih" target="_blank" class="header__link" rel="noreferrer">
               GitHub
             </a>
           </li>
           <li>
-          <a href="https://www.linkedin.com/in/alexander-nepomnyashchikh/" target="_blank" class="header__link">
+          <a href="https://www.linkedin.com/in/alexander-nepomnyashchikh/" target="_blank" class="header__link" rel="noreferrer">
               LinkedIn
+            </a>
+          </li>
+          <li>
+          <a href="https://career.habr.com/nepomn9shih" target="_blank" class="header__link" rel="noreferrer">
+              Хабр.Карьера
             </a>
           </li>
           <li>
           <NavLink className="header__link" to="/about">
               О сайте
             </NavLink>
-          </li>
-          <li>
-            <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763"  target="_blank" class="header__link">
-              <img src={cart} alt="" />
-            </a>
           </li>
         </ul>
         <div

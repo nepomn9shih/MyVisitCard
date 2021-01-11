@@ -547,8 +547,26 @@ button.swiper-pagination-bullet {
 
 .swiper-container#aboutMe {
   max-width: 100%;
-  margin: 0px 10px 20px 0px;
+  margin: 0px auto 20px auto;
   border-radius: 10px;
+}
+
+@media (max-width: 550px) {
+  .swiper-container#about {
+    max-width: 400px;
+  }
+  .swiper-container#aboutMe {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .swiper-container#about {
+    max-width: 300px;
+  }
+  .swiper-container#aboutMe {
+    max-width: 300px;
+  }
 }
 
 .swiper-wrapper#about {
@@ -559,15 +577,6 @@ button.swiper-pagination-bullet {
 .swiper-wrapper#aboutMe {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-}
-
-@media (max-width: 550px) {
-  .swiper-container#about {
-    max-width: 400px;
-  }
-  .swiper-container#aboutMe {
-    max-width: 400px;
-  }
 }
 
 .swiper-button-next,
@@ -1090,6 +1099,7 @@ code {
   background-color: ivory;
   border-radius: 10px;
   padding: 15px 15px 20px 15px;
+  margin-left: 10px;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -1104,6 +1114,9 @@ code {
   }
   .aboutMe__image img {
     width: 100%;
+  }
+  .aboutMe__text {
+    margin-left: 0px;
   }
 }
 
@@ -1158,9 +1171,9 @@ code {
   text-align: center;
   background-color: gray;
   border-radius: 15px;
-  -ms-grid-rows: 50px 50px 200px 50px 1fr;
+  -ms-grid-rows: 50px 70px 200px 50px 1fr;
   -ms-grid-columns: 1fr;
-      grid-template: 50px 50px 200px 50px 1fr/ 1fr;
+      grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 }
 
 .work__date {
@@ -1179,7 +1192,7 @@ code {
 .work__dateItem {
   background-color: ivory;
   border-radius: 10px;
-  margin: 5px;
+  margin: 2px;
   padding: 4px 5px 4px 5px;
   color: indigo;
 }
@@ -1224,6 +1237,11 @@ code {
   color: ivory;
   padding: 15px;
   background-color: darkorchid;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .work__name:hover {

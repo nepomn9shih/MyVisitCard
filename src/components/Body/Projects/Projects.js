@@ -11,10 +11,10 @@ const Projects = () => {
           .map((project, index) => {
             return (
               <div class="products__item" key={index}>
-                <a href={project.link} target="_blank" class="products__image">
+                <a href={project.link} target="_blank" class="products__image" rel="noreferrer">
                   <img src={project.img} alt="" />
                 </a>
-                <a href={project.link} target="_blank" class="products__name">
+                <a href={project.link} target="_blank" class="products__name" rel="noreferrer">
                   {project.name}
                 </a>
                 <div class="products__technologies">
@@ -23,6 +23,7 @@ const Projects = () => {
                       <a
                         href={"https://www.google.com/search?q=" + tech}
                         target="_blank"
+                        rel="noreferrer"
                         class="cellItem"
                         key={index}
                       >
@@ -32,7 +33,7 @@ const Projects = () => {
                   })}
                 </div>
                 <div class="products__description">{project.description}</div>
-                <a href={project.link} target="_blank" class="products__button">
+                <a href={project.link} target="_blank" class="products__button" rel="noreferrer">
                   Ссылка
                 </a>
               </div>

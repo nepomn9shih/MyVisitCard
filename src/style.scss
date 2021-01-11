@@ -100,9 +100,6 @@ body {
             box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
             li {
                 padding: 15px;
-                &:last-child {
-                    text-align: center;
-                }
             }
         }
     }
@@ -595,42 +592,14 @@ body {
 
 
 .footer {
+    color: ivory;
     grid-area: footer;
     background-color: $mainColor; 
     padding: 15px;
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 800px) 1fr;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-.footer__copy {
-    color: ivory;
-}
-.footer__menu {
-    a {
-        color: ivory;
-    }
-}
-@media (min-width: 550px) {
-    .footer__copy {
-        grid-column: 2 / 3;
-    }
-    .footer__menu {
-        grid-column: 3 / 4;
-    }
-}
-@media (max-width: 550px) {
-    .footer {
-        grid-template: 1fr 1fr/ 1fr;
-    }
-    .footer__copy {
-        order: 2;
-    }
-    .footer__menu {
-        order: 1;
-        padding: 15px 0px;
-    }
 }
 
 .cellItem {

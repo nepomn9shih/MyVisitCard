@@ -9,6 +9,7 @@ import Skills from './Skills/Skills'
 import Work from './Work/Work'
 
 const Body = () => {
+
     return (
 <main class="main">
             <Sidebar/>

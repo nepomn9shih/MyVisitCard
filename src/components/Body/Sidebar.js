@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
+
     return (
         <aside class="sidebar">
         <nav class="sidebar__menu">

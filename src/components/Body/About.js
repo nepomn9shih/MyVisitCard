@@ -26,6 +26,7 @@ const About = () => {
         id="about"
         tag="section"
         wrapperTag="ul"
+        speed={800}
         navigation
         pagination={{ clickable: true }}
       >

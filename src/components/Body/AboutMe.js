@@ -12,6 +12,7 @@ SwiperCore.use([Navigation, Pagination]);
 const myPhotos = [myPhoto0, myPhoto1, myPhoto2]
 
 const AboutMe = () => {
+
   const mySlides = [];
   for (let i = 0; i < 3; i++) {
     mySlides.push(
@@ -32,6 +33,7 @@ const AboutMe = () => {
         id="aboutMe"
         navigation
         pagination={{ clickable: true }}
+        speed={800}
       >
         {mySlides}
       </Swiper>
@@ -48,7 +50,7 @@ const AboutMe = () => {
         технологии. В процессе обучения научился использовать: HTML5, CSS3,
         FlexBox, Bootstrap4.5, SASS/SCSS, Grid, JavaScript, Git, ReactJS(с применением
         hooks), Material UI, Redux, Redux-form, Redux-thunk, React-router,
-        gh-pages, Axios и работату с серверным API, TypeScript, БЭМ. </p> 
+        gh-pages, Axios и работу с серверным API, TypeScript, БЭМ, Styled-components </p> 
         <br/>
         <hr/>
         <p>Обладаю логическим мышлением,

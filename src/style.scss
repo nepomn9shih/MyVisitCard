@@ -447,22 +447,22 @@ body {
 
 .content__skills {
 }
-.skills {
-    min-height: 476px;
-    background-color: $mainColor;
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-.skills__text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    a {
-        color: $mainColor;
-        &:visited {color: $mainColor;}
-    }
-}
+// .skills {
+//     min-height: 476px;
+//     background-color: $mainColor;
+//     border-radius: 10px;
+//     padding: 10px 10px 20px 10px;
+//     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+// }
+// .skills__text {
+//     display: flex;
+//     flex-wrap: wrap;
+//     font-size: 20px;
+//     a {
+//         color: $mainColor;
+//         &:visited {color: $mainColor;}
+//     }
+// }
 
 .content__work {
 }

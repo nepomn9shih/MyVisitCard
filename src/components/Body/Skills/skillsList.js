@@ -16,6 +16,7 @@ const skillsList = [
   "Axios",
   "Swiper",
   "Material UI",
+  "Styled-components",
   "Адаптивная верстка",
   "Prop-types",
   "TypeScript",

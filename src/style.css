@@ -1117,32 +1117,6 @@ code {
   }
 }
 
-.skills {
-  min-height: 476px;
-  background-color: indigo;
-  border-radius: 10px;
-  padding: 10px 10px 20px 10px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.skills__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 20px;
-}
-
-.skills__text a {
-  color: indigo;
-}
-
-.skills__text a:visited {
-  color: indigo;
-}
-
 .work {
   background-color: indigo;
   border-radius: 10px;

@@ -2,6 +2,8 @@ import { useState } from "react";
 import hobbyImages from "./HobbyImages/hobbyImages";
 
 const Hobby = () => {
+    console.log("hobby")
+
    const [hobbyIndex, setHobbyIndex] = useState(0);
 
     return (

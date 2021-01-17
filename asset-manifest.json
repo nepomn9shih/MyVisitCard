@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MyVisitCard/static/css/main.7b3250e6.chunk.css",
-    "main.js": "/MyVisitCard/static/js/main.3971e116.chunk.js",
-    "main.js.map": "/MyVisitCard/static/js/main.3971e116.chunk.js.map",
-    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.f4bafe82.js",
-    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.f4bafe82.js.map",
-    "static/js/2.a87f1f68.chunk.js": "/MyVisitCard/static/js/2.a87f1f68.chunk.js",
-    "static/js/2.a87f1f68.chunk.js.map": "/MyVisitCard/static/js/2.a87f1f68.chunk.js.map",
-    "static/js/3.44b050b6.chunk.js": "/MyVisitCard/static/js/3.44b050b6.chunk.js",
-    "static/js/3.44b050b6.chunk.js.map": "/MyVisitCard/static/js/3.44b050b6.chunk.js.map",
+    "main.css": "/MyVisitCard/static/css/main.3b4b2ef5.chunk.css",
+    "main.js": "/MyVisitCard/static/js/main.64259b0d.chunk.js",
+    "main.js.map": "/MyVisitCard/static/js/main.64259b0d.chunk.js.map",
+    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.479cd4b6.js",
+    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.479cd4b6.js.map",
+    "static/js/2.87df904c.chunk.js": "/MyVisitCard/static/js/2.87df904c.chunk.js",
+    "static/js/2.87df904c.chunk.js.map": "/MyVisitCard/static/js/2.87df904c.chunk.js.map",
+    "static/js/3.7b4458c3.chunk.js": "/MyVisitCard/static/js/3.7b4458c3.chunk.js",
+    "static/js/3.7b4458c3.chunk.js.map": "/MyVisitCard/static/js/3.7b4458c3.chunk.js.map",
     "index.html": "/MyVisitCard/index.html",
-    "static/css/main.7b3250e6.chunk.css.map": "/MyVisitCard/static/css/main.7b3250e6.chunk.css.map",
-    "static/js/2.a87f1f68.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.a87f1f68.chunk.js.LICENSE.txt",
+    "static/css/main.3b4b2ef5.chunk.css.map": "/MyVisitCard/static/css/main.3b4b2ef5.chunk.css.map",
+    "static/js/2.87df904c.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.87df904c.chunk.js.LICENSE.txt",
     "static/media/CatNet.21fb8a65.png": "/MyVisitCard/static/media/CatNet.21fb8a65.png",
     "static/media/DriversOfF1.4fc21b1c.png": "/MyVisitCard/static/media/DriversOfF1.4fc21b1c.png",
     "static/media/Like.dbaf7ea6.png": "/MyVisitCard/static/media/Like.dbaf7ea6.png",
@@ -42,9 +42,9 @@
     "static/media/ya.a0f1253c.png": "/MyVisitCard/static/media/ya.a0f1253c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4bafe82.js",
-    "static/js/2.a87f1f68.chunk.js",
-    "static/css/main.7b3250e6.chunk.css",
-    "static/js/main.3971e116.chunk.js"
+    "static/js/runtime-main.479cd4b6.js",
+    "static/js/2.87df904c.chunk.js",
+    "static/css/main.3b4b2ef5.chunk.css",
+    "static/js/main.64259b0d.chunk.js"
   ]
 }

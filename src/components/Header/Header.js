@@ -1,8 +1,10 @@
 import ya from "../../images/ya.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ToggleButton from "../ToggleButton/ToggleButton";
+import { HeaderBlock } from "./HeaderStyles";
 
-const Header = () => {
+const Header = ({handlerToggle, isDarkMode}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleClick = (e) => {
@@ -10,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header class="header">
+    <HeaderBlock dark={isDarkMode}>
       <a href="https://github.com/nepomn9shih" class="header__logo">
         <img src={ya} alt="" />
       </a>
@@ -33,14 +35,12 @@ const Header = () => {
             </a>
           </li>
           <li>
-          <a href="https://career.habr.com/nepomn9shih" target="_blank" class="header__link" rel="noreferrer">
-              Хабр.Карьера
-            </a>
-          </li>
-          <li>
           <NavLink className="header__link" to="/about">
               О сайте
             </NavLink>
+          </li>
+          <li>
+          <ToggleButton buttonText={"DarkMode"} handlerOnChange={handlerToggle}/>
           </li>
         </ul>
         <div
@@ -50,7 +50,7 @@ const Header = () => {
           <span></span>
         </div>
       </nav>
-    </header>
+    </HeaderBlock>
   );
 };
 

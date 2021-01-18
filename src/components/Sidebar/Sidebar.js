@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { SidebarBlock } from "./SidebarStyles";
 
-const Sidebar = () => {
+const Sidebar = ({isDarkMode}) => {
 
     return (
-        <aside class="sidebar">
+        <SidebarBlock dark={isDarkMode}>
         <nav class="sidebar__menu">
             <ul class="sidebar__list">
                 <li>
@@ -29,7 +30,7 @@ const Sidebar = () => {
                 </li>
             </ul>
         </nav>
-    </aside> 
+    </SidebarBlock> 
     )
 }
 

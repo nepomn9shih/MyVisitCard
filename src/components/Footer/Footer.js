@@ -1,9 +1,11 @@
-const Footer = () => {
+import { FooterBlock } from "./FooterStyles";
+
+const Footer = ({isDarkMode}) => {
     
     return (
-        <footer class="footer">
+        <FooterBlock dark={isDarkMode}>
             <div>Непомнящих Александр &copy; 2021</div>
-        </footer>
+        </FooterBlock>
     )
 }
 

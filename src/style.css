@@ -610,35 +610,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.wrapper {
-  min-height: 100%;
-  background-color: gray;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: minmax(100px, auto) 1fr minmax(70px, auto);
-  -ms-grid-columns: 1fr;
-      grid-template: minmax(100px, auto) 1fr minmax(70px, auto)/1fr;
-      grid-template-areas: "header" "main" "footer";
-}
-
-.header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-  padding: 15px;
-  background-color: indigo;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-  -ms-grid-columns: 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 1100px) 1fr;
-      grid-template: 1fr/1fr minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 1100px) 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
 .header__logo {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -792,8 +763,6 @@ code {
 
 @media (min-width: 992px) {
   .main {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: main;
     display: -ms-grid;
     display: grid;
@@ -801,26 +770,12 @@ code {
     -ms-grid-columns: 1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
         grid-template: 1fr/1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
   }
-  .sidebar {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-  }
   .content {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
     padding: 0px 0px 0px 30px;
   }
-}
-
-.sidebar {
-  background-color: darkorchid;
-  border-radius: 10px;
-  padding: 30px 30px 15px 30px;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 0px 0px 20px 0px;
 }
 
 .sidebar__list li {
@@ -1286,23 +1241,6 @@ code {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
-}
-
-.footer {
-  color: ivory;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  background-color: indigo;
-  padding: 15px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cellItem {

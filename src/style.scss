@@ -37,25 +37,25 @@ body {
       monospace;
   }
 
-.wrapper {
-    min-height: 100%;
-    background-color: $backgroundColor;
-    display: grid;
-    grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-    padding: 15px;
-    background-color: $mainColor;
-    display: grid;
-    grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 1100px) 1fr;
-    align-items: center;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
+// .wrapper {
+//     min-height: 100%;
+//     background-color: $backgroundColor;
+//     display: grid;
+//     grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
+//     grid-template-areas: 
+//     "header"
+//     "main"
+//     "footer";
+// }
+// .header {
+//     grid-area: header;
+//     padding: 15px;
+//     background-color: $mainColor;
+//     display: grid;
+//     grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(auto, 1100px) 1fr;
+//     align-items: center;
+//     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+// }
 .header__logo {
     grid-column: 2 / 3;
     img {
@@ -182,22 +182,22 @@ body {
         display: grid;
         grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
     }
-    .sidebar {
-        grid-column: 2 / 3;
-    }
+    // .sidebar {
+    //     grid-column: 2 / 3;
+    // }
     .content {
         grid-column: 3 / 4;
         padding: 0px 0px 0px 30px;
     }
 }
 
-.sidebar {
-    background-color: $secondaryColor;
-    border-radius: 10px;
-    padding: 30px 30px 15px 30px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    margin: 0px 0px 20px 0px;
-}
+// .sidebar {
+//     background-color: $secondaryColor;
+//     border-radius: 10px;
+//     padding: 30px 30px 15px 30px;
+//     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+//     margin: 0px 0px 20px 0px;
+// }
 .sidebar__menu {
 }
 .sidebar__list {
@@ -591,16 +591,16 @@ body {
 }
 
 
-.footer {
-    color: ivory;
-    grid-area: footer;
-    background-color: $mainColor; 
-    padding: 15px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
+// .footer {
+//     color: ivory;
+//     grid-area: footer;
+//     background-color: $mainColor; 
+//     padding: 15px;
+//     display: grid;
+//     align-items: center;
+//     justify-items: center;
+//     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+// }
 
 .cellItem {
     background-color: ivory;

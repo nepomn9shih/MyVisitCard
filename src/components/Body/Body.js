@@ -4,20 +4,20 @@ import AboutMe from './AboutMe'
 import Gallery from './Gallery/Gallery'
 import Hobby from './Hobby/Hobby'
 import Projects from './Projects/Projects'
-import Sidebar from './Sidebar'
+import Sidebar from '../Sidebar/Sidebar'
 import Skills from './Skills/Skills'
 import Work from './Work/Work'
 
-const Body = () => {
+const Body = ({isDarkMode}) => {
 
     return (
 <main class="main">
-            <Sidebar/>
+            <Sidebar isDarkMode={isDarkMode}/>
             <section class="content">
                 <Switch>
                 <Redirect exact from="/" to="/aboutme"/>
-                    <Route path="/aboutme" component={AboutMe}/>
-                    <Route path="/skills" component={Skills}/>
+                    <Route path="/aboutme" render={() => {return <AboutMe isDarkMode={isDarkMode}/>}}/>
+                    <Route path="/skills" render={() => {return <Skills isDarkMode={isDarkMode}/>}}/>
                     <Route path="/work" component={Work}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/hobby" component={Hobby}/>

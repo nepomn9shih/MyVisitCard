@@ -2,7 +2,7 @@ import ya from "../../images/ya.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ToggleButton from "../ToggleButton/ToggleButton";
-import { HeaderBlock } from "./HeaderStyles";
+import { HeaderBlock, HeaderList } from "./HeaderStyles";
 
 const Header = ({handlerToggle, isDarkMode}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Header = ({handlerToggle, isDarkMode}) => {
       </a>
       <b class="header__name">МОЯ\\\<br/>ВИЗИТКА</b>
       <nav class="header__menu">
-        <ul class={isMenuOpen ? "header__list active" : "header__list"}>
+        <HeaderList dark={isDarkMode} isOpen={isMenuOpen ? true : false}>
           <li>
           <a href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763" target="_blank" class="header__link" rel="noreferrer">
               HH
@@ -42,7 +42,7 @@ const Header = ({handlerToggle, isDarkMode}) => {
           <li>
           <ToggleButton buttonText={"DarkMode"} handlerOnChange={handlerToggle}/>
           </li>
-        </ul>
+        </HeaderList>
         <div
           onClick={handleClick}
           class={isMenuOpen ? "header__burger active" : "header__burger"}

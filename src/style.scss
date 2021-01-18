@@ -399,14 +399,14 @@ body {
 
 .content__aboutMe {
 }
-.aboutMe {
-    background-color: $mainColor;
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    display: grid;
-    grid-template: auto auto / minmax(200px, 500px) auto;
-}
+// .aboutMe {
+//     background-color: $mainColor;
+//     border-radius: 10px;
+//     padding: 10px 10px 20px 10px;
+//     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+//     display: grid;
+//     grid-template: auto auto / minmax(200px, 500px) auto;
+// }
 .aboutMe__title {
     grid-column: span 2;
 }

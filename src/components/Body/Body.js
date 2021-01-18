@@ -1,6 +1,6 @@
 import { Redirect, Route, Switch } from 'react-router-dom'
 import About from './About'
-import AboutMe from './AboutMe'
+import AboutMe from './AboutMe/AboutMe'
 import Gallery from './Gallery/Gallery'
 import Hobby from './Hobby/Hobby'
 import Projects from './Projects/Projects'

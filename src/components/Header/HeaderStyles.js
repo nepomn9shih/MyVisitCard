@@ -13,3 +13,25 @@ export const HeaderBlock = styled.div`
     align-items: center;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
+
+export const HeaderList = styled.ul`
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+  li{
+    align-self: center;
+  }
+  @media (max-width: 992px) {
+    & {
+      display: ${(props) => (props.isOpen ? "block" : "none")};
+      position: absolute;
+      top: 90px;
+      background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+      padding: 19px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      li {
+        padding: 15px;
+      }
+    }
+`;

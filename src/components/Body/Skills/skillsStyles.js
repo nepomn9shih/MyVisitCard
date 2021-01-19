@@ -7,6 +7,7 @@ import {
   secondaryColor,
   itemColor,
   darkItemColor,
+  backgroundColor,
 } from "../../Colours";
 
 export const SkillsBlock = styled.div`
@@ -34,12 +35,12 @@ export const SkillsText = styled.div`
   flex-wrap: wrap;
   font-size: 20px;
   a {
-    color: ${(props) => (props.dark ? darkSecondaryColor : mainColor)};
+    color: ${(props) => (props.dark ? darkMainColor : mainColor)};
   }
 `;
 
 export const SkillCellItem = styled.a`
-  background-color: ${(props) => (props.dark ? darkItemColor : itemColor)};
+  background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
   border-radius: 10px;
   margin: 5px;
   padding: 4px 5px 6px 5px;

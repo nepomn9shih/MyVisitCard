@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {
     activeColor,
+    backgroundColor,
     darkItemColor,
     darkMainColor,
     darkSecondaryColor,
@@ -35,10 +36,10 @@ export const SidebarLink = styled(NavLink)`
     font-size: 20px;
     margin: 5px 0px 5px 5px;
     &:hover {
-        color: ${activeColor};
+        color: ${(props) => (props.dark ? darkMainColor : activeColor)};
     }
     &.active {
-        color: ${(props) => (props.dark ? itemColor : mainColor)};
+        color: ${(props) => (props.dark ? backgroundColor : mainColor)};
         background-color: ${(props) => (props.dark ? darkMainColor : itemColor)};
         padding: 3px 5px 5px 5px;
         margin: 5px 0px;

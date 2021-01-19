@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import {
+    backgroundColor,
     darkMainColor,
+    itemColor,
     mainColor,
 } from "../Colours";
 
 export const FooterBlock = styled.div`
-    color: ivory;
+    color: ${(props) => (props.dark ? backgroundColor : itemColor)};
     grid-area: footer;
     background-color: ${(props) => (props.dark ? darkMainColor : mainColor)}; 
     padding: 15px;

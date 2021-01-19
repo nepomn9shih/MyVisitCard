@@ -1,28 +1,38 @@
 import { useState } from "react";
+import { ContentTitle } from "../Skills/skillsStyles";
 import hobbyImages from "./HobbyImages/hobbyImages";
+import {
+  HobbyBlock,
+  HobbyImage,
+  HobbyItems,
+  HobbyCellItem,
+} from "./HobbyStyles";
 
-const Hobby = () => {
-    console.log("hobby")
+const Hobby = ({ isDarkMode }) => {
+  const [hobbyIndex, setHobbyIndex] = useState(0);
 
-   const [hobbyIndex, setHobbyIndex] = useState(0);
-
-    return (
-        <section class="content__hobby hobby">
-        <h1 class="content__title">Мои увлечения</h1>
-        <div class="hobby__items">
+  return (
+    <HobbyBlock dark={isDarkMode}>
+      <ContentTitle dark={isDarkMode}>Мои увлечения</ContentTitle>
+      <HobbyItems dark={isDarkMode}>
         {hobbyImages.map((hobby, index) => {
-            return (
-                <div class={(hobbyIndex === index)? "cellItem chosen" : "cellItem"} key={index} onClick={() => setHobbyIndex(index)}>
-                    {hobby.name}    
-                </div>
-            )
+          return (
+            <HobbyCellItem
+              dark={isDarkMode}
+              isChosen={hobbyIndex === index}
+              key={index}
+              onClick={() => setHobbyIndex(index)}
+            >
+              {hobby.name}
+            </HobbyCellItem>
+          );
         })}
-        </div>
-        <div class="hobby__image">
-            <img src={hobbyImages[hobbyIndex].img} alt="" />
-        </div>
-    </section>  
-    )
-}
+      </HobbyItems>
+      <HobbyImage>
+        <img src={hobbyImages[hobbyIndex].img} alt="" />
+      </HobbyImage>
+    </HobbyBlock>
+  );
+};
 
 export default Hobby;

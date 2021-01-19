@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { darkItemColor, darkSecondaryColor, itemColor, secondaryColor } from "../Colours";
+import { backgroundColor, darkItemColor, darkSecondaryColor, itemColor, secondaryColor } from "../Colours";
 
 export const ButtonContainer = styled.div` 
     display: flex;
@@ -49,6 +49,6 @@ export const Toggle = styled.input`
 export const ToggleLabel = styled.label` 
     cursor: pointer;
     margin-left: 10px;
-    color: ivory;
+    color: ${(props) => (props.dark ? backgroundColor : itemColor)};
     font-weight: 600;
 `;

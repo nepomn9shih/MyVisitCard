@@ -1,24 +1,25 @@
+import { ContentTitle } from '../Skills/skillsStyles'
 import galleryImages from './GalleryImages/galleryImages'
+import { GalleryBlock, GalleryItems, GalleryItem } from './GalleryStyles'
 
-const Gallery = () => {
+const Gallery = ({isDarkMode}) => {
     return (
-        <section class="content__gallery gallery">
-        <h1 class="content__title">Галерея</h1>
-        <div class="gallery__items">
+        <GalleryBlock dark={{isDarkMode}}>
+        <ContentTitle dark={{isDarkMode}}>Галерея</ContentTitle>
+        <GalleryItems>
         {galleryImages.map((photo, index) => {
             let isBig = index === 0 || index === 7
             return (
-                <div 
-                    class={isBig ? "gallery__item gallery__item_big" : "gallery__item"} 
+                <GalleryItem 
+                    isBig={isBig ? true : false} 
                     key={index}
                 >
                     <img src={photo} alt="" />
-                </div>
+                </GalleryItem>
             )
         })}
-        
-        </div>
-    </section>  
+        </GalleryItems>
+    </GalleryBlock>  
     )
 }
 

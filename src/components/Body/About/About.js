@@ -1,12 +1,14 @@
-import { Swiper, SwiperSlide } from "../../../node_modules/swiper/react";
+import { Swiper, SwiperSlide } from "../../../../node_modules/swiper/react";
 import SwiperCore, {
   Navigation,
   Pagination,
-} from "../../../node_modules/swiper";
+} from "../../../../node_modules/swiper";
+import { AboutBlock, AboutText } from "./AboutStyles";
+import { ContentTitle } from "../Skills/skillsStyles";
 
 SwiperCore.use([Navigation, Pagination]);
 
-const About = () => {
+const About = ({isDarkMode}) => {
   const slides = [];
   for (let i = 0; i < 5; i++) {
     slides.push(
@@ -20,8 +22,8 @@ const About = () => {
   }
 
   return (
-    <section class="content__about about">
-      <h1 class="content__title">О сайте</h1>
+    <AboutBlock dark={isDarkMode}>
+      <ContentTitle dark={isDarkMode}>О сайте</ContentTitle>
       <Swiper
         id="about"
         tag="section"
@@ -32,7 +34,7 @@ const About = () => {
       >
         {slides}
       </Swiper>
-      <div class="about__text">
+      <AboutText dark={isDarkMode}>
         <p>
           "Данный сайт является резюме-визиткой, содержащий информацию обо мне,
           моих навыках, опыте работы, моих проектах. Здесь также присутствуют
@@ -43,8 +45,8 @@ const About = () => {
         <p>
           <b>Непомнящих Александр, начинающий React frontend разработчик.</b>
         </p>
-      </div>
-    </section>
+      </AboutText>
+    </AboutBlock>
   );
 };
 

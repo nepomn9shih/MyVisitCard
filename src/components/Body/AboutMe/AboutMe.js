@@ -6,7 +6,7 @@ import SwiperCore, {
   Navigation,
   Pagination,
 } from "../../../../node_modules/swiper";
-import { AboutMeBlock, AboutMeTitle, Hr } from "./AboutMeStyles";
+import { AboutMeBlock, AboutMeTitle, Hr, AboutMeText, AboutMeImage } from "./AboutMeStyles";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -29,7 +29,7 @@ const AboutMe = ({isDarkMode}) => {
   return (
     <AboutMeBlock dark={isDarkMode}>
       <AboutMeTitle dark={isDarkMode}>Обо мне</AboutMeTitle>
-      <div class="aboutMe__image">
+      <AboutMeImage>
       <Swiper
         id="aboutMe"
         navigation
@@ -38,8 +38,8 @@ const AboutMe = ({isDarkMode}) => {
       >
         {mySlides}
       </Swiper>
-      </div>
-      <div class="aboutMe__text">
+      </AboutMeImage>
+      <AboutMeText dark={isDarkMode}>
         <p>Давно увлекаюсь программированием, и в 2020 серьезно решил поменять
         профессию на frontend-разработчик. Выбрал направление frontend потому,
         что мне очень нравится дизайн, пару последних лет я занимался созданием
@@ -66,7 +66,7 @@ const AboutMe = ({isDarkMode}) => {
         Создал свой первый сайт еще в 2005 году.
         В 2016 году пробовал создавать игры в Unity 3D и программировать на C#.
         С 2018 года занимался созданием дизайна курсов для дистанционного обучения и версткой в программе iSpring Suite и Articulate</p>
-      </div>
+      </AboutMeText>
     </AboutMeBlock>
   );
 };

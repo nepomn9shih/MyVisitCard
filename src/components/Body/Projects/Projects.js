@@ -1,46 +1,73 @@
+import { ContentTitle } from "../Skills/skillsStyles";
 import projectsImages from "./ProjectsImages/projectsImages";
+import {
+  ProjectsBlock,
+  ProjectsItems,
+  ProjectsItem,
+  ProjectsImage,
+  ProjectsName,
+  ProjectsTechnologies,
+  ProjectsDescription,
+  ProjectsButton
+} from "./ProjectsStyles";
+import { SkillCellItem } from '../Skills/skillsStyles'
 
-const Projects = () => {
+const Projects = ({ isDarkMode }) => {
   return (
-    <section class="content__products products">
-      <h1 class="content__title">Мои проекты</h1>
-      <div class="products__items">
+    <ProjectsBlock dark={isDarkMode}>
+      <ContentTitle dark={isDarkMode}>Мои проекты</ContentTitle>
+      <ProjectsItems>
         {projectsImages
           .slice(0)
           .reverse()
           .map((project, index) => {
             return (
-              <div class="products__item" key={index}>
-                <a href={project.link} target="_blank" class="products__image" rel="noreferrer">
+              <ProjectsItem key={index}>
+                <ProjectsImage
+                  dark={isDarkMode}
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={project.img} alt="" />
-                </a>
-                <a href={project.link} target="_blank" class="products__name" rel="noreferrer">
+                </ProjectsImage>
+                <ProjectsName
+                  dark={isDarkMode}
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {project.name}
-                </a>
-                <div class="products__technologies">
+                </ProjectsName>
+                <ProjectsTechnologies dark={isDarkMode}>
                   {project.technologies.map((tech, index) => {
                     return (
-                      <a
+                      <SkillCellItem
+                        dark={isDarkMode}
                         href={"https://www.google.com/search?q=" + tech}
                         target="_blank"
                         rel="noreferrer"
-                        class="cellItem"
                         key={index}
                       >
                         {tech}{" "}
-                      </a>
+                      </SkillCellItem>
                     );
                   })}
-                </div>
-                <div class="products__description">{project.description}</div>
-                <a href={project.link} target="_blank" class="products__button" rel="noreferrer">
+                </ProjectsTechnologies>
+                <ProjectsDescription dark={isDarkMode}>{project.description}</ProjectsDescription>
+                <ProjectsButton
+                  dark={isDarkMode}
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Ссылка
-                </a>
-              </div>
+                </ProjectsButton>
+              </ProjectsItem>
             );
           })}
-      </div>
-    </section>
+      </ProjectsItems>
+    </ProjectsBlock>
   );
 };
 

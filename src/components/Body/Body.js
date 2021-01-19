@@ -1,5 +1,5 @@
 import { Redirect, Route, Switch } from 'react-router-dom'
-import About from './About'
+import About from './About/About'
 import AboutMe from './AboutMe/AboutMe'
 import Gallery from './Gallery/Gallery'
 import Hobby from './Hobby/Hobby'
@@ -7,25 +7,26 @@ import Projects from './Projects/Projects'
 import Sidebar from '../Sidebar/Sidebar'
 import Skills from './Skills/Skills'
 import Work from './Work/Work'
+import { BodyContent, BodyMain } from './BodyStyles'
 
 const Body = ({isDarkMode}) => {
 
     return (
-<main class="main">
+<BodyMain>
             <Sidebar isDarkMode={isDarkMode}/>
-            <section class="content">
+            <BodyContent>
                 <Switch>
                 <Redirect exact from="/" to="/aboutme"/>
                     <Route path="/aboutme" render={() => {return <AboutMe isDarkMode={isDarkMode}/>}}/>
                     <Route path="/skills" render={() => {return <Skills isDarkMode={isDarkMode}/>}}/>
                     <Route path="/work" render={() => {return <Work isDarkMode={isDarkMode}/>}}/>
-                    <Route path="/projects" component={Projects}/>
-                    <Route path="/hobby" component={Hobby}/>
-                    <Route path="/gallery" component={Gallery}/>
-                    <Route path="/about" component={About}/>
+                    <Route path="/projects" render={() => {return <Projects isDarkMode={isDarkMode}/>}}/>
+                    <Route path="/hobby" render={() => {return <Hobby isDarkMode={isDarkMode}/>}}/>
+                    <Route path="/gallery" render={() => {return <Gallery isDarkMode={isDarkMode}/>}}/>
+                    <Route path="/about" render={() => {return <About isDarkMode={isDarkMode}/>}}/>
                 </Switch>
-            </section>
-        </main>
+            </BodyContent>
+        </BodyMain>
     )
 }
 

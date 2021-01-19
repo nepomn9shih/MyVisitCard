@@ -30,7 +30,7 @@ export const WorkItem = styled.div`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
-    background-color:${(props) => (props.dark ? darkBackgroundColor : backgroundColor)};
+    background-color:${(props) => (props.dark ? darkItemColor : backgroundColor)};
     border-radius: 15px;
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
@@ -71,7 +71,7 @@ export const WorkName = styled.div`
 export const WorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: ivory;
+    background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,7 +97,7 @@ export const WorkDescription = styled.div`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
-    background-color: ${(props) => (props.dark ? darkBackgroundColor : backgroundColor)};
+    background-color: ${(props) => (props.dark ? darkItemColor : backgroundColor)};
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     display: flex;

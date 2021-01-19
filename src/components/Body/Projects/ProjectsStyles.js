@@ -46,6 +46,7 @@ export const ProjectsImage = styled.a`
         border-top-right-radius: 10px;
         background-color: ${(props) => (props.dark ? darkItemColor : itemColor)};
         padding: 15px;
+        opacity: ${(props) => (props.dark ? "80%" : "100%")};
         &:hover {
             padding: 10px;
             transition: 0.5s;

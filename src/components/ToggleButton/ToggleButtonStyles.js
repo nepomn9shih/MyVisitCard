@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { backgroundColor, darkItemColor, darkSecondaryColor, itemColor, secondaryColor } from "../Colours";
+import { activeColor, backgroundColor, darkItemColor, darkSecondaryColor, itemColor, secondaryColor } from "../Colours";
 
 export const ButtonContainer = styled.div` 
     display: flex;
@@ -50,5 +50,8 @@ export const ToggleLabel = styled.label`
     cursor: pointer;
     margin-left: 10px;
     color: ${(props) => (props.dark ? backgroundColor : itemColor)};
-    font-weight: 600;
+    font-size: 18px;
+    &:hover {
+      color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+    }
 `;

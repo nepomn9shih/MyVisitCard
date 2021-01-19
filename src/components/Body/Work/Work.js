@@ -35,7 +35,7 @@ const Work = ({ isDarkMode }) => {
                 <WorkName dark={isDarkMode}>
                   <div>{work.name}</div>
                 </WorkName>
-                <WorkImage>
+                <WorkImage dark={isDarkMode}>
                   <img src={work.img} alt="" />
                 </WorkImage>
                 <WorkPosition dark={isDarkMode}>{work.position}</WorkPosition>

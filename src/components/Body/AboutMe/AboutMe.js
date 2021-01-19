@@ -29,7 +29,7 @@ const AboutMe = ({isDarkMode}) => {
   return (
     <AboutMeBlock dark={isDarkMode}>
       <AboutMeTitle dark={isDarkMode}>Обо мне</AboutMeTitle>
-      <AboutMeImage>
+      <AboutMeImage dark={isDarkMode}>
       <Swiper
         id="aboutMe"
         navigation

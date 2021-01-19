@@ -13,7 +13,7 @@ const Header = ({handlerToggle, isDarkMode}) => {
 
   return (
     <HeaderBlock dark={isDarkMode}>
-      <HeaderLogo href="https://github.com/nepomn9shih">
+      <HeaderLogo dark={isDarkMode} href="https://github.com/nepomn9shih">
         <img src={ya} alt="" />
       </HeaderLogo>
       <HeaderName dark={isDarkMode}>МОЯ\\\<br/>ВИЗИТКА</HeaderName>

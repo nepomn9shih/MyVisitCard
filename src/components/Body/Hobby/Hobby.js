@@ -28,7 +28,7 @@ const Hobby = ({ isDarkMode }) => {
           );
         })}
       </HobbyItems>
-      <HobbyImage>
+      <HobbyImage dark={isDarkMode}>
         <img src={hobbyImages[hobbyIndex].img} alt="" />
       </HobbyImage>
     </HobbyBlock>

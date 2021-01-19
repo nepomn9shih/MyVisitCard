@@ -32,6 +32,7 @@ export const GalleryItem = styled.div`
         object-fit: cover;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        opacity: ${(props) => (props.dark ? "70%" : "100%")};
         &:hover {
             border: 5px solid transparent;
             transition: 0.5s;

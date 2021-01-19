@@ -39,6 +39,7 @@ export const HobbyImage = styled.div`
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
+        opacity: ${(props) => (props.dark ? "80%" : "100%")};
     }
 `;
 

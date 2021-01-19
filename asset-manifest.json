@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MyVisitCard/static/css/main.3b4b2ef5.chunk.css",
-    "main.js": "/MyVisitCard/static/js/main.64259b0d.chunk.js",
-    "main.js.map": "/MyVisitCard/static/js/main.64259b0d.chunk.js.map",
+    "main.css": "/MyVisitCard/static/css/main.e5da0a63.chunk.css",
+    "main.js": "/MyVisitCard/static/js/main.5318abdd.chunk.js",
+    "main.js.map": "/MyVisitCard/static/js/main.5318abdd.chunk.js.map",
     "runtime-main.js": "/MyVisitCard/static/js/runtime-main.479cd4b6.js",
     "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.479cd4b6.js.map",
-    "static/js/2.87df904c.chunk.js": "/MyVisitCard/static/js/2.87df904c.chunk.js",
-    "static/js/2.87df904c.chunk.js.map": "/MyVisitCard/static/js/2.87df904c.chunk.js.map",
+    "static/js/2.e14e6b5d.chunk.js": "/MyVisitCard/static/js/2.e14e6b5d.chunk.js",
+    "static/js/2.e14e6b5d.chunk.js.map": "/MyVisitCard/static/js/2.e14e6b5d.chunk.js.map",
     "static/js/3.7b4458c3.chunk.js": "/MyVisitCard/static/js/3.7b4458c3.chunk.js",
     "static/js/3.7b4458c3.chunk.js.map": "/MyVisitCard/static/js/3.7b4458c3.chunk.js.map",
     "index.html": "/MyVisitCard/index.html",
-    "static/css/main.3b4b2ef5.chunk.css.map": "/MyVisitCard/static/css/main.3b4b2ef5.chunk.css.map",
-    "static/js/2.87df904c.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.87df904c.chunk.js.LICENSE.txt",
+    "static/css/main.e5da0a63.chunk.css.map": "/MyVisitCard/static/css/main.e5da0a63.chunk.css.map",
+    "static/js/2.e14e6b5d.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.e14e6b5d.chunk.js.LICENSE.txt",
     "static/media/CatNet.21fb8a65.png": "/MyVisitCard/static/media/CatNet.21fb8a65.png",
     "static/media/DriversOfF1.4fc21b1c.png": "/MyVisitCard/static/media/DriversOfF1.4fc21b1c.png",
     "static/media/Like.dbaf7ea6.png": "/MyVisitCard/static/media/Like.dbaf7ea6.png",
@@ -20,7 +20,7 @@
     "static/media/VisitCard.9e52c4a7.png": "/MyVisitCard/static/media/VisitCard.9e52c4a7.png",
     "static/media/airsoft.2b9f0a87.png": "/MyVisitCard/static/media/airsoft.2b9f0a87.png",
     "static/media/art.8b67de9c.png": "/MyVisitCard/static/media/art.8b67de9c.png",
-    "static/media/combo.4c320817.png": "/MyVisitCard/static/media/combo.4c320817.png",
+    "static/media/combo.f8c0b355.png": "/MyVisitCard/static/media/combo.f8c0b355.png",
     "static/media/img0.36635135.png": "/MyVisitCard/static/media/img0.36635135.png",
     "static/media/img1.aa79c8b1.png": "/MyVisitCard/static/media/img1.aa79c8b1.png",
     "static/media/img2.cb99d4a5.png": "/MyVisitCard/static/media/img2.cb99d4a5.png",
@@ -39,12 +39,12 @@
     "static/media/travel.d6cf7a4a.png": "/MyVisitCard/static/media/travel.d6cf7a4a.png",
     "static/media/trennings.31080262.png": "/MyVisitCard/static/media/trennings.31080262.png",
     "static/media/ya.36635135.png": "/MyVisitCard/static/media/ya.36635135.png",
-    "static/media/ya.a0f1253c.png": "/MyVisitCard/static/media/ya.a0f1253c.png"
+    "static/media/ya.fc4c0649.png": "/MyVisitCard/static/media/ya.fc4c0649.png"
   },
   "entrypoints": [
     "static/js/runtime-main.479cd4b6.js",
-    "static/js/2.87df904c.chunk.js",
-    "static/css/main.3b4b2ef5.chunk.css",
-    "static/js/main.64259b0d.chunk.js"
+    "static/js/2.e14e6b5d.chunk.js",
+    "static/css/main.e5da0a63.chunk.css",
+    "static/js/main.5318abdd.chunk.js"
   ]
 }

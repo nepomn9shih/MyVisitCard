@@ -18,7 +18,7 @@ const Body = ({isDarkMode}) => {
                 <Redirect exact from="/" to="/aboutme"/>
                     <Route path="/aboutme" render={() => {return <AboutMe isDarkMode={isDarkMode}/>}}/>
                     <Route path="/skills" render={() => {return <Skills isDarkMode={isDarkMode}/>}}/>
-                    <Route path="/work" component={Work}/>
+                    <Route path="/work" render={() => {return <Work isDarkMode={isDarkMode}/>}}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/hobby" component={Hobby}/>
                     <Route path="/gallery" component={Gallery}/>

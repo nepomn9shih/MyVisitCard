@@ -1,34 +1,34 @@
 import { NavLink } from "react-router-dom";
-import { SidebarBlock } from "./SidebarStyles";
+import { SidebarBlock, SidebarLink, SidebarList } from "./SidebarStyles";
 
 const Sidebar = ({isDarkMode}) => {
 
     return (
         <SidebarBlock dark={isDarkMode}>
         <nav class="sidebar__menu">
-            <ul class="sidebar__list">
+            <SidebarList>
                 <li>
-                 <NavLink className="sidebar__link" to="/aboutme">Обо мне</NavLink>
+                    <SidebarLink dark={isDarkMode} to="/aboutme">Обо мне</SidebarLink>
                 </li>
                 <li>
-                    <NavLink className="sidebar__link" to="/skills">Мои навыки</NavLink>
+                    <SidebarLink dark={isDarkMode} to="/skills">Мои навыки</SidebarLink>
                 </li>
                 <li>
-                <NavLink className="sidebar__link" to="work">Опыт работы</NavLink>
+                    <SidebarLink dark={isDarkMode} to="work">Опыт работы</SidebarLink>
                 </li>
                 <li>
-                    <NavLink className="sidebar__link" to="/projects">Мои проекты</NavLink>
+                    <SidebarLink dark={isDarkMode} to="/projects">Мои проекты</SidebarLink>
                 </li>
                 <li>
-                    <NavLink className="sidebar__link" to="/hobby">Увлечения</NavLink>  
+                    <SidebarLink dark={isDarkMode} to="/hobby">Увлечения</SidebarLink>  
                 </li>
                 <li>
-                    <NavLink 
-                        className="sidebar__link" 
+                    <SidebarLink 
+                        dark={isDarkMode}
                         to="/gallery"
-                    >Галерея</NavLink>
+                    >Галерея</SidebarLink>
                 </li>
-            </ul>
+            </SidebarList>
         </nav>
     </SidebarBlock> 
     )

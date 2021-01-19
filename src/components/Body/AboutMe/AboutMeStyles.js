@@ -1,12 +1,7 @@
 import styled from "styled-components";
 import {
-  activeColor,
   darkMainColor,
-  darkSecondaryColor,
   mainColor,
-  secondaryColor,
-  itemColor,
-  darkItemColor,
 } from "../../Colours";
 import { ContentTitle } from "../Skills/skillsStyles";
 

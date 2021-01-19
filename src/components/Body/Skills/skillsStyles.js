@@ -25,7 +25,7 @@ export const ContentTitle = styled.h1`
   background-color: ${(props) =>
     props.dark ? darkSecondaryColor : secondaryColor};
   border-radius: 10px;
-  color: ivory;
+  color: ${(props) => (props.dark ? darkItemColor : itemColor)};
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 

@@ -1,41 +1,58 @@
+import { ContentTitle } from "../Skills/skillsStyles";
 import workBase from "./workBase/workBase";
+import {
+  WorkBlock,
+  WorkItem,
+  WorkItems,
+  WorkDate,
+  WorkDateItem,
+  WorkName,
+  WorkImage,
+  WorkPosition,
+  WorkDescription,
+  WorkCellItem
+} from "./WorkStyles";
 
-const Work = () => {
+const Work = ({ isDarkMode }) => {
   return (
-    <section class="content__work work">
-      <h1 class="content__title">Опыт работы</h1>
-      <div class="work__items">
+    <WorkBlock dark={isDarkMode}>
+      <ContentTitle dark={isDarkMode}>Опыт работы</ContentTitle>
+      <WorkItems>
         {workBase
           .slice(0)
           .reverse()
           .map((work, index) => {
-            return <div class="work__item" key={index}>
-                <div class="work__date">
-                    <div class="work__dateItem">
-                      <b>Начало:</b> {work.date.from}
-                    </div>
-                    <div class="work__dateItem">
-                      <b>Конец:</b> {work.date.to}
-                    </div>
-                </div>
-                <div class="work__name">
-                    <div>{work.name}</div>
-                </div>
-                <div class="work__image">
-                    <img src={work.img} alt=""/>
-                </div>
-                <div class="work__position">
-                    {work.position}
-                </div>
-                <div class="work__description">
-                    {work.description.map((duty, index) => {
-                return <div class="cellItem" key={index}>{duty} </div>
-              })}
-                </div>
-            </div>;
+            return (
+              <WorkItem dark={isDarkMode} key={index}>
+                <WorkDate>
+                  <WorkDateItem dark={isDarkMode}>
+                    <b>Начало:</b> {work.date.from}
+                  </WorkDateItem>
+                  <WorkDateItem dark={isDarkMode}>
+                    <b>Конец:</b> {work.date.to}
+                  </WorkDateItem>
+                </WorkDate>
+                <WorkName dark={isDarkMode}>
+                  <div>{work.name}</div>
+                </WorkName>
+                <WorkImage>
+                  <img src={work.img} alt="" />
+                </WorkImage>
+                <WorkPosition dark={isDarkMode}>{work.position}</WorkPosition>
+                <WorkDescription dark={isDarkMode}>
+                  {work.description.map((duty, index) => {
+                    return (
+                      <WorkCellItem dark={isDarkMode} key={index}>
+                        {duty}{" "}
+                      </WorkCellItem>
+                    );
+                  })}
+                </WorkDescription>
+              </WorkItem>
+            );
           })}
-      </div>
-    </section>
+      </WorkItems>
+    </WorkBlock>
   );
 };
 

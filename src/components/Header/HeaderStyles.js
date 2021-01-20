@@ -49,7 +49,7 @@ export const HeaderLogo = styled.div`
   img {
     width: 70px;
     height: 70px;
-    opacity: ${(props) => (props.dark ? "60%" : "100%")};
+    opacity: ${(props) => (props.dark ? "80%" : "100%")};
     border-radius: 50%;
     &:hover {
       transform: scale(1.1);

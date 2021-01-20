@@ -79,6 +79,7 @@ export const WorkImage = styled.div`
         max-height: 180px;
         max-width: 220px;
         padding: 5px;
+        opacity: ${(props) => (props.dark ? "90%" : "100%")};
         &:hover {
             padding: 0px;
             transition: 0.5s;

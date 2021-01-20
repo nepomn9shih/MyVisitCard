@@ -52,7 +52,7 @@ export const AboutMeImage = styled.div`
     width: 100%;
     object-fit: contain;
     border-radius: 10px;
-    opacity: ${(props) => (props.dark ? "70%" : "100%")};
+    opacity: ${(props) => (props.dark ? "80%" : "100%")};
   }
   @media (max-width: 770px) {
     & {

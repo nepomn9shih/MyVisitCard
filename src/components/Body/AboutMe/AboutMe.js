@@ -51,7 +51,7 @@ const AboutMe = ({isDarkMode}) => {
         технологии. В процессе обучения научился использовать: HTML5, CSS3,
         FlexBox, Bootstrap4.5, SASS/SCSS, Grid, JavaScript, Git, ReactJS(с применением
         hooks), Material UI, Redux, Redux-form, Redux-thunk, React-router,
-        gh-pages, Axios и работу с серверным API, TypeScript, БЭМ, Styled-components </p> 
+        gh-pages, Axios и работу с серверным API, TypeScript, БЭМ, Styled-components. </p> 
         <br/>
         <Hr dark={isDarkMode}/>
         <p>Обладаю логическим мышлением,

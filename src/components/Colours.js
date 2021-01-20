@@ -4,7 +4,7 @@ export const activeColor = 'goldenrod';
 export const backgroundColor = 'grey';
 export const itemColor = 'ivory';
 
-export const darkMainColor = '#233237';
+export const darkMainColor = '#032e42';
 export const darkSecondaryColor = '#955f31';
 export const darkActiveColor = 'goldenrod';
 export const darkBackgroundColor = '#141a23';

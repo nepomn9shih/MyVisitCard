@@ -6,7 +6,7 @@ import {
 	MAIN_COLOR,
 } from "../../Colours";
 
-export const AboutBlock = styled.section`
+export const AboutBlock = styled.section<{dark: boolean}>`
     in-height: 400px;
     background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
@@ -14,7 +14,7 @@ export const AboutBlock = styled.section`
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const AboutText = styled.div`
+export const AboutText = styled.div<{dark: boolean}>`
     background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     padding: 10px 10px 10px 10px;

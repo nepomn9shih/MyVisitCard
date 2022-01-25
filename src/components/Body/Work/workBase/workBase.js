@@ -1,7 +1,7 @@
 import work0 from "./combo.png";
 import work1 from "./NBCom.png";
 import work2 from "./ya.png";
-
+import work3 from "./Yoomoney.png";
 
 const workBase = [
   {
@@ -24,12 +24,22 @@ const workBase = [
   },
   {
     img: work2,
-    date: { from: "07.2020", to: "Работаю" },
+    date: { from: "07.2020", to: "01.2021" },
     name: "Фриланс",
     position: "Дизайнер СДО",
     description: [
       "Создание дизайна и верстка курсов Системы Дистанционного Обучения на базе iSpring.",
       'Работал с компанией "ЮMoney" (ex. "Яндекс.Деньги")',
+    ],
+  },
+  {
+    img: work3,
+    date: { from: "02.2021", to: "Работаю" },
+    name: "ЮMoney",
+    position: "Frontend-разработчик",
+    description: [
+      "Разработка и поддержка гемификации - игры 'ЮVillage'",
+      'Разработка и поддержка страницы для неавторизированных пользователей yoomoney.ru',
     ],
   },
 ];

@@ -59,7 +59,7 @@ export const WorkName = styled.div`
     font-size: 20px;
     color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     padding: 15px;
-    background-color: ${(dark) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
+    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
     display: grid;
     align-items: center;
 

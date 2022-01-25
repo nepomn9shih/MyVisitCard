@@ -1,4 +1,4 @@
-import { ContentTitle } from '../Skills/skillsStyles'
+import { ContentTitle } from '../Skills/styles'
 import galleryImages from './GalleryImages/galleryImages'
 import { GalleryBlock, GalleryItems, GalleryItem } from './GalleryStyles'
 

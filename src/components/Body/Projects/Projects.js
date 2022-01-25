@@ -1,4 +1,4 @@
-import { ContentTitle } from "../Skills/skillsStyles";
+import { ContentTitle, SkillCellItem } from "../Skills/styles";
 import projectsImages from "./ProjectsImages/projectsImages";
 import {
   ProjectsBlock,
@@ -10,7 +10,6 @@ import {
   ProjectsDescription,
   ProjectsButton
 } from "./ProjectsStyles";
-import { SkillCellItem } from '../Skills/skillsStyles'
 
 const Projects = ({ isDarkMode }) => {
   return (

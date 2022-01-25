@@ -1,14 +1,13 @@
-import { Swiper, SwiperSlide } from "../../../../node_modules/swiper/react";
-import SwiperCore, {
-  Navigation,
-  Pagination,
-} from "../../../../node_modules/swiper";
-import { AboutBlock, AboutText } from "./AboutStyles";
-import { ContentTitle } from "../Skills/skillsStyles";
+import * as React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from '../../../../node_modules/swiper';
+
+import { AboutBlock, AboutText } from "./styles";
+import { ContentTitle } from "../Skills/styles";
 
 SwiperCore.use([Navigation, Pagination]);
 
-const About = ({isDarkMode}) => {
+const About = ({isDarkMode}: {isDarkMode: boolean}) => {
   const slides = [];
   for (let i = 0; i < 5; i++) {
     slides.push(

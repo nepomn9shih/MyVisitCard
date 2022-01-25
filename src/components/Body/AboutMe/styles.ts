@@ -5,9 +5,9 @@ import {
 	ITEM_COLOR,
 	BACKGROUND_COLOR
 } from "../../Colours";
-import { ContentTitle } from "../Skills/skillsStyles";
+import { ContentTitle } from "../Skills/styles";
 
-export const AboutMeBlock = styled.section`
+export const AboutMeBlock = styled.section<{dark: boolean}>`
 	background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -22,16 +22,16 @@ export const AboutMeBlock = styled.section`
 }
 `;
 
-export const AboutMeTitle = styled(ContentTitle)`
+export const AboutMeTitle = styled(ContentTitle)<{dark: boolean}>`
 	grid-column: span 2;
 `;
 
-export const Hr = styled.hr`
+export const Hr = styled.hr<{dark: boolean}>`
     border-bottom: 2px solid ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     margin: 0px -15px 15px -15px;
 `;
 
-export const AboutMeText = styled.div`
+export const AboutMeText = styled.div<{dark: boolean}>`
 font-size: 18px;
     line-height: 22px;
     background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
@@ -47,7 +47,7 @@ font-size: 18px;
 }
 `;
 
-export const AboutMeImage = styled.div`
+export const AboutMeImage = styled.div<{dark: boolean}>`
 	margin: 0 auto;
 	width: 100%;
 

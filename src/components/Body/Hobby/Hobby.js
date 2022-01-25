@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ContentTitle } from "../Skills/skillsStyles";
+import { ContentTitle } from "../Skills/styles";
 import hobbyImages from "./HobbyImages/hobbyImages";
 import {
   HobbyBlock,

@@ -74,7 +74,7 @@ export const ProjectsTechnologies = styled.div`
     a {
         color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
         &:visited {color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};}
-        &:visited:hover {color: ${(dark) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};}
+        &:visited:hover {color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};}
     }
 `;
 
@@ -84,7 +84,7 @@ export const ProjectsDescription = styled.div`
     padding: 15px;
     border-bottom-left-radius: 10px;
     color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : DARK_ITEM_COLOR};
-    background-color: ${(dark) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
+    background-color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 

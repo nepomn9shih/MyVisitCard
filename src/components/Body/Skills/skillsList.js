@@ -7,24 +7,21 @@ const skillsList = [
   "Grid",
   "Bootstrap",
   "JavaScript",
+  "TypeScript",
   "Git",
   "React",
-  "React-router-dom",
-  "Redux",
-  "Redux-form",
-  "Redux-thunk",
-  "Axios",
-  "Swiper",
-  "Material UI",
   "Styled-components",
+  "Redux Toolkit",
+  "Material UI",
+  "Nest.js",
+  "Axios",
   "Адаптивная верстка",
-  "Prop-types",
-  "TypeScript",
   "БЭМ",
   "VS Code",
-  "Avocode",
+  "Bitbucket",
+  "Figma",
   "Adobe Photoshop",
-  "iSpring Suite 9"
+  "iSpring Suite"
 ];
 
 export default skillsList;

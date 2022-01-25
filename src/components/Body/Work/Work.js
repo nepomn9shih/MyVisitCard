@@ -1,4 +1,4 @@
-import { ContentTitle } from "../Skills/skillsStyles";
+import { ContentTitle } from "../Skills/styles";
 import workBase from "./workBase/workBase";
 import {
   WorkBlock,

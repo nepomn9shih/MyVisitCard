@@ -1,5 +1,5 @@
 import skillsList from "./skillsList";
-import { ContentTitle, SkillCellItem, SkillsBlock, SkillsText } from "./skillsStyles";
+import { ContentTitle, SkillCellItem, SkillsBlock, SkillsText } from "./styles";
 
 
 const Skills = ({isDarkMode}) => {

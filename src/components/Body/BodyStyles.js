@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BodyMain = styled.section`
     padding: 30px 15px;
+
     @media (min-width: 992px) {
     & {
         grid-area: main;
@@ -13,6 +14,7 @@ export const BodyMain = styled.section`
 
 export const BodyContent = styled.section`
     margin: 0px 0px 20px 00px;
+
     @media (min-width: 992px) {
     & {
         grid-column: 3 / 4;

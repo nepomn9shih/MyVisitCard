@@ -1,19 +1,15 @@
 import styled from "styled-components";
 import {
-    activeColor,
-    backgroundColor,
-    darkActiveColor,
-    darkBackgroundColor,
-    darkItemColor,
-  darkMainColor,
-  darkSecondaryColor,
-  itemColor,
-  mainColor,
-  secondaryColor,
+	ACTIVE_COLOR,
+	BACKGROUND_COLOR,
+	DARK_MAIN_COLOR,
+	DARK_SECONDARY_COLOR,
+	ITEM_COLOR,
+	MAIN_COLOR
 } from "../../Colours";
 
 export const HobbyBlock = styled.section`
-    background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -31,6 +27,7 @@ export const HobbyImage = styled.div`
     padding: 0px 0px 100% 0px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
     img {
         position: absolute;
         top: 0;
@@ -39,19 +36,19 @@ export const HobbyImage = styled.div`
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        opacity: ${(props) => (props.dark ? "80%" : "100%")};
+        opacity: ${({dark}) => dark ? "80%" : "100%"};
     }
 `;
 
 export const HobbyCellItem = styled.div`
-    background-color: ${(props) => (props.isChosen? activeColor : props.dark ? backgroundColor : itemColor)};
+    background-color: ${({isChosen, dark}) => isChosen? ACTIVE_COLOR : dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     margin: 5px;
     padding: 4px 5px 6px 5px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     &:hover {
         transition: 0.5s;
-        background-color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+        background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
         box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
         cursor: pointer;
     }

@@ -1,19 +1,20 @@
 import styled from "styled-components";
 import {
-  darkMainColor,
-  mainColor,
-  itemColor,
-  backgroundColor
+	DARK_MAIN_COLOR,
+	MAIN_COLOR,
+	ITEM_COLOR,
+	BACKGROUND_COLOR
 } from "../../Colours";
 import { ContentTitle } from "../Skills/skillsStyles";
 
 export const AboutMeBlock = styled.section`
-  background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+	background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     display: grid;
     grid-template: auto auto / minmax(200px, 500px) auto;
+
     @media (max-width: 770px) {
     & {
         display: block;
@@ -22,22 +23,23 @@ export const AboutMeBlock = styled.section`
 `;
 
 export const AboutMeTitle = styled(ContentTitle)`
-grid-column: span 2;
+	grid-column: span 2;
 `;
 
 export const Hr = styled.hr`
-    border-bottom: 2px solid ${(props) => (props.dark ? darkMainColor : mainColor)};
+    border-bottom: 2px solid ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     margin: 0px -15px 15px -15px;
 `;
 
 export const AboutMeText = styled.div`
 font-size: 18px;
     line-height: 22px;
-    background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     padding: 15px 15px 20px 15px;
     margin-left: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
     @media (max-width: 770px) {
     & {
       margin-left: 0px;
@@ -46,24 +48,25 @@ font-size: 18px;
 `;
 
 export const AboutMeImage = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-    opacity: ${(props) => (props.dark ? "80%" : "100%")};
-  }
-  @media (max-width: 770px) {
-    & {
-      margin: 0 auto;
-      max-width: 500px;
-      img {
-        width: 100%;
-      }
-    }
-    
-}
+	margin: 0 auto;
+	width: 100%;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+		border-radius: 10px;
+		opacity: ${({dark}) => dark ? "80%" : "100%"};
+	}
+
+	@media (max-width: 770px) {
+		& {
+			margin: 0 auto;
+			max-width: 500px;
+			img {
+				width: 100%;
+			}
+		}
+	}
 `;
 
 

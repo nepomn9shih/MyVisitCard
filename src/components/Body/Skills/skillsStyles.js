@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import {
-  activeColor,
-  darkMainColor,
-  darkSecondaryColor,
-  mainColor,
-  secondaryColor,
-  itemColor,
-  darkItemColor,
-  backgroundColor,
+	ACTIVE_COLOR,
+	DARK_MAIN_COLOR,
+	DARK_SECONDARY_COLOR,
+	MAIN_COLOR,
+	SECONDARY_COLOR,
+	ITEM_COLOR,
+	DARK_ITEM_COLOR,
+	BACKGROUND_COLOR
 } from "../../Colours";
 
 export const SkillsBlock = styled.div`
   min-height: 476px;
-  background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+  background-color: ${(dark) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
   border-radius: 10px;
   padding: 10px 10px 20px 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -23,10 +23,9 @@ export const ContentTitle = styled.h1`
   padding: 20px;
   font-size: 30px;
   font-weight: bold;
-  background-color: ${(props) =>
-    props.dark ? darkSecondaryColor : secondaryColor};
+  background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
   border-radius: 10px;
-  color: ${(props) => (props.dark ? darkItemColor : itemColor)};
+  color: ${(dark) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
@@ -34,21 +33,22 @@ export const SkillsText = styled.div`
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;
+
   a {
-    color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+    color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
   }
 `;
 
 export const SkillCellItem = styled.a`
-  background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+  background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
   border-radius: 10px;
   margin: 5px;
   padding: 4px 5px 6px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   &:hover {
     transition: 0.5s;
-    background-color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+    color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
   }
 `;

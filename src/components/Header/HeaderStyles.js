@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import {
-  activeColor,
-  backgroundColor,
-  darkMainColor,
-  darkSecondaryColor,
-  itemColor,
-  mainColor,
-  secondaryColor,
+	ACTIVE_COLOR,
+	BACKGROUND_COLOR,
+	DARK_MAIN_COLOR,
+	DARK_SECONDARY_COLOR,
+	ITEM_COLOR,
+	MAIN_COLOR,
+	SECONDARY_COLOR
 } from "../Colours";
 
 export const HeaderBlock = styled.div`
   grid-area: header;
   padding: 15px;
-  background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+  background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(
       auto,
@@ -26,18 +26,21 @@ export const HeaderList = styled.ul`
   display: grid;
   grid-auto-flow: column;
   justify-items: end;
-  li{
+
+  li {
     align-self: center;
   }
+
   @media (max-width: 992px) {
     & {
-      display: ${(props) => (props.isOpen ? "block" : "none")};
+      display: ${({isOpen}) => isOpen ? "block" : "none"};
       position: absolute;
       top: 90px;
-      background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+      background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
       padding: 19px;
       border-radius: 10px;
       box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+
       li {
         padding: 15px;
       }
@@ -46,22 +49,24 @@ export const HeaderList = styled.ul`
 
 export const HeaderLogo = styled.div`
   grid-column: 2 / 3;
+
   img {
     width: 70px;
     height: 70px;
-    opacity: ${(props) => (props.dark ? "80%" : "100%")};
+    opacity: ${({dark}) => dark ? "80%" : "100%"};
     border-radius: 50%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
     &:hover {
       transform: scale(1.1);
       transition: 0.5s;
     }
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   }
 `;
 
 export const HeaderName = styled.b`
   font-size: 30px;
-  color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+  color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
 `;
 
 export const HeaderMenu = styled.nav`
@@ -76,13 +81,15 @@ export const HeaderMenu = styled.nav`
 `;
 
 export const HeaderLink = styled.a`
-  color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+  color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
   font-size: 18px;
+
   &:hover {
-    color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+    color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
   }
+
   &.active {
-    color: ${(props) => (props.dark ? darkSecondaryColor : secondaryColor)};
+    color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
   }
 `;
 
@@ -92,7 +99,7 @@ export const HeaderBurger = styled.div`
     & {
       width: 30px;
       height: 20px;
-      color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+      color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
       display: grid;
       align-items: center;
       grid-template: repeat(3, 8px) / 1fr;
@@ -101,36 +108,39 @@ export const HeaderBurger = styled.div`
       &:before,
       &:after {
         content: "";
-        background-color: ${(props) =>
-          props.dark ? backgroundColor : itemColor};
+        background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
         position: absolute;
         width: 100%;
         height: 3px;
         left: 0;
         transition: 0.5s;
       }
+
       &:before {
         top: 0;
       }
+
       &:after {
         bottom: 0;
       }
+
       span {
-        background-color: ${(props) =>
-          props.dark ? backgroundColor : itemColor};
+        background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
         position: absolute;
         width: 100%;
         height: 2px;
         left: 0;
-        display: ${(props) => (props.active ? "none" : "")};
+        display: ${({active}) => active ? "none" : ""};
       }
+
       &:before {
-        transform: ${(props) => (props.active ? "rotate(45deg)" : "")};
-        top: ${(props) => (props.active ? "8px" : "")};
+        transform: ${({active}) => active ? "rotate(45deg)" : ""};
+        top: ${({active}) => active ? "8px" : ""};
       }
+
       &:after {
-        transform: ${(props) => (props.active ? "rotate(-45deg)" : "")};
-        bottom: ${(props) => (props.active ? "9px" : "")};
+        transform: ${({active}) => active ? "rotate(-45deg)" : ""};
+        bottom: ${({active}) => active ? "9px" : ""};
       }
     }
   }

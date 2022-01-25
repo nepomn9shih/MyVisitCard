@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import {
-  darkMainColor,
-  mainColor,
-  itemColor,
-  backgroundColor
+  DARK_MAIN_COLOR,
+  MAIN_COLOR
 } from "../../Colours";
-import { ContentTitle } from "../Skills/skillsStyles";
 
 export const GalleryBlock = styled.section`
-    background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -23,6 +20,7 @@ export const GalleryItems = styled.div`
 export const GalleryItem = styled.div`
     position: relative;
     padding: 0px 0px 85% 0px;
+
     img{
         position: absolute;
         top: 0;
@@ -32,17 +30,18 @@ export const GalleryItem = styled.div`
         object-fit: cover;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-        opacity: ${(props) => (props.dark ? "70%" : "100%")};
+        opacity: ${({dark}) => dark ? "70%" : "100%"};
         &:hover {
             border: 5px solid transparent;
             transition: 0.5s;
             box-shadow: 5px 5px 10px rgba(0,0,0,0.0);
         }
     }
+
     @media (min-width: 992px) {
     & {
-        grid-column: ${(props) => (props.isBig ? "span 2" : "")};
-        grid-row: ${(props) => (props.isBig ? "span 2" : "")};
+        grid-column: ${({isBig}) => isBig ? "span 2" : ""};
+        grid-row: ${(isBig) => isBig ? "span 2" : ""};
     }
 }
 `;

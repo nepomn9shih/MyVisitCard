@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { activeColor, backgroundColor, darkItemColor, darkSecondaryColor, itemColor, secondaryColor } from "../Colours";
+import {
+	ACTIVE_COLOR,
+	BACKGROUND_COLOR,
+	DARK_ITEM_COLOR,
+	DARK_SECONDARY_COLOR,
+	ITEM_COLOR,
+	SECONDARY_COLOR
+} from "../Colours";
 
 export const ButtonContainer = styled.div` 
     display: flex;
@@ -14,7 +21,7 @@ export const Toggle = styled.input`
     height: 25px;
     margin: 0;
     vertical-align: top;
-    background: ${itemColor};
+    background: ${ITEM_COLOR};
     border-radius: 30px;
     outline: none;
     cursor: pointer;
@@ -23,35 +30,36 @@ export const Toggle = styled.input`
     appearance: none;
     transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
 
-&:after {
-  content: "";
-  position: absolute;
-  left: 1.5px;
-  top: 0.75px;
-  width: 23.5px;
-  height: 23.5px;
-  background-color: ${secondaryColor};
-  border-radius: 50%;
-  transform: translateX(0);
-  transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
-}
+	&:after {
+	content: "";
+	position: absolute;
+	left: 1.5px;
+	top: 0.75px;
+	width: 23.5px;
+	height: 23.5px;
+	background-color: ${SECONDARY_COLOR};
+	border-radius: 50%;
+	transform: translateX(0);
+	transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+	}
 
-&:checked:after {
-  transform: translateX(100%);
-  background-color: ${darkSecondaryColor};
-}
+	&:checked:after {
+	transform: translateX(100%);
+	background-color: ${DARK_SECONDARY_COLOR};
+	}
 
-&:checked {
-  background-color: ${darkItemColor};
-}
+	&:checked {
+	background-color: ${DARK_ITEM_COLOR};
+	}
 `;
 
 export const ToggleLabel = styled.label` 
     cursor: pointer;
     margin-left: 10px;
-    color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+    color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     font-size: 18px;
+
     &:hover {
-      color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+      color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
     }
 `;

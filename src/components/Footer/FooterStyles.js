@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import {
-    backgroundColor,
-    darkMainColor,
-    itemColor,
-    mainColor,
+    BACKGROUND_COLOR,
+    DARK_MAIN_COLOR,
+    ITEM_COLOR,
+    MAIN_COLOR
 } from "../Colours";
 
 export const FooterBlock = styled.div`
-    color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+    color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     grid-area: footer;
-    background-color: ${(props) => (props.dark ? darkMainColor : mainColor)}; 
+    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR}; 
     padding: 15px;
     display: grid;
     align-items: center;

@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { SidebarBlock, SidebarLink, SidebarList } from "./SidebarStyles";
 
 const Sidebar = ({isDarkMode}) => {

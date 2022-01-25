@@ -1,19 +1,17 @@
 import styled from "styled-components";
 import {
-    activeColor,
-    backgroundColor,
-    darkActiveColor,
-    darkBackgroundColor,
-    darkItemColor,
-  darkMainColor,
-  darkSecondaryColor,
-  itemColor,
-  mainColor,
-  secondaryColor,
+    ACTIVE_COLOR,
+    BACKGROUND_COLOR,
+    DARK_ITEM_COLOR,
+	DARK_MAIN_COLOR,
+	DARK_SECONDARY_COLOR,
+	ITEM_COLOR,
+	MAIN_COLOR,
+	SECONDARY_COLOR
 } from "../../Colours";
 
 export const WorkBlock = styled.section`
-    background-color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -30,7 +28,7 @@ export const WorkItem = styled.div`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
-    background-color:${(props) => (props.dark ? darkItemColor : backgroundColor)};
+    background-color:${({dark}) => dark ? DARK_ITEM_COLOR : BACKGROUND_COLOR};
     border-radius: 15px;
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
@@ -44,42 +42,46 @@ export const WorkDate = styled.div`
 `;
 
 export const WorkDateItem = styled.div`
-    background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     margin: 2px;
     padding: 4px 5px 4px 5px;
-    color:$mainColor;
+    color: ${MAIN_COLOR};
+
     &:hover {
         transition: 0.5s;
-        background-color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+        background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
         box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     }
 `;
 
 export const WorkName = styled.div`
     font-size: 20px;
-    color: ${(props) => (props.dark ? darkItemColor : itemColor)};
+    color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     padding: 15px;
-    background-color: ${(props) => (props.dark ? darkSecondaryColor : secondaryColor)};
+    background-color: ${(dark) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
     display: grid;
     align-items: center;
+
     &:hover {
-        color: ${(props) => (props.dark ? darkMainColor : mainColor)};
+        color: ${(props) => (props.dark ? DARK_MAIN_COLOR : MAIN_COLOR)};
     }
 `;
 
 export const WorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
         max-height: 180px;
         max-width: 220px;
         padding: 5px;
-        opacity: ${(props) => (props.dark ? "90%" : "100%")};
+        opacity: ${({dark}) => dark ? "90%" : "100%"};
+
         &:hover {
             padding: 0px;
             transition: 0.5s;
@@ -89,16 +91,16 @@ export const WorkImage = styled.div`
 
 export const WorkPosition = styled.div`
     font-size: 16px;
-    color: ${(props) => (props.dark ? darkItemColor : itemColor)};
+    color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     padding: 15px;
-    background-color: ${(props) => (props.dark ? darkSecondaryColor : secondaryColor)};
+    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
 `;
 
 export const WorkDescription = styled.div`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
-    background-color: ${(props) => (props.dark ? darkItemColor : backgroundColor)};
+    background-color: ${({dark}) => dark ? DARK_ITEM_COLOR : BACKGROUND_COLOR};
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     display: flex;
@@ -107,15 +109,16 @@ export const WorkDescription = styled.div`
 `;
 
 export const WorkCellItem = styled.div`
-  background-color: ${(props) => (props.dark ? backgroundColor : itemColor)};
+  background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
   border-radius: 10px;
   margin: 5px;
   padding: 4px 5px 6px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
   &:hover {
     transition: 0.5s;
-    background-color: ${(props) => (props.dark ? darkSecondaryColor : activeColor)};
+    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    color: ${(props) => (props.dark ? darkItemColor : mainColor)};
+    color: ${({dark}) => dark ? DARK_ITEM_COLOR : MAIN_COLOR};
   }
 `;

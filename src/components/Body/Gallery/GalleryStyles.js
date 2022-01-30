@@ -41,7 +41,7 @@ export const GalleryItem = styled.div`
     @media (min-width: 992px) {
     & {
         grid-column: ${({isBig}) => isBig ? "span 2" : ""};
-        grid-row: ${(isBig) => isBig ? "span 2" : ""};
+        grid-row: ${({isBig}) => isBig ? "span 2" : ""};
     }
 }
 `;

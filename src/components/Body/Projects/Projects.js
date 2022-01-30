@@ -1,5 +1,5 @@
 import { ContentTitle, SkillCellItem } from "../Skills/styles";
-import projectsImages from "./ProjectsImages/projectsImages";
+import {projectsData} from "./ProjectsData/projectsData";
 import {
   ProjectsBlock,
   ProjectsItems,
@@ -16,7 +16,7 @@ const Projects = ({ isDarkMode }) => {
     <ProjectsBlock dark={isDarkMode}>
       <ContentTitle dark={isDarkMode}>Мои проекты</ContentTitle>
       <ProjectsItems>
-        {projectsImages
+        {projectsData
           .slice(0)
           .reverse()
           .map((project, index) => {

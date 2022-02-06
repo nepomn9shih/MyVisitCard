@@ -1,4 +1,4 @@
-const skillsList = [
+export const skillsList: string[] = [
   "HTML",
   "CSS",
   "SASS",
@@ -23,5 +23,3 @@ const skillsList = [
   "Adobe Photoshop",
   "iSpring Suite"
 ];
-
-export default skillsList;

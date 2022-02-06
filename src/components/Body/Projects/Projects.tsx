@@ -9,9 +9,9 @@ import {
   ProjectsTechnologies,
   ProjectsDescription,
   ProjectsButton
-} from "./ProjectsStyles";
+} from "./styles";
 
-const Projects = ({ isDarkMode }) => {
+export const Projects = ({isDarkMode}: {isDarkMode: boolean}) => {
   return (
     <ProjectsBlock dark={isDarkMode}>
       <ContentTitle dark={isDarkMode}>Мои проекты</ContentTitle>
@@ -69,5 +69,3 @@ const Projects = ({ isDarkMode }) => {
     </ProjectsBlock>
   );
 };
-
-export default Projects;

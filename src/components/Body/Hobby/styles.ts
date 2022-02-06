@@ -6,9 +6,9 @@ import {
 	DARK_SECONDARY_COLOR,
 	ITEM_COLOR,
 	MAIN_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 
-export const HobbyBlock = styled.section`
+export const HobbyBlock = styled.section<{dark: boolean}>`
     background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -22,7 +22,7 @@ export const HobbyItems = styled.div`
     font-size: 20px;
 `;
 
-export const HobbyImage = styled.div`
+export const HobbyImage = styled.div<{dark: boolean}>`
     position: relative;
     padding: 0px 0px 100% 0px;
     border-radius: 10px;
@@ -40,7 +40,7 @@ export const HobbyImage = styled.div`
     }
 `;
 
-export const HobbyCellItem = styled.div`
+export const HobbyCellItem = styled.div<{dark: boolean; isChosen: boolean}>`
     background-color: ${({isChosen, dark}) => isChosen? ACTIVE_COLOR : dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     margin: 5px;

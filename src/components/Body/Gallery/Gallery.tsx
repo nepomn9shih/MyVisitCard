@@ -1,8 +1,8 @@
 import { ContentTitle } from '../Skills/styles'
-import galleryImages from './GalleryImages/galleryImages'
-import { GalleryBlock, GalleryItems, GalleryItem } from './GalleryStyles'
+import {galleryImages} from './GalleryImages/galleryImages'
+import { GalleryBlock, GalleryItems, GalleryItem } from './styles'
 
-const Gallery = ({isDarkMode}) => {
+export const Gallery = ({isDarkMode}: {isDarkMode: boolean}) => {
     return (
         <GalleryBlock dark={isDarkMode}>
         <ContentTitle dark={isDarkMode}>Галерея</ContentTitle>
@@ -23,5 +23,3 @@ const Gallery = ({isDarkMode}) => {
     </GalleryBlock>  
     )
 }
-
-export default Gallery;

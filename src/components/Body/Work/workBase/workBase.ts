@@ -1,9 +1,10 @@
+import { WorkPlaceDataType } from "../types";
 import work0 from "./combo.png";
 import work1 from "./NBCom.png";
 import work2 from "./ya.png";
 import work3 from "./Yoomoney.png";
 
-const workBase = [
+export const workBase: WorkPlaceDataType[] = [
   {
     img: work0,
     date: { from: "03.2010", to: "05.2018" },
@@ -43,5 +44,3 @@ const workBase = [
     ],
   },
 ];
-
-export default workBase;

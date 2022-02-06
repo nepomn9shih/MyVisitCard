@@ -9,7 +9,4 @@ import img7 from './img7.png'
 import img8 from './img8.png'
 import img9 from './img9.png'
 
-const galleryImages = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9]
-
-export default galleryImages
-
+export const galleryImages: string[] = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9]

@@ -4,7 +4,7 @@ import {
 	DARK_MAIN_COLOR,
 	ITEM_COLOR,
 	MAIN_COLOR,
-} from "../../Colours";
+} from "../../../constants/colors";
 
 export const AboutBlock = styled.section<{dark: boolean}>`
     in-height: 400px;

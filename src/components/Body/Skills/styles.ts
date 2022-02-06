@@ -8,7 +8,7 @@ import {
 	ITEM_COLOR,
 	DARK_ITEM_COLOR,
 	BACKGROUND_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 
 export const SkillsBlock = styled.div<{dark: boolean}>`
   min-height: 476px;

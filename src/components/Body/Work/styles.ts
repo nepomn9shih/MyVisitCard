@@ -8,9 +8,9 @@ import {
 	ITEM_COLOR,
 	MAIN_COLOR,
 	SECONDARY_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 
-export const WorkBlock = styled.section`
+export const WorkBlock = styled.section<{dark: boolean}>`
     background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -24,7 +24,7 @@ export const WorkItems = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `;
 
-export const WorkItem = styled.div`
+export const WorkItem = styled.div<{dark: boolean}>`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
@@ -41,7 +41,7 @@ export const WorkDate = styled.div`
     padding: 2px 0px;
 `;
 
-export const WorkDateItem = styled.div`
+export const WorkDateItem = styled.div<{dark: boolean}>`
     background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
     border-radius: 10px;
     margin: 2px;
@@ -55,7 +55,7 @@ export const WorkDateItem = styled.div`
     }
 `;
 
-export const WorkName = styled.div`
+export const WorkName = styled.div<{dark: boolean}>`
     font-size: 20px;
     color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     padding: 15px;
@@ -68,7 +68,7 @@ export const WorkName = styled.div`
     }
 `;
 
-export const WorkImage = styled.div`
+export const WorkImage = styled.div<{dark: boolean}>`
     padding: 10px 0px 10px 0px;
     text-align: center;
     background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
@@ -89,14 +89,14 @@ export const WorkImage = styled.div`
     }
 `;
 
-export const WorkPosition = styled.div`
+export const WorkPosition = styled.div<{dark: boolean}>`
     font-size: 16px;
     color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     padding: 15px;
     background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
 `;
 
-export const WorkDescription = styled.div`
+export const WorkDescription = styled.div<{dark: boolean}>`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
@@ -108,7 +108,7 @@ export const WorkDescription = styled.div`
     flex-wrap: wrap;
 `;
 
-export const WorkCellItem = styled.div`
+export const WorkCellItem = styled.div<{dark: boolean}>`
   background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
   border-radius: 10px;
   margin: 5px;

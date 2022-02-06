@@ -7,7 +7,7 @@ import { ContentTitle } from "../Skills/styles";
 
 SwiperCore.use([Navigation, Pagination]);
 
-const About = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const About = ({isDarkMode}: {isDarkMode: boolean}) => {
   const slides = [];
   for (let i = 0; i < 5; i++) {
     slides.push(
@@ -42,11 +42,9 @@ const About = ({isDarkMode}: {isDarkMode: boolean}) => {
         </p>
         <br />
         <p>
-          <b>Непомнящих Александр, начинающий React frontend разработчик.</b>
+          <b>Непомнящих Александр, React frontend разработчик.</b>
         </p>
       </AboutText>
     </AboutBlock>
   );
 };
-
-export default About;

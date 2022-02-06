@@ -12,9 +12,9 @@ import { AboutMeTextBlock } from "./AboutMeTextBlock";
 
 SwiperCore.use([Navigation, Pagination]);
 
-const myPhotos = [myPhoto0, myPhoto1, myPhoto2]
+const myPhotos: string[] = [myPhoto0, myPhoto1, myPhoto2]
 
-const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
 
   const mySlides = [];
   for (let i = 0; i < 3; i++) {
@@ -55,5 +55,3 @@ const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
     </AboutMeBlock>
   );
 };
-
-export default AboutMe;

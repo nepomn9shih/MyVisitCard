@@ -6,7 +6,7 @@ import {
 	DARK_SECONDARY_COLOR,
 	ITEM_COLOR,
 	SECONDARY_COLOR
-} from "../Colours";
+} from "../../constants/colors";
 
 export const ButtonContainer = styled.div` 
     display: flex;
@@ -53,7 +53,7 @@ export const Toggle = styled.input`
 	}
 `;
 
-export const ToggleLabel = styled.label` 
+export const ToggleLabel = styled.label<{dark: boolean}>` 
     cursor: pointer;
     margin-left: 10px;
     color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};

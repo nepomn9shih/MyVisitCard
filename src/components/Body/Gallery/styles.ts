@@ -2,9 +2,9 @@ import styled from "styled-components";
 import {
   DARK_MAIN_COLOR,
   MAIN_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 
-export const GalleryBlock = styled.section`
+export const GalleryBlock = styled.section<{dark: boolean}>`
     background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px;
@@ -17,7 +17,7 @@ export const GalleryItems = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
 
-export const GalleryItem = styled.div`
+export const GalleryItem = styled.div<{dark: boolean, isBig: boolean}>`
     position: relative;
     padding: 0px 0px 85% 0px;
 

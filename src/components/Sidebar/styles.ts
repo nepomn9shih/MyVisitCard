@@ -9,9 +9,9 @@ import {
     ITEM_COLOR,
     MAIN_COLOR,
     SECONDARY_COLOR
-} from "../Colours";
+} from "../../constants/colors";
 
-export const SidebarBlock = styled.aside`
+export const SidebarBlock = styled.aside<{dark: boolean}>`
 	background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
     border-radius: 10px;
     padding: 30px 30px 15px 30px;
@@ -32,7 +32,7 @@ export const SidebarList = styled.ul`
     }
 `;
 
-export const SidebarLink = styled(NavLink)`
+export const SidebarLink = styled(NavLink)<{dark: boolean}>`
     color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     font-size: 20px;
     margin: 5px 0px 5px 5px;

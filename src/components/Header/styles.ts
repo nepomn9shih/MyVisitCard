@@ -7,9 +7,9 @@ import {
 	ITEM_COLOR,
 	MAIN_COLOR,
 	SECONDARY_COLOR
-} from "../Colours";
+} from "../../constants/colors";
 
-export const HeaderBlock = styled.div`
+export const HeaderBlock = styled.div<{dark: boolean}>`
   grid-area: header;
   padding: 15px;
   background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
@@ -22,7 +22,7 @@ export const HeaderBlock = styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const HeaderList = styled.ul`
+export const HeaderList = styled.ul<{isOpen: boolean; dark: boolean}>`
   display: grid;
   grid-auto-flow: column;
   justify-items: end;
@@ -47,7 +47,7 @@ export const HeaderList = styled.ul`
     }
 `;
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled.a<{dark: boolean}>`
   grid-column: 2 / 3;
 
   img {
@@ -64,7 +64,7 @@ export const HeaderLogo = styled.div`
   }
 `;
 
-export const HeaderName = styled.b`
+export const HeaderName = styled.b<{dark: boolean}>`
   font-size: 30px;
   color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
 `;
@@ -80,7 +80,7 @@ export const HeaderMenu = styled.nav`
   }
 `;
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.a<{dark: boolean}>`
   color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
   font-size: 18px;
 
@@ -93,7 +93,7 @@ export const HeaderLink = styled.a`
   }
 `;
 
-export const HeaderBurger = styled.div`
+export const HeaderBurger = styled.div<{dark: boolean; active: boolean}>`
   display: none;
   @media (max-width: 992px) {
     & {

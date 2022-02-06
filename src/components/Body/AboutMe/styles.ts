@@ -4,7 +4,7 @@ import {
 	MAIN_COLOR,
 	ITEM_COLOR,
 	BACKGROUND_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 import { ContentTitle } from "../Skills/styles";
 
 export const AboutMeBlock = styled.section<{dark: boolean}>`

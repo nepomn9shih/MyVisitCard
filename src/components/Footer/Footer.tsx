@@ -1,6 +1,6 @@
-import { FooterBlock } from "./FooterStyles";
+import { FooterBlock } from "./styles";
 
-const Footer = ({isDarkMode}) => {
+export const Footer = ({isDarkMode}: {isDarkMode: boolean}) => {
     
     return (
         <FooterBlock dark={isDarkMode}>
@@ -8,5 +8,3 @@ const Footer = ({isDarkMode}) => {
         </FooterBlock>
     )
 }
-
-export default Footer;

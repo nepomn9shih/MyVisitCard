@@ -7,9 +7,9 @@ import {
 	ITEM_COLOR,
 	MAIN_COLOR,
 	SECONDARY_COLOR
-} from "../../Colours";
+} from "../../../constants/colors";
 
-export const ProjectsBlock = styled.section`
+export const ProjectsBlock = styled.section<{dark: boolean}>`
     background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -29,7 +29,7 @@ export const ProjectsItem = styled.div`
     grid-template: auto auto auto 1fr minmax(40px, auto) / 1fr;
 `;
 
-export const ProjectsImage = styled.a`
+export const ProjectsImage = styled.a<{dark: boolean}>`
     position: relative;
     padding: 0px 0px 90% 0px;
     img{
@@ -51,7 +51,7 @@ export const ProjectsImage = styled.a`
     }
 `;
 
-export const ProjectsName = styled.a`
+export const ProjectsName = styled.a<{dark: boolean}>`
     font-size: 20px;
     color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
     line-height: 30px;
@@ -64,7 +64,7 @@ export const ProjectsName = styled.a`
     }
 `;
 
-export const ProjectsTechnologies = styled.div`
+export const ProjectsTechnologies = styled.div<{dark: boolean}>`
     font-size: 16px;
     padding: 15px;
     text-align: center;
@@ -78,7 +78,7 @@ export const ProjectsTechnologies = styled.div`
     }
 `;
 
-export const ProjectsDescription = styled.div`
+export const ProjectsDescription = styled.div<{dark: boolean}>`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
@@ -88,7 +88,7 @@ export const ProjectsDescription = styled.div`
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const ProjectsButton = styled.a`
+export const ProjectsButton = styled.a<{dark: boolean}>`
     color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
     border-bottom-left-radius: 10px;

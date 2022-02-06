@@ -1,8 +1,7 @@
-import skillsList from "./skillsList";
+import {skillsList} from "./skillsList";
 import { ContentTitle, SkillCellItem, SkillsBlock, SkillsText } from "./styles";
 
-
-const Skills = ({isDarkMode}) => {
+export const Skills = ({isDarkMode}: {isDarkMode: boolean}) => {
 
   return (
      <SkillsBlock dark={isDarkMode}>
@@ -25,5 +24,3 @@ const Skills = ({isDarkMode}) => {
     </SkillsBlock>
   );
 };
-
-export default Skills;

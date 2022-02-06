@@ -1,20 +1,20 @@
-import { useState } from "react";
-import { ContentTitle } from "../Skills/styles";
-import hobbyImages from "./HobbyImages/hobbyImages";
+import {useState} from "react";
+import {ContentTitle} from "../Skills/styles";
+import {hobbyImages} from "./HobbyImages/hobbyImages";
 import {
   HobbyBlock,
   HobbyImage,
   HobbyItems,
   HobbyCellItem,
-} from "./HobbyStyles";
+} from "./styles";
 
-const Hobby = ({ isDarkMode }) => {
+export const Hobby = ({isDarkMode}: {isDarkMode: boolean}) => {
   const [hobbyIndex, setHobbyIndex] = useState(0);
 
   return (
     <HobbyBlock dark={isDarkMode}>
       <ContentTitle dark={isDarkMode}>Мои увлечения</ContentTitle>
-      <HobbyItems dark={isDarkMode}>
+      <HobbyItems>
         {hobbyImages.map((hobby, index) => {
           return (
             <HobbyCellItem
@@ -34,5 +34,3 @@ const Hobby = ({ isDarkMode }) => {
     </HobbyBlock>
   );
 };
-
-export default Hobby;

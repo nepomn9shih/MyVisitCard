@@ -1,18 +1,17 @@
 import { Redirect, Route, Switch } from 'react-router-dom'
-import About from './About/About'
-import AboutMe from './AboutMe/AboutMe'
-import Gallery from './Gallery/Gallery'
-import Hobby from './Hobby/Hobby'
-import Projects from './Projects/Projects'
-import Sidebar from '../Sidebar/Sidebar'
-import Skills from './Skills/Skills'
-import Work from './Work/Work'
-import { BodyContent, BodyMain } from './BodyStyles'
+import {About} from './About/About'
+import {AboutMe} from './AboutMe/AboutMe'
+import {Gallery} from './Gallery/Gallery'
+import {Hobby} from './Hobby/Hobby'
+import {Projects} from './Projects/Projects'
+import {Sidebar} from '../Sidebar/Sidebar'
+import {Skills} from './Skills/Skills'
+import {Work} from './Work/Work'
+import { BodyContent, BodyMain } from './styles'
 
-const Body = ({isDarkMode}) => {
-
+export const Body = ({isDarkMode}: {isDarkMode: boolean}) => {
     return (
-<BodyMain>
+        <BodyMain>
             <Sidebar isDarkMode={isDarkMode}/>
             <BodyContent>
                 <Switch>
@@ -29,5 +28,3 @@ const Body = ({isDarkMode}) => {
         </BodyMain>
     )
 }
-
-export default Body;

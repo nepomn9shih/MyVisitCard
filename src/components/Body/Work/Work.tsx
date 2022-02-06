@@ -1,5 +1,5 @@
 import { ContentTitle } from "../Skills/styles";
-import workBase from "./workBase/workBase";
+import {workBase} from "./workBase/workBase";
 import {
   WorkBlock,
   WorkItem,
@@ -11,9 +11,10 @@ import {
   WorkPosition,
   WorkDescription,
   WorkCellItem
-} from "./WorkStyles";
+} from "./styles";
+import { WorkProps } from "./types";
 
-const Work = ({ isDarkMode }) => {
+export const Work = ({isDarkMode}: WorkProps) => {
   return (
     <WorkBlock dark={isDarkMode}>
       <ContentTitle dark={isDarkMode}>Опыт работы</ContentTitle>
@@ -55,5 +56,3 @@ const Work = ({ isDarkMode }) => {
     </WorkBlock>
   );
 };
-
-export default Work;

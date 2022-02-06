@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Hr } from './styles';
+import { AboutMeTextBlockProps } from './types';
 
-export const AboutMeTextBlock = ({text, isDarkMode}: {text: string, isDarkMode: boolean}) => {
+export const AboutMeTextBlock = ({text, isDarkMode}: AboutMeTextBlockProps) => {
     return (
         <>
             <p>{text}</p>

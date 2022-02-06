@@ -1,12 +1,12 @@
 import './style.css';
-import Header from './components/Header/Header';
-import Body from './components/Body/Body';
-import Footer from './components/Footer/Footer';
+import {Header} from './components/Header/Header';
+import {Body} from './components/Body/Body';
+import {Footer} from './components/Footer/Footer';
 import { HashRouter } from 'react-router-dom';
 import { useState } from 'react';
-import { Wrapper } from './components/Wrapper';
+import { StyledWrapper } from './components/StyledWrapper';
 
-function App() {
+export const App = () => {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -17,14 +17,12 @@ function App() {
   return (
     <>
     <HashRouter>
-      <Wrapper dark={isDarkMode}>
+      <StyledWrapper dark={isDarkMode}>
           <Header handlerToggle={handlerToggle} isDarkMode={isDarkMode}/>
           <Body isDarkMode={isDarkMode}/>
           <Footer isDarkMode={isDarkMode}/>
-      </Wrapper>
+      </StyledWrapper>
     </HashRouter>
     </>
   );
 }
-
-export default App;

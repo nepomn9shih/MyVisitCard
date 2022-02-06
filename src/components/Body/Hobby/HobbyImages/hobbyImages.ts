@@ -5,7 +5,7 @@ import img3 from "./trennings.png";
 import img4 from "./airsoft.png";
 import img5 from "./art.png";
 
-const hobbyImages = [
+export const hobbyImages: {img: string; name: string}[] = [
     {img: img0, name: "Путешествовать"},
     {img: img1, name: "Фотографировать"},
     {img: img2, name: "Кататься на велосипеде"},
@@ -13,5 +13,3 @@ const hobbyImages = [
     {img: img4, name: "Играть в страйкбол"},
     {img: img5, name: "Рисовать"},
 ];
-
-export default hobbyImages;

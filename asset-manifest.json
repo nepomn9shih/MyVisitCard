@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/MyVisitCard/static/css/main.e5da0a63.chunk.css",
-    "main.js": "/MyVisitCard/static/js/main.1f19d464.chunk.js",
-    "main.js.map": "/MyVisitCard/static/js/main.1f19d464.chunk.js.map",
-    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.479cd4b6.js",
-    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.479cd4b6.js.map",
-    "static/js/2.494d6e61.chunk.js": "/MyVisitCard/static/js/2.494d6e61.chunk.js",
-    "static/js/2.494d6e61.chunk.js.map": "/MyVisitCard/static/js/2.494d6e61.chunk.js.map",
-    "static/js/3.7b4458c3.chunk.js": "/MyVisitCard/static/js/3.7b4458c3.chunk.js",
-    "static/js/3.7b4458c3.chunk.js.map": "/MyVisitCard/static/js/3.7b4458c3.chunk.js.map",
+    "main.js": "/MyVisitCard/static/js/main.b935c398.chunk.js",
+    "main.js.map": "/MyVisitCard/static/js/main.b935c398.chunk.js.map",
+    "runtime-main.js": "/MyVisitCard/static/js/runtime-main.e107fdcb.js",
+    "runtime-main.js.map": "/MyVisitCard/static/js/runtime-main.e107fdcb.js.map",
+    "static/js/2.a614eb6d.chunk.js": "/MyVisitCard/static/js/2.a614eb6d.chunk.js",
+    "static/js/2.a614eb6d.chunk.js.map": "/MyVisitCard/static/js/2.a614eb6d.chunk.js.map",
+    "static/js/3.789b68fe.chunk.js": "/MyVisitCard/static/js/3.789b68fe.chunk.js",
+    "static/js/3.789b68fe.chunk.js.map": "/MyVisitCard/static/js/3.789b68fe.chunk.js.map",
     "index.html": "/MyVisitCard/index.html",
     "static/css/main.e5da0a63.chunk.css.map": "/MyVisitCard/static/css/main.e5da0a63.chunk.css.map",
-    "static/js/2.494d6e61.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.494d6e61.chunk.js.LICENSE.txt",
+    "static/js/2.a614eb6d.chunk.js.LICENSE.txt": "/MyVisitCard/static/js/2.a614eb6d.chunk.js.LICENSE.txt",
     "static/media/CatNet.591edaf6.png": "/MyVisitCard/static/media/CatNet.591edaf6.png",
     "static/media/DriversOfF1.4a30dede.png": "/MyVisitCard/static/media/DriversOfF1.4a30dede.png",
     "static/media/Like.2f570a0a.png": "/MyVisitCard/static/media/Like.2f570a0a.png",
@@ -44,9 +44,9 @@
     "static/media/ya.fc4c0649.png": "/MyVisitCard/static/media/ya.fc4c0649.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.479cd4b6.js",
-    "static/js/2.494d6e61.chunk.js",
+    "static/js/runtime-main.e107fdcb.js",
+    "static/js/2.a614eb6d.chunk.js",
     "static/css/main.e5da0a63.chunk.css",
-    "static/js/main.1f19d464.chunk.js"
+    "static/js/main.b935c398.chunk.js"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyVisitCard/static/css/main.c954d9e9.css",
-    "main.js": "/MyVisitCard/static/js/main.8703cccb.js",
+    "main.css": "/MyVisitCard/static/css/main.ef0a6438.css",
+    "main.js": "/MyVisitCard/static/js/main.2e30031b.js",
     "static/media/FrontendMix_2024_2.jpeg": "/MyVisitCard/static/media/FrontendMix_2024_2.3bb365f20fb702a3758d.jpeg",
     "static/media/HolyJS_2024_5.jpg": "/MyVisitCard/static/media/HolyJS_2024_5.7affe535ae44afbb894f.jpg",
     "static/media/HolyJS_2024_7.jpg": "/MyVisitCard/static/media/HolyJS_2024_7.223715383ea420a240a8.jpg",
@@ -17,22 +17,22 @@
     "static/media/HolyJS_2024_3.jpg": "/MyVisitCard/static/media/HolyJS_2024_3.42f65acd4152a6e4a72b.jpg",
     "static/media/YoomoneyUnlogin.png": "/MyVisitCard/static/media/YoomoneyUnlogin.ee08fb59129b7ec257dc.png",
     "static/media/myPhoto1.jpg": "/MyVisitCard/static/media/myPhoto1.8ba6447a56b20d9636fb.jpg",
-    "static/media/YoomoneyDay_2023_1.jpg": "/MyVisitCard/static/media/YoomoneyDay_2023_1.1b33dc73de2f36a41851.jpg",
-    "static/media/YoomoneyDay_2023_2.jpg": "/MyVisitCard/static/media/YoomoneyDay_2023_2.d1283e0ccdf099b5b7ce.jpg",
+    "static/media/YooMoneyDay_2023_1.jpg": "/MyVisitCard/static/media/YooMoneyDay_2023_1.1b33dc73de2f36a41851.jpg",
+    "static/media/YooMoneyDay_2023_2.jpg": "/MyVisitCard/static/media/YooMoneyDay_2023_2.d1283e0ccdf099b5b7ce.jpg",
     "static/media/CatNet.png": "/MyVisitCard/static/media/CatNet.591edaf6983263132e13.png",
     "static/media/FrontendMix_2025_1.jpg": "/MyVisitCard/static/media/FrontendMix_2025_1.43d59ef5e0ed1322c383.jpg",
-    "static/media/YoomoneyDay_2023_3.jpg": "/MyVisitCard/static/media/YoomoneyDay_2023_3.44d7580875ec208ccf24.jpg",
+    "static/media/YooMoneyDay_2023_3.jpg": "/MyVisitCard/static/media/YooMoneyDay_2023_3.44d7580875ec208ccf24.jpg",
     "static/media/VisitCard.png": "/MyVisitCard/static/media/VisitCard.87ed3e9e4cc612f522c8.png",
     "static/media/ya.png": "/MyVisitCard/static/media/ya.fc4c0649faf8db7c54ae.png",
     "static/media/myPhoto2.jpg": "/MyVisitCard/static/media/myPhoto2.38e053cc6eb9dd59f303.jpg",
     "static/media/combo.png": "/MyVisitCard/static/media/combo.f8c0b3550cf96631e875.png",
     "static/media/PassDefect.png": "/MyVisitCard/static/media/PassDefect.eccd182d7a1d636b999c.png",
     "index.html": "/MyVisitCard/index.html",
-    "main.c954d9e9.css.map": "/MyVisitCard/static/css/main.c954d9e9.css.map",
-    "main.8703cccb.js.map": "/MyVisitCard/static/js/main.8703cccb.js.map"
+    "main.ef0a6438.css.map": "/MyVisitCard/static/css/main.ef0a6438.css.map",
+    "main.2e30031b.js.map": "/MyVisitCard/static/js/main.2e30031b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c954d9e9.css",
-    "static/js/main.8703cccb.js"
+    "static/css/main.ef0a6438.css",
+    "static/js/main.2e30031b.js"
   ]
 }

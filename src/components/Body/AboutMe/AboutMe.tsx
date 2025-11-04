@@ -1,6 +1,10 @@
 import * as React from 'react';
-import SwiperCore, { Navigation, Pagination } from '../../../../node_modules/swiper';
-import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore from 'swiper';
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation, Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import myPhoto0 from "../../../images/myPhoto0.jpg";
 import myPhoto1 from "../../../images/myPhoto1.jpg";

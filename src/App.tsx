@@ -2,9 +2,9 @@ import './style.css';
 import {Header} from './components/Header/Header';
 import {Body} from './components/Body/Body';
 import {Footer} from './components/Footer/Footer';
-import { HashRouter } from 'react-router-dom';
-import { useState } from 'react';
-import { StyledWrapper } from './components/StyledWrapper';
+import {HashRouter} from 'react-router-dom';
+import {useState} from 'react';
+import {StyledWrapper} from './components/StyledWrapper';
 
 export const App = () => {
 

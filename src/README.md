@@ -1,2 +1,2 @@
-# GridTestStore
-Шаблон интернет-магазина (HTML/CSS/Grid). Тестирую Grid Layout.
+# MyVisitCard
+Мой сайт-визитка.

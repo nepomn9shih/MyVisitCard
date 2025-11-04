@@ -1,9 +1,13 @@
 import * as React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from '../../../../node_modules/swiper';
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Navigation, Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import SwiperCore from 'swiper';
 
-import { AboutBlock, AboutText } from "./styles";
-import { ContentTitle } from "../Skills/styles";
+import {AboutBlock, AboutText} from "./styles";
+import {ContentTitle} from "../Skills/styles";
 
 SwiperCore.use([Navigation, Pagination]);
 

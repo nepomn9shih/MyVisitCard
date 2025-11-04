@@ -39,7 +39,9 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
       <Swiper
         id="aboutMe"
         navigation
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+        }}
         speed={800}
       >
         {mySlides}

@@ -45,7 +45,7 @@ export const WorkDateItem = styled.div<{dark: boolean}>`
     border-radius: 10px;
     margin: 2px;
     padding: 4px 5px 4px 5px;
-    color: ${MAIN_COLOR};
+    color:  ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
 `;
 
 export const WorkName = styled.div<{dark: boolean}>`

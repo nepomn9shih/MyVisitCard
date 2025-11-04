@@ -43,5 +43,9 @@ export const GalleryItem = styled.div<{dark: boolean, isBig: boolean}>`
         grid-column: ${({isBig}) => isBig ? "span 2" : ""};
         grid-row: ${({isBig}) => isBig ? "span 2" : ""};
     }
+
+    :hover {
+        cursor: pointer;
+    }
 }
 `;

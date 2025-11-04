@@ -27,3 +27,10 @@ export const AboutText = styled.div<{dark: boolean}>`
         color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR}
     }
 `;
+
+export const StyledImage = styled.img`
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 12px;
+`;

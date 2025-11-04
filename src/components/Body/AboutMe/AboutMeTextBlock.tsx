@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Hr } from './styles';
-import { AboutMeTextBlockProps } from './types';
+import {Hr} from './styles';
+import {AboutMeTextBlockProps} from './types';
 
-export const AboutMeTextBlock = ({text, isDarkMode}: AboutMeTextBlockProps) => {
+export const AboutMeTextBlock = ({text, isDarkMode, isLast}: AboutMeTextBlockProps) => {
     return (
         <>
             <p>{text}</p>
             <br/>
-            <Hr dark={isDarkMode}/>
+            {!isLast && <Hr dark={isDarkMode}/>}
         </>
     )
 };

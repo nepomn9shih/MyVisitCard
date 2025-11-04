@@ -1,4 +1,4 @@
-import { SidebarBlock, SidebarLink, SidebarList } from "./styles";
+import {SidebarBlock, SidebarLink, SidebarList} from "./styles";
 
 export const Sidebar = ({isDarkMode}: {isDarkMode: boolean}) => {
 
@@ -19,13 +19,12 @@ export const Sidebar = ({isDarkMode}: {isDarkMode: boolean}) => {
                         <SidebarLink dark={isDarkMode} to="/projects">Мои проекты</SidebarLink>
                     </li>
                     <li>
-                        <SidebarLink dark={isDarkMode} to="/hobby">Увлечения</SidebarLink>  
-                    </li>
-                    <li>
                         <SidebarLink 
                             dark={isDarkMode}
                             to="/gallery"
-                        >Галерея</SidebarLink>
+                        >
+                            Галерея
+                        </SidebarLink>
                     </li>
                 </SidebarList>
             </nav>

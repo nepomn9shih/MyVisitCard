@@ -10,9 +10,9 @@ import myPhoto0 from "../../../images/myPhoto0.jpg";
 import myPhoto1 from "../../../images/myPhoto1.jpg";
 import myPhoto2 from "../../../images/myPhoto2.jpg";
 
-import { AboutMeBlock, AboutMeTitle, AboutMeText, AboutMeImage } from "./styles";
-import { ABOUT_ME_TEXT_DATA } from "./aboutMeBase/aboutMeText";
-import { AboutMeTextBlock } from "./AboutMeTextBlock";
+import {AboutMeBlock, AboutMeTitle, AboutMeText, AboutMeImage} from "./styles";
+import {ABOUT_ME_TEXT_DATA} from "./aboutMeBase/aboutMeText";
+import {AboutMeTextBlock} from "./AboutMeTextBlock";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -34,7 +34,7 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
 
   return (
     <AboutMeBlock dark={isDarkMode}>
-      <AboutMeTitle dark={isDarkMode}>Обо мне</AboutMeTitle>
+      <AboutMeTitle dark={isDarkMode}>Непомнящих Александр</AboutMeTitle>
       <AboutMeImage dark={isDarkMode}>
       <Swiper
         id="aboutMe"
@@ -52,6 +52,7 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
               key={index}
               text={text}
               isDarkMode={isDarkMode}
+              isLast={index === ABOUT_ME_TEXT_DATA.length - 1}
             />
           )
         })}

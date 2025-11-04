@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {
-    ACTIVE_COLOR,
     BACKGROUND_COLOR,
     DARK_ITEM_COLOR,
 	DARK_MAIN_COLOR,
@@ -47,12 +46,6 @@ export const WorkDateItem = styled.div<{dark: boolean}>`
     margin: 2px;
     padding: 4px 5px 4px 5px;
     color: ${MAIN_COLOR};
-
-    &:hover {
-        transition: 0.5s;
-        background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    }
 `;
 
 export const WorkName = styled.div<{dark: boolean}>`
@@ -62,10 +55,6 @@ export const WorkName = styled.div<{dark: boolean}>`
     background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
     display: grid;
     align-items: center;
-
-    &:hover {
-        color: ${(props) => (props.dark ? DARK_MAIN_COLOR : MAIN_COLOR)};
-    }
 `;
 
 export const WorkImage = styled.div<{dark: boolean}>`
@@ -114,11 +103,4 @@ export const WorkCellItem = styled.div<{dark: boolean}>`
   margin: 5px;
   padding: 4px 5px 6px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-
-  &:hover {
-    transition: 0.5s;
-    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    color: ${({dark}) => dark ? DARK_ITEM_COLOR : MAIN_COLOR};
-  }
 `;

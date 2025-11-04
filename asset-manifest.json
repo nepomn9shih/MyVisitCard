@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyVisitCard/static/css/main.d2e75867.css",
-    "main.js": "/MyVisitCard/static/js/main.adab726a.js",
+    "main.css": "/MyVisitCard/static/css/main.c954d9e9.css",
+    "main.js": "/MyVisitCard/static/js/main.8703cccb.js",
     "static/media/FrontendMix_2024_2.jpeg": "/MyVisitCard/static/media/FrontendMix_2024_2.3bb365f20fb702a3758d.jpeg",
     "static/media/HolyJS_2024_5.jpg": "/MyVisitCard/static/media/HolyJS_2024_5.7affe535ae44afbb894f.jpg",
     "static/media/HolyJS_2024_7.jpg": "/MyVisitCard/static/media/HolyJS_2024_7.223715383ea420a240a8.jpg",
@@ -28,11 +28,11 @@
     "static/media/combo.png": "/MyVisitCard/static/media/combo.f8c0b3550cf96631e875.png",
     "static/media/PassDefect.png": "/MyVisitCard/static/media/PassDefect.eccd182d7a1d636b999c.png",
     "index.html": "/MyVisitCard/index.html",
-    "main.d2e75867.css.map": "/MyVisitCard/static/css/main.d2e75867.css.map",
-    "main.adab726a.js.map": "/MyVisitCard/static/js/main.adab726a.js.map"
+    "main.c954d9e9.css.map": "/MyVisitCard/static/css/main.c954d9e9.css.map",
+    "main.8703cccb.js.map": "/MyVisitCard/static/js/main.8703cccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2e75867.css",
-    "static/js/main.adab726a.js"
+    "static/css/main.c954d9e9.css",
+    "static/js/main.8703cccb.js"
   ]
 }

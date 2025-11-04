@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import {
   DARK_MAIN_COLOR,
   MAIN_COLOR
@@ -39,13 +40,25 @@ export const GalleryItem = styled.div<{dark: boolean, isBig: boolean}>`
     }
 
     @media (min-width: 992px) {
-    & {
-        grid-column: ${({isBig}) => isBig ? "span 2" : ""};
-        grid-row: ${({isBig}) => isBig ? "span 2" : ""};
-    }
+        & {
+            grid-column: ${({isBig}) => isBig ? "span 2" : ""};
+            grid-row: ${({isBig}) => isBig ? "span 2" : ""};
+        }
 
-    :hover {
-        cursor: pointer;
+        :hover {
+            cursor: pointer;
+        }
     }
-}
+`;
+
+export const GalleryDescription = styled.div`
+    padding: 8px;
+    color: white;
+    width: auto;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 `;

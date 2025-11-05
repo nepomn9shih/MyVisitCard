@@ -1,7 +1,20 @@
 {
   "files": {
     "main.css": "/MyVisitCard/static/css/main.ef0a6438.css",
-    "main.js": "/MyVisitCard/static/js/main.2e30031b.js",
+    "main.js": "/MyVisitCard/static/js/main.d04f3704.js",
+    "reactPlayerHls.js": "/MyVisitCard/static/js/reactPlayerHls.ed53829c.chunk.js",
+    "reactPlayerDash.js": "/MyVisitCard/static/js/reactPlayerDash.28934341.chunk.js",
+    "reactPlayerMux.js": "/MyVisitCard/static/js/reactPlayerMux.4e18094c.chunk.js",
+    "reactPlayerYouTube.js": "/MyVisitCard/static/js/reactPlayerYouTube.18081c08.chunk.js",
+    "reactPlayerVimeo.js": "/MyVisitCard/static/js/reactPlayerVimeo.9e91b1f0.chunk.js",
+    "reactPlayerWistia.js": "/MyVisitCard/static/js/reactPlayerWistia.443e2fa9.chunk.js",
+    "reactPlayerSpotify.js": "/MyVisitCard/static/js/reactPlayerSpotify.ca5eb2b5.chunk.js",
+    "reactPlayerTwitch.js": "/MyVisitCard/static/js/reactPlayerTwitch.17511553.chunk.js",
+    "reactPlayerTiktok.js": "/MyVisitCard/static/js/reactPlayerTiktok.1922f2bb.chunk.js",
+    "reactPlayerPreview.js": "/MyVisitCard/static/js/reactPlayerPreview.c2415267.chunk.js",
+    "static/js/416.c446600b.chunk.js": "/MyVisitCard/static/js/416.c446600b.chunk.js",
+    "static/js/372.50d3f3e6.chunk.js": "/MyVisitCard/static/js/372.50d3f3e6.chunk.js",
+    "static/js/788.1e16c80b.chunk.js": "/MyVisitCard/static/js/788.1e16c80b.chunk.js",
     "static/media/FrontendMix_2024_2.jpeg": "/MyVisitCard/static/media/FrontendMix_2024_2.3bb365f20fb702a3758d.jpeg",
     "static/media/HolyJS_2024_5.jpg": "/MyVisitCard/static/media/HolyJS_2024_5.7affe535ae44afbb894f.jpg",
     "static/media/HolyJS_2024_7.jpg": "/MyVisitCard/static/media/HolyJS_2024_7.223715383ea420a240a8.jpg",
@@ -29,10 +42,23 @@
     "static/media/PassDefect.png": "/MyVisitCard/static/media/PassDefect.eccd182d7a1d636b999c.png",
     "index.html": "/MyVisitCard/index.html",
     "main.ef0a6438.css.map": "/MyVisitCard/static/css/main.ef0a6438.css.map",
-    "main.2e30031b.js.map": "/MyVisitCard/static/js/main.2e30031b.js.map"
+    "main.d04f3704.js.map": "/MyVisitCard/static/js/main.d04f3704.js.map",
+    "reactPlayerHls.ed53829c.chunk.js.map": "/MyVisitCard/static/js/reactPlayerHls.ed53829c.chunk.js.map",
+    "reactPlayerDash.28934341.chunk.js.map": "/MyVisitCard/static/js/reactPlayerDash.28934341.chunk.js.map",
+    "reactPlayerMux.4e18094c.chunk.js.map": "/MyVisitCard/static/js/reactPlayerMux.4e18094c.chunk.js.map",
+    "reactPlayerYouTube.18081c08.chunk.js.map": "/MyVisitCard/static/js/reactPlayerYouTube.18081c08.chunk.js.map",
+    "reactPlayerVimeo.9e91b1f0.chunk.js.map": "/MyVisitCard/static/js/reactPlayerVimeo.9e91b1f0.chunk.js.map",
+    "reactPlayerWistia.443e2fa9.chunk.js.map": "/MyVisitCard/static/js/reactPlayerWistia.443e2fa9.chunk.js.map",
+    "reactPlayerSpotify.ca5eb2b5.chunk.js.map": "/MyVisitCard/static/js/reactPlayerSpotify.ca5eb2b5.chunk.js.map",
+    "reactPlayerTwitch.17511553.chunk.js.map": "/MyVisitCard/static/js/reactPlayerTwitch.17511553.chunk.js.map",
+    "reactPlayerTiktok.1922f2bb.chunk.js.map": "/MyVisitCard/static/js/reactPlayerTiktok.1922f2bb.chunk.js.map",
+    "reactPlayerPreview.c2415267.chunk.js.map": "/MyVisitCard/static/js/reactPlayerPreview.c2415267.chunk.js.map",
+    "416.c446600b.chunk.js.map": "/MyVisitCard/static/js/416.c446600b.chunk.js.map",
+    "372.50d3f3e6.chunk.js.map": "/MyVisitCard/static/js/372.50d3f3e6.chunk.js.map",
+    "788.1e16c80b.chunk.js.map": "/MyVisitCard/static/js/788.1e16c80b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef0a6438.css",
-    "static/js/main.2e30031b.js"
+    "static/js/main.d04f3704.js"
   ]
 }

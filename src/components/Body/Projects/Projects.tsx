@@ -1,4 +1,4 @@
-import { ContentTitle, SkillCellItem } from "../Skills/styles";
+import {ContentTitle, SkillCellItem} from "../styles";
 import {projectsData} from "./ProjectsData/projectsData";
 import {
   ProjectsBlock,
@@ -11,10 +11,12 @@ import {
   ProjectsButton
 } from "./styles";
 
-export const Projects = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const Projects = () => {
   return (
-    <ProjectsBlock dark={isDarkMode}>
-      <ContentTitle dark={isDarkMode}>Мои проекты</ContentTitle>
+    <ProjectsBlock>
+      <ContentTitle>
+        Мои проекты
+      </ContentTitle>
       <ProjectsItems>
         {projectsData
           .slice(0)
@@ -23,7 +25,6 @@ export const Projects = ({isDarkMode}: {isDarkMode: boolean}) => {
             return (
               <ProjectsItem key={index}>
                 <ProjectsImage
-                  dark={isDarkMode}
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
@@ -31,18 +32,16 @@ export const Projects = ({isDarkMode}: {isDarkMode: boolean}) => {
                   <img src={project.img} alt="" />
                 </ProjectsImage>
                 <ProjectsName
-                  dark={isDarkMode}
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
                 >
                   {project.name}
                 </ProjectsName>
-                <ProjectsTechnologies dark={isDarkMode}>
+                <ProjectsTechnologies>
                   {project.technologies.map((tech, index) => {
                     return (
                       <SkillCellItem
-                        dark={isDarkMode}
                         href={"https://www.google.com/search?q=" + tech}
                         target="_blank"
                         rel="noreferrer"
@@ -53,9 +52,10 @@ export const Projects = ({isDarkMode}: {isDarkMode: boolean}) => {
                     );
                   })}
                 </ProjectsTechnologies>
-                <ProjectsDescription dark={isDarkMode}>{project.description}</ProjectsDescription>
+                <ProjectsDescription>
+                  {project.description}
+                </ProjectsDescription>
                 <ProjectsButton
-                  dark={isDarkMode}
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"

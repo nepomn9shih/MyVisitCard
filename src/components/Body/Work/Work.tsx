@@ -1,4 +1,3 @@
-import { ContentTitle } from "../Skills/styles";
 import {workBase} from "./workBase/workBase";
 import {
   WorkBlock,
@@ -12,38 +11,42 @@ import {
   WorkDescription,
   WorkCellItem
 } from "./styles";
-import { WorkProps } from "./types";
+import {ContentTitle} from "../styles";
 
-export const Work = ({isDarkMode}: WorkProps) => {
+export const Work = () => {
   return (
-    <WorkBlock dark={isDarkMode}>
-      <ContentTitle dark={isDarkMode}>Опыт работы</ContentTitle>
+    <WorkBlock>
+      <ContentTitle>
+        Опыт работы
+      </ContentTitle>
       <WorkItems>
         {workBase
           .slice(0)
           .reverse()
           .map((work, index) => {
             return (
-              <WorkItem dark={isDarkMode} key={index}>
+              <WorkItem key={index}>
                 <WorkDate>
-                  <WorkDateItem dark={isDarkMode}>
+                  <WorkDateItem>
                     <b>Начало:</b> {work.date.from}
                   </WorkDateItem>
-                  <WorkDateItem dark={isDarkMode}>
+                  <WorkDateItem>
                     <b>Конец:</b> {work.date.to}
                   </WorkDateItem>
                 </WorkDate>
-                <WorkName dark={isDarkMode}>
+                <WorkName>
                   <div>{work.name}</div>
                 </WorkName>
-                <WorkImage dark={isDarkMode}>
+                <WorkImage>
                   <img src={work.img} alt="" />
                 </WorkImage>
-                <WorkPosition dark={isDarkMode}>{work.position}</WorkPosition>
-                <WorkDescription dark={isDarkMode}>
+                <WorkPosition>
+                  {work.position}
+                </WorkPosition>
+                <WorkDescription>
                   {work.description.map((duty, index) => {
                     return (
-                      <WorkCellItem dark={isDarkMode} key={index}>
+                      <WorkCellItem key={index}>
                         {duty}{" "}
                       </WorkCellItem>
                     );

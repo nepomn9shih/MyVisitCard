@@ -4,8 +4,9 @@ import project3 from './VisitCard.png';
 import project4 from './YoomoneyUnlogin.png';
 import project5 from './YooVillage.png';
 import project6 from './PassDefect.png';
+import {ProjectData} from '../types';
 
-export const projectsData = [
+export const projectsData: ProjectData[] = [
     {
         img: project1, 
         name: "Фото из VK", 
@@ -41,7 +42,7 @@ export const projectsData = [
         technologies: ["React", "Nest.js", "JavaScript", "Emotion", "TypeScript", "Redux Toolkit", "Grid", "Phaser.js", "Three.js", "Material UI"],
         link: "https://yoomoney.ru/yoovillage",
     },
-     {
+    {
         img: project6, 
         name: "Игра Pass Defect", 
         description: "2D-игра, по типу Vampire Survivors. В процессе разработки. Пока адаптировано только для десктопов. В свободное время занимаюсь проектом, чтобы глубже разобраться с возможностями движка Phaser.JS",

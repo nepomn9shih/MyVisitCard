@@ -1,27 +1,34 @@
+import {HashRouter} from 'react-router-dom';
+import {useState} from 'react';
+
 import {Header} from './components/Header/Header';
 import {Body} from './components/Body/Body';
 import {Footer} from './components/Footer/Footer';
-import {HashRouter} from 'react-router-dom';
-import {useState} from 'react';
 import {StyledWrapper} from './components/StyledWrapper';
+import {PageTheme} from './components/PageTheme';
+import {ThemeNames} from './enums/ThemeNames';
 
 export const App = () => {
-
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [chosenTheme, setChosenTheme] = useState(ThemeNames.LIGHT);
 
   const handlerToggle = () => {
-    setIsDarkMode(!isDarkMode);
+    setChosenTheme(
+      chosenTheme === ThemeNames.LIGHT
+        ? ThemeNames.DARK
+        : ThemeNames.LIGHT
+    );
   }
 
   return (
     <>
-    <HashRouter>
-      <StyledWrapper dark={isDarkMode}>
-          <Header handlerToggle={handlerToggle} isDarkMode={isDarkMode}/>
-          <Body isDarkMode={isDarkMode}/>
-          <Footer isDarkMode={isDarkMode}/>
-      </StyledWrapper>
-    </HashRouter>
+      <PageTheme chosenTheme={chosenTheme} />
+      <HashRouter>
+        <StyledWrapper>
+            <Header handlerToggle={handlerToggle} />
+            <Body />
+            <Footer />
+        </StyledWrapper>
+      </HashRouter>
     </>
   );
 }

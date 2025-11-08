@@ -1,16 +1,15 @@
-import { ButtonContainer, Toggle, ToggleLabel } from './styles'
-import { ToggleButtonProps } from './types';
+import {ButtonContainer, Toggle, ToggleLabel} from './styles'
+import {ToggleButtonProps} from './types';
 
 export const ToggleButton = ({
     buttonText = '',
-    handlerOnChange = () => {},
-    isDarkMode = false
+    handlerOnChange = () => {}
   }: ToggleButtonProps) => {
     
     return (
         <ButtonContainer>
         <Toggle type="checkbox" name="toggle" id="toggle-button" onChange={handlerOnChange}/>
-        <ToggleLabel dark={isDarkMode} htmlFor="toggle-button">{buttonText}</ToggleLabel>
+        <ToggleLabel htmlFor="toggle-button">{buttonText}</ToggleLabel>
       </ButtonContainer>
     );
   };

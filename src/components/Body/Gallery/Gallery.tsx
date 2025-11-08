@@ -4,11 +4,11 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import {ContentTitle} from '../Skills/styles'
-import {galleryImages} from './GalleryImages/galleryImages'
-import {GalleryBlock, GalleryItems, GalleryItem, GalleryDescription} from './styles'
+import {galleryImages} from "./GalleryImages/galleryImages";
+import {GalleryBlock, GalleryItems, GalleryItem, GalleryDescription} from "./styles";
+import {ContentTitle} from "../styles";
 
-export const Gallery = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const Gallery = () => {
     const [open, setOpen] = useState(false);
     const [imageIndex, setImageIndex] = useState(0);
 
@@ -30,8 +30,8 @@ export const Gallery = ({isDarkMode}: {isDarkMode: boolean}) => {
     }).sort((a, b) => a.year - b.year);
 
     return (
-        <GalleryBlock dark={isDarkMode}>
-        <ContentTitle dark={isDarkMode}>
+        <GalleryBlock>
+        <ContentTitle>
             Галерея
         </ContentTitle>
         <Lightbox
@@ -46,8 +46,7 @@ export const Gallery = ({isDarkMode}: {isDarkMode: boolean}) => {
                 let isBig = index === 0 || index % 7 === 0 || index % 10 === 0
 
                 return (
-                    <GalleryItem 
-                        dark={isDarkMode}
+                    <GalleryItem
                         isBig={isBig}
                         key={index}
                         onClick={() => onClick(index)}

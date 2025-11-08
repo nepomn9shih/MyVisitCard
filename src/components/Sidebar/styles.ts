@@ -1,18 +1,8 @@
-import { NavLink } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import styled from "styled-components";
-import {
-    ACTIVE_COLOR,
-    BACKGROUND_COLOR,
-    DARK_ITEM_COLOR,
-    DARK_MAIN_COLOR,
-    DARK_SECONDARY_COLOR,
-    ITEM_COLOR,
-    MAIN_COLOR,
-    SECONDARY_COLOR
-} from "../../constants/colors";
 
-export const SidebarBlock = styled.aside<{dark: boolean}>`
-	background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
+export const SidebarBlock = styled.aside`
+	background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 30px 30px 15px 30px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -32,18 +22,18 @@ export const SidebarList = styled.ul`
     }
 `;
 
-export const SidebarLink = styled(NavLink)<{dark: boolean}>`
-    color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
+export const SidebarLink = styled(NavLink)`
+    color: var(--main-text-color);
     font-size: 20px;
     margin: 5px 0px 5px 5px;
 
     &:hover {
-        color: ${({dark}) => dark ? DARK_MAIN_COLOR : ACTIVE_COLOR};
+        color: var(--main-text-color);
     }
 
     &.active {
-        color: ${({dark}) => dark ? BACKGROUND_COLOR : MAIN_COLOR};
-        background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : ITEM_COLOR};
+        color: var(--description-text-color);
+        background-color: var(--secondary-background-color);
         padding: 3px 5px 5px 5px;
         margin: 5px 0px;
         border-radius: 10px;

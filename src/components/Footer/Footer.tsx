@@ -1,9 +1,9 @@
 import {FooterBlock} from "./styles";
 
-export const Footer = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const Footer = () => {
     
     return (
-        <FooterBlock dark={isDarkMode}>
+        <FooterBlock>
             <div>Непомнящих Александр &copy; 2025</div>
         </FooterBlock>
     )

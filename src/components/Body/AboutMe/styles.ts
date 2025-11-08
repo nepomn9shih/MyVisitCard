@@ -1,14 +1,9 @@
 import styled from "styled-components";
-import {
-	DARK_MAIN_COLOR,
-	MAIN_COLOR,
-	ITEM_COLOR,
-	BACKGROUND_COLOR
-} from "../../../constants/colors";
-import {ContentTitle} from "../Skills/styles";
 
-export const AboutMeBlock = styled.section<{dark: boolean}>`
-	background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+import {ContentTitle} from "../styles";
+
+export const AboutMeBlock = styled.section`
+	background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -23,27 +18,27 @@ export const AboutMeBlock = styled.section<{dark: boolean}>`
 	}
 `;
 
-export const AboutMeTitle = styled(ContentTitle)<{dark: boolean}>`
-	grid-column: span 2;
+export const AboutMeTitle = styled(ContentTitle)`
+  grid-column: span 2;
 `;
 
-export const Hr = styled.hr<{dark: boolean}>`
-    border-bottom: 2px solid ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+export const Hr = styled.hr`
+    border-bottom: 2px solid var(--main-color);
     margin: 0px -15px 15px -15px;
 	box-sizing: border-box;
 `;
 
-export const AboutMeText = styled.div<{dark: boolean}>`
+export const AboutMeText = styled.div`
 	font-size: 18px;
     line-height: 22px;
-    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+    background-color: var(--secondary-background-color);
     border-radius: 10px;
     padding: 15px 15px 20px 15px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 	box-sizing: border-box;
 `;
 
-export const AboutMeImage = styled.div<{dark: boolean}>`
+export const AboutMeImage = styled.div`
 	margin: 0 auto;
 	width: 100%;
 	border-radius: 10px;
@@ -57,11 +52,11 @@ export const AboutMeImage = styled.div<{dark: boolean}>`
 	}
 `;
 
-export const StyledSwiperImage = styled.img<{dark: boolean}>`
+export const StyledSwiperImage = styled.img`
 	width: 100%;
 	padding: 1px;
 	object-fit: contain;
 	border-radius: 10px;
 	box-sizing: border-box;
-	opacity: ${({dark}) => dark ? "80%" : "100%"};
+	opacity: var(--opacity-value);
 `;

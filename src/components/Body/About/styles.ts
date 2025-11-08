@@ -1,21 +1,15 @@
 import styled from "styled-components";
-import {
-	BACKGROUND_COLOR,
-	DARK_MAIN_COLOR,
-	ITEM_COLOR,
-	MAIN_COLOR,
-} from "../../../constants/colors";
 
-export const AboutBlock = styled.section<{dark: boolean}>`
+export const AboutBlock = styled.section`
     in-height: 400px;
-    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+    background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const AboutText = styled.div<{dark: boolean}>`
-    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+export const AboutText = styled.div`
+    background-color: var(--secondary-background-color);
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     min-height: 356px;
@@ -24,7 +18,7 @@ export const AboutText = styled.div<{dark: boolean}>`
         line-height: 22px;
     }
     b {
-        color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR}
+        color: var(--main-color);
     }
 `;
 

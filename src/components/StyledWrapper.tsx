@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
-import {BACKGROUND_COLOR, DARK_BACKGROUND_COLOR} from "../constants/colors";
-
-export const StyledWrapper = styled.div<{dark: boolean}>`
+export const StyledWrapper = styled.div`
 	min-height: 100%;
-	background-color: ${({dark}) => dark ? DARK_BACKGROUND_COLOR : BACKGROUND_COLOR};
+	background-color: var(--background-color);
 	display: grid;
 	grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
 	grid-template-areas: 

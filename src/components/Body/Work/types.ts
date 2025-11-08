@@ -1,7 +1,3 @@
-export type WorkProps = {
-    isDarkMode: boolean;
-}
-
 type WorkDateType = {
     from: string;
     to: string;

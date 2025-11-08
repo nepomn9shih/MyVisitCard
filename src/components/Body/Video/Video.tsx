@@ -3,18 +3,18 @@ import ReactPlayer from 'react-player';
 
 import {
   VideoBlock,
-  VideoTitle,
   VideoContent
 } from "./styles";
+import {ContentTitle} from '../styles';
 
-export const Video = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const Video = () => {
   try {
     return (
-      <VideoBlock dark={isDarkMode}>
-        <VideoTitle dark={isDarkMode}>
+      <VideoBlock>
+        <ContentTitle>
           Видео выступлений
-        </VideoTitle>
-        <VideoContent dark={isDarkMode}>
+        </ContentTitle>
+        <VideoContent>
           <Suspense fallback={() => <div>Загружаю видео</div>}>
             <ReactPlayer
               src='https://www.youtube.com/watch?v=mhJWbrMfNNo&list=PLIZR3nsCfy888mzTbQ-LwNExi7A1GYE21&index=4&t=11s'
@@ -37,8 +37,8 @@ export const Video = ({isDarkMode}: {isDarkMode: boolean}) => {
       </VideoBlock>
     );
 } catch (error) {
-  console.log(error);
+    console.log(error);
 
-  return null;
-}
+    return null;
+  }
 };

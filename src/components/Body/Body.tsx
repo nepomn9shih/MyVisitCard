@@ -8,22 +8,22 @@ import {Skills} from './Skills/Skills'
 import {Work} from './Work/Work'
 import {BodyContent, BodyMain} from './styles'
 import {Routes} from '../../enums/routes'
-import { Video } from './Video/Video'
+import {Video} from './Video/Video'
 
-export const Body = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const Body = () => {
     return (
         <BodyMain>
-            <Sidebar isDarkMode={isDarkMode}/>
+            <Sidebar />
             <BodyContent>
                 <Switch>
                 <Redirect exact from="/" to={Routes.ABOUT_ME}/>
-                    <Route path={Routes.ABOUT_ME} render={() => {return <AboutMe isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.SKILLS} render={() => {return <Skills isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.WORK} render={() => {return <Work isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.PROJECTS} render={() => {return <Projects isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.GALLERY} render={() => {return <Gallery isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.VIDEO} render={() => {return <Video isDarkMode={isDarkMode}/>}}/>
-                    <Route path={Routes.ABOUT} render={() => {return <About isDarkMode={isDarkMode}/>}}/>
+                    <Route path={Routes.ABOUT_ME} render={() => {return <AboutMe />}}/>
+                    <Route path={Routes.SKILLS} render={() => {return <Skills />}}/>
+                    <Route path={Routes.WORK} render={() => {return <Work />}}/>
+                    <Route path={Routes.PROJECTS} render={() => {return <Projects />}}/>
+                    <Route path={Routes.GALLERY} render={() => {return <Gallery />}}/>
+                    <Route path={Routes.VIDEO} render={() => {return <Video />}}/>
+                    <Route path={Routes.ABOUT} render={() => {return <About />}}/>
                 </Switch>
             </BodyContent>
         </BodyMain>

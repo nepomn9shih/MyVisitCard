@@ -1,15 +1,9 @@
 import styled from "styled-components";
-import {
-    BACKGROUND_COLOR,
-    DARK_MAIN_COLOR,
-    ITEM_COLOR,
-    MAIN_COLOR
-} from "../../constants/colors";
 
-export const FooterBlock = styled.div<{dark: boolean}>`
-    color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+export const FooterBlock = styled.div`
+    color: var(--item-color);
     grid-area: footer;
-    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR}; 
+    background-color: var(--main-color);
     padding: 15px;
     display: grid;
     align-items: center;

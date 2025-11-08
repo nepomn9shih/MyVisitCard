@@ -1,12 +1,4 @@
 import styled from "styled-components";
-import {
-	ACTIVE_COLOR,
-	BACKGROUND_COLOR,
-	DARK_ITEM_COLOR,
-	DARK_SECONDARY_COLOR,
-	ITEM_COLOR,
-	SECONDARY_COLOR
-} from "../../constants/colors";
 
 export const ButtonContainer = styled.div` 
     display: flex;
@@ -21,7 +13,7 @@ export const Toggle = styled.input`
     height: 25px;
     margin: 0;
     vertical-align: top;
-    background: ${ITEM_COLOR};
+    background: var(--item-color);
     border-radius: 30px;
     outline: none;
     cursor: pointer;
@@ -37,7 +29,7 @@ export const Toggle = styled.input`
 	top: 0.75px;
 	width: 23.5px;
 	height: 23.5px;
-	background-color: ${SECONDARY_COLOR};
+	background-color: var(--secondary-color);
 	border-radius: 50%;
 	transform: translateX(0);
 	transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
@@ -45,21 +37,21 @@ export const Toggle = styled.input`
 
 	&:checked:after {
 	transform: translateX(100%);
-	background-color: ${DARK_SECONDARY_COLOR};
+	background-color: var()
 	}
 
 	&:checked {
-	background-color: ${DARK_ITEM_COLOR};
+	background-color: var(--secondary-background-color);
 	}
 `;
 
-export const ToggleLabel = styled.label<{dark: boolean}>` 
+export const ToggleLabel = styled.label` 
     cursor: pointer;
     margin-left: 10px;
-    color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+    color: var(--main-text-color);
     font-size: 18px;
 
     &:hover {
-      color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
+      color: var(--active-color);
     }
 `;

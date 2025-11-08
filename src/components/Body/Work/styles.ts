@@ -1,16 +1,7 @@
 import styled from "styled-components";
-import {
-    BACKGROUND_COLOR,
-    DARK_ITEM_COLOR,
-	DARK_MAIN_COLOR,
-	DARK_SECONDARY_COLOR,
-	ITEM_COLOR,
-	MAIN_COLOR,
-	SECONDARY_COLOR
-} from "../../../constants/colors";
 
-export const WorkBlock = styled.section<{dark: boolean}>`
-    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+export const WorkBlock = styled.section`
+    background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -23,11 +14,11 @@ export const WorkItems = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `;
 
-export const WorkItem = styled.div<{dark: boolean}>`
+export const WorkItem = styled.div`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
-    background-color:${({dark}) => dark ? DARK_ITEM_COLOR : BACKGROUND_COLOR};
+    background-color: var(--background-color);
     border-radius: 15px;
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
@@ -40,27 +31,27 @@ export const WorkDate = styled.div`
     padding: 2px 0px;
 `;
 
-export const WorkDateItem = styled.div<{dark: boolean}>`
-    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+export const WorkDateItem = styled.div`
+    background-color: var(--secondary-background-color);
     border-radius: 10px;
     margin: 2px;
     padding: 4px 5px 4px 5px;
-    color:  ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+    color: var(--main-color);
 `;
 
-export const WorkName = styled.div<{dark: boolean}>`
+export const WorkName = styled.div`
     font-size: 20px;
-    color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
+    color: var(--main-text-color);
     padding: 15px;
-    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
+    background-color: var(--secondary-color);
     display: grid;
     align-items: center;
 `;
 
-export const WorkImage = styled.div<{dark: boolean}>`
+export const WorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+    background-color: var(--secondary-background-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +60,6 @@ export const WorkImage = styled.div<{dark: boolean}>`
         max-height: 180px;
         max-width: 220px;
         padding: 5px;
-        opacity: ${({dark}) => dark ? "90%" : "100%"};
 
         &:hover {
             padding: 0px;
@@ -78,18 +68,18 @@ export const WorkImage = styled.div<{dark: boolean}>`
     }
 `;
 
-export const WorkPosition = styled.div<{dark: boolean}>`
+export const WorkPosition = styled.div`
     font-size: 16px;
-    color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
+    color: var(--main-text-color);
     padding: 15px;
-    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : SECONDARY_COLOR};
+    background-color: var(--secondary-color);
 `;
 
-export const WorkDescription = styled.div<{dark: boolean}>`
+export const WorkDescription = styled.div`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
-    background-color: ${({dark}) => dark ? DARK_ITEM_COLOR : BACKGROUND_COLOR};
+    background-color: var(--background-color);
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     display: flex;
@@ -97,8 +87,8 @@ export const WorkDescription = styled.div<{dark: boolean}>`
     flex-wrap: wrap;
 `;
 
-export const WorkCellItem = styled.div<{dark: boolean}>`
-  background-color: ${({dark}) => dark ? BACKGROUND_COLOR : ITEM_COLOR};
+export const WorkCellItem = styled.div`
+  background-color: var(--item-color);
   border-radius: 10px;
   margin: 5px;
   padding: 4px 5px 6px 5px;

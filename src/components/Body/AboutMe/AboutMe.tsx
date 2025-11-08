@@ -18,7 +18,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 const myPhotos: string[] = [myPhoto0, myPhoto1, myPhoto2]
 
-export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const AboutMe = () => {
 
   const mySlides = [];
   for (let i = 0; i < 3; i++) {
@@ -27,18 +27,17 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
           <StyledSwiperImage
             src={myPhotos[i]}
             alt={`myPhoto-${i}`}
-            dark={isDarkMode}
           />
       </SwiperSlide>
     );
   }
 
   return (
-    <AboutMeBlock dark={isDarkMode}>
-      <AboutMeTitle dark={isDarkMode}>
+    <AboutMeBlock>
+      <AboutMeTitle>
         Непомнящих Александр
       </AboutMeTitle>
-      <AboutMeImage dark={isDarkMode}>
+      <AboutMeImage>
         <Swiper
           id="aboutMe"
           navigation
@@ -50,13 +49,12 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
           {mySlides}
         </Swiper>
       </AboutMeImage>
-      <AboutMeText dark={isDarkMode}>
+      <AboutMeText>
         {ABOUT_ME_TEXT_DATA.map((text, index) => {
           return (
             <AboutMeTextBlock
               key={index}
               text={text}
-              isDarkMode={isDarkMode}
               isLast={index === ABOUT_ME_TEXT_DATA.length - 1}
             />
           )

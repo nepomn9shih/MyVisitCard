@@ -1,12 +1,7 @@
 import styled from "styled-components";
 
-import {
-  DARK_MAIN_COLOR,
-  MAIN_COLOR
-} from "../../../constants/colors";
-
-export const GalleryBlock = styled.section<{dark: boolean}>`
-    background-color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
+export const GalleryBlock = styled.section`
+    background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -18,7 +13,7 @@ export const GalleryItems = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
 
-export const GalleryItem = styled.div<{dark: boolean, isBig: boolean}>`
+export const GalleryItem = styled.div<{isBig: boolean}>`
     position: relative;
     padding: 0px 0px 85% 0px;
 
@@ -31,7 +26,7 @@ export const GalleryItem = styled.div<{dark: boolean, isBig: boolean}>`
         object-fit: cover;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-        opacity: ${({dark}) => dark ? "70%" : "100%"};
+        opacity: var(--opacity-value);
         &:hover {
             border: 5px solid transparent;
             transition: 0.5s;

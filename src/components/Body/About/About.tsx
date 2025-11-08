@@ -1,14 +1,16 @@
 import * as React from 'react';
 
 import {AboutBlock, AboutText, StyledImage} from "./styles";
-import {ContentTitle} from "../Skills/styles";
 import samurai from "../../../images/samurai.png";
+import {ContentTitle} from '../styles';
 
-export const About = ({isDarkMode}: {isDarkMode: boolean}) => {
+export const About = () => {
   return (
-    <AboutBlock dark={isDarkMode}>
-      <ContentTitle dark={isDarkMode}>О сайте</ContentTitle>
-      <AboutText dark={isDarkMode}>
+    <AboutBlock>
+      <ContentTitle>
+        О сайте
+      </ContentTitle>
+      <AboutText>
         <StyledImage src={samurai} />
         <p>
           "Данный сайт является резюме-визиткой, содержащий информацию обо мне,

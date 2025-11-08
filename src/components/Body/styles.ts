@@ -23,3 +23,29 @@ export const BodyContent = styled.section`
     }
 }
 `;
+
+export const ContentTitle = styled.h1`
+  margin: 0px 0px 20px 0px;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  color: var(--main-text-color);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+`;
+
+export const SkillCellItem = styled.a`
+  background-color: var(--item-color);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 4px 5px 6px 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    transition: 0.5s;
+    background-color: var(--active-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: var(--main-color);
+  }
+`;

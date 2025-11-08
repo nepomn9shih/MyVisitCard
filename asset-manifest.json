@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyVisitCard/static/css/main.ef0a6438.css",
-    "main.js": "/MyVisitCard/static/js/main.07eee596.js",
+    "main.js": "/MyVisitCard/static/js/main.a107df2e.js",
     "reactPlayerHls.js": "/MyVisitCard/static/js/reactPlayerHls.ed53829c.chunk.js",
     "reactPlayerDash.js": "/MyVisitCard/static/js/reactPlayerDash.28934341.chunk.js",
     "reactPlayerMux.js": "/MyVisitCard/static/js/reactPlayerMux.4e18094c.chunk.js",
@@ -42,7 +42,7 @@
     "static/media/PassDefect.png": "/MyVisitCard/static/media/PassDefect.eccd182d7a1d636b999c.png",
     "index.html": "/MyVisitCard/index.html",
     "main.ef0a6438.css.map": "/MyVisitCard/static/css/main.ef0a6438.css.map",
-    "main.07eee596.js.map": "/MyVisitCard/static/js/main.07eee596.js.map",
+    "main.a107df2e.js.map": "/MyVisitCard/static/js/main.a107df2e.js.map",
     "reactPlayerHls.ed53829c.chunk.js.map": "/MyVisitCard/static/js/reactPlayerHls.ed53829c.chunk.js.map",
     "reactPlayerDash.28934341.chunk.js.map": "/MyVisitCard/static/js/reactPlayerDash.28934341.chunk.js.map",
     "reactPlayerMux.4e18094c.chunk.js.map": "/MyVisitCard/static/js/reactPlayerMux.4e18094c.chunk.js.map",
@@ -59,6 +59,6 @@
   },
   "entrypoints": [
     "static/css/main.ef0a6438.css",
-    "static/js/main.07eee596.js"
+    "static/js/main.a107df2e.js"
   ]
 }

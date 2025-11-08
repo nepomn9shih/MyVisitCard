@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { BACKGROUND_COLOR, DARK_BACKGROUND_COLOR } from "../constants/colors";
+
+import {BACKGROUND_COLOR, DARK_BACKGROUND_COLOR} from "../constants/colors";
 
 export const StyledWrapper = styled.div<{dark: boolean}>`
 	min-height: 100%;

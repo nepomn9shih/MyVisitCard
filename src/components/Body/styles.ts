@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BodyMain = styled.section`
     padding: 30px 15px;
+    width: 100vw;
 
     @media (min-width: 992px) {
     & {

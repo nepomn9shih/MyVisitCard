@@ -7,7 +7,8 @@ import {
 	SECONDARY_COLOR,
 	ITEM_COLOR,
 	DARK_ITEM_COLOR,
-	BACKGROUND_COLOR
+	BACKGROUND_COLOR,
+  DARK_ACTIVE_COLOR
 } from "../../../constants/colors";
 
 export const SkillsBlock = styled.div<{dark: boolean}>`
@@ -47,7 +48,7 @@ export const SkillCellItem = styled.a<{dark: boolean}>`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   &:hover {
     transition: 0.5s;
-    background-color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : ACTIVE_COLOR};
+    background-color: ${({dark}) => dark ? DARK_ACTIVE_COLOR : ACTIVE_COLOR};
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     color: ${({dark}) => dark ? DARK_MAIN_COLOR : MAIN_COLOR};
   }

@@ -10,7 +10,7 @@ import myPhoto0 from "../../../images/myPhoto0.jpg";
 import myPhoto1 from "../../../images/myPhoto1.jpg";
 import myPhoto2 from "../../../images/myPhoto2.jpg";
 
-import {AboutMeBlock, AboutMeTitle, AboutMeText, AboutMeImage} from "./styles";
+import {AboutMeBlock, AboutMeTitle, AboutMeText, AboutMeImage, StyledSwiperImage} from "./styles";
 import {ABOUT_ME_TEXT_DATA} from "./aboutMeBase/aboutMeText";
 import {AboutMeTextBlock} from "./AboutMeTextBlock";
 
@@ -24,9 +24,10 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
   for (let i = 0; i < 3; i++) {
     mySlides.push(
       <SwiperSlide key={`slide-${i}`}>
-          <img
+          <StyledSwiperImage
             src={myPhotos[i]}
             alt={`myPhoto-${i}`}
+            dark={isDarkMode}
           />
       </SwiperSlide>
     );
@@ -34,18 +35,20 @@ export const AboutMe = ({isDarkMode}: {isDarkMode: boolean}) => {
 
   return (
     <AboutMeBlock dark={isDarkMode}>
-      <AboutMeTitle dark={isDarkMode}>Непомнящих Александр</AboutMeTitle>
+      <AboutMeTitle dark={isDarkMode}>
+        Непомнящих Александр
+      </AboutMeTitle>
       <AboutMeImage dark={isDarkMode}>
-      <Swiper
-        id="aboutMe"
-        navigation
-        pagination={{
-          clickable: true,
-        }}
-        speed={800}
-      >
-        {mySlides}
-      </Swiper>
+        <Swiper
+          id="aboutMe"
+          navigation
+          pagination={{
+            clickable: true,
+          }}
+          speed={800}
+        >
+          {mySlides}
+        </Swiper>
       </AboutMeImage>
       <AboutMeText dark={isDarkMode}>
         {ABOUT_ME_TEXT_DATA.map((text, index) => {

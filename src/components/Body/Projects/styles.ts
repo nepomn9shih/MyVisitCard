@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import {
 	BACKGROUND_COLOR,
+	DARK_DESCRIPTION_COLOR,
 	DARK_ITEM_COLOR,
 	DARK_MAIN_COLOR,
 	DARK_SECONDARY_COLOR,
+	DESCRIPTION_COLOR,
 	ITEM_COLOR,
 	MAIN_COLOR,
 	SECONDARY_COLOR
@@ -83,7 +85,7 @@ export const ProjectsDescription = styled.div<{dark: boolean}>`
     line-height: 20px;
     padding: 15px;
     border-bottom-left-radius: 10px;
-    color: ${({dark}) => dark ? DARK_SECONDARY_COLOR : DARK_ITEM_COLOR};
+    color: ${({dark}) => dark ? DARK_DESCRIPTION_COLOR : DESCRIPTION_COLOR};
     background-color: ${({dark}) => dark ? DARK_ITEM_COLOR : ITEM_COLOR};
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;

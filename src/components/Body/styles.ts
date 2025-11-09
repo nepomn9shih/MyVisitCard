@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BodyMain = styled.section`
+export const StyledBodyMain = styled.section`
     padding: 30px 15px;
     width: 100vw;
 
@@ -13,7 +13,7 @@ export const BodyMain = styled.section`
 }
 `;
 
-export const BodyContent = styled.section`
+export const StyledBodyContent = styled.section`
     margin: 0px 0px 20px 00px;
 
     @media (min-width: 992px) {
@@ -24,7 +24,7 @@ export const BodyContent = styled.section`
 }
 `;
 
-export const ContentTitle = styled.h1`
+export const StyledContentTitle = styled.h1`
   margin: 0px 0px 20px 0px;
   padding: 20px;
   font-size: 30px;
@@ -35,7 +35,7 @@ export const ContentTitle = styled.h1`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const SkillCellItem = styled.a`
+export const StyledSkillCellItem = styled.a`
   background-color: var(--item-color);
   border-radius: 10px;
   margin: 5px;

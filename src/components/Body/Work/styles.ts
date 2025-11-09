@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-export const WorkBlock = styled.section`
+export const StyledWorkBlock = styled.section`
     background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const WorkItems = styled.div`
+export const StyledWorkItems = styled.div`
     display: grid;
     column-gap: 20px;
     row-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `;
 
-export const WorkItem = styled.div`
+export const StyledWorkItem = styled.div`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
@@ -23,7 +23,7 @@ export const WorkItem = styled.div`
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
 
-export const WorkDate = styled.div`
+export const StyledWorkDate = styled.div`
     display: grid;
     grid-template: 1fr/ 1fr 1fr;
     justify-items: center;
@@ -31,15 +31,15 @@ export const WorkDate = styled.div`
     padding: 2px 0px;
 `;
 
-export const WorkDateItem = styled.div`
-    background-color: var(--secondary-background-color);
+export const StyledWorkDateItem = styled.div`
+    background-color: var(--item-color);
     border-radius: 10px;
     margin: 2px;
     padding: 4px 5px 4px 5px;
     color: var(--main-color);
 `;
 
-export const WorkName = styled.div`
+export const StyledWorkName = styled.div`
     font-size: 20px;
     color: var(--main-text-color);
     padding: 15px;
@@ -48,7 +48,7 @@ export const WorkName = styled.div`
     align-items: center;
 `;
 
-export const WorkImage = styled.div`
+export const StyledWorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
     background-color: var(--secondary-background-color);
@@ -68,14 +68,14 @@ export const WorkImage = styled.div`
     }
 `;
 
-export const WorkPosition = styled.div`
+export const StyledWorkPosition = styled.div`
     font-size: 16px;
     color: var(--main-text-color);
     padding: 15px;
     background-color: var(--secondary-color);
 `;
 
-export const WorkDescription = styled.div`
+export const StyledWorkDescription = styled.div`
     font-size: 16px;
     line-height: 20px;
     padding: 15px;
@@ -87,7 +87,7 @@ export const WorkDescription = styled.div`
     flex-wrap: wrap;
 `;
 
-export const WorkCellItem = styled.div`
+export const StyledWorkCellItem = styled.div`
   background-color: var(--item-color);
   border-radius: 10px;
   margin: 5px;

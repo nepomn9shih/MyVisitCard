@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SkillsBlock = styled.div`
+export const StyledSkillsBlock = styled.div`
   min-height: 476px;
   background-color: var(--main-color);
   border-radius: 10px;
@@ -8,7 +8,7 @@ export const SkillsBlock = styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const SkillsText = styled.div`
+export const StyledSkillsItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   font-size: 20px;

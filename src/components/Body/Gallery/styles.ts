@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
-export const GalleryBlock = styled.section`
+export const StyledGalleryBlock = styled.section`
     background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const GalleryItems = styled.div`
+export const StyledGalleryItems = styled.div`
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
 
-export const GalleryItem = styled.div<{isBig: boolean}>`
+export const StyledGalleryItem = styled.div<{isBig: boolean}>`
     position: relative;
     padding: 0px 0px 85% 0px;
 
@@ -46,7 +46,7 @@ export const GalleryItem = styled.div<{isBig: boolean}>`
     }
 `;
 
-export const GalleryDescription = styled.div`
+export const StyledGalleryDescription = styled.div`
     padding: 8px;
     color: white;
     width: auto;

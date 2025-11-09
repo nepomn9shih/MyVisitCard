@@ -1,4 +1,4 @@
-import {SidebarLink} from "./styles";
+import {StyledSidebarLink} from "./styles";
 
 export const SidebarItem = ({
     to,
@@ -9,10 +9,10 @@ export const SidebarItem = ({
 }) => {
 
     return (
-        <li>
-            <SidebarLink to={to}>
+        <li className="qa-sidebar-item">
+            <StyledSidebarLink to={to}>
                 {title}
-            </SidebarLink>
+            </StyledSidebarLink>
         </li>
     );
 };

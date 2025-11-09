@@ -1,17 +1,21 @@
 import * as React from 'react';
 
-import {AboutBlock, AboutText, StyledImage} from "./styles";
+import {StyledAboutBlock, StylesAboutContent, StyledImage} from "./styles";
 import samurai from "../../../images/samurai.png";
-import {ContentTitle} from '../styles';
+import {StyledContentTitle} from '../styles';
 
+/** Раздел "О сайте" */
 export const About = () => {
   return (
-    <AboutBlock>
-      <ContentTitle>
+    <StyledAboutBlock className="qa-about-block">
+      <StyledContentTitle className="qa-about-block-title">
         О сайте
-      </ContentTitle>
-      <AboutText>
-        <StyledImage src={samurai} />
+      </StyledContentTitle>
+      <StylesAboutContent className="qa-about-block-content">
+        <StyledImage
+          className="qa-about-block-image"
+          src={samurai}
+        />
         <p>
           "Данный сайт является резюме-визиткой, содержащий информацию обо мне,
           моих навыках, опыте работы, моих проектах. Здесь также присутствуют
@@ -22,7 +26,7 @@ export const About = () => {
         <p>
           <b>Непомнящих Александр, Старший frontend-разработчик.</b>
         </p>
-      </AboutText>
-    </AboutBlock>
+      </StylesAboutContent>
+    </StyledAboutBlock>
   );
 };

@@ -1,61 +1,65 @@
 import {workBase} from "./workBase/workBase";
 import {
-  WorkBlock,
-  WorkItem,
-  WorkItems,
-  WorkDate,
-  WorkDateItem,
-  WorkName,
-  WorkImage,
-  WorkPosition,
-  WorkDescription,
-  WorkCellItem
+  StyledWorkBlock,
+  StyledWorkItem,
+  StyledWorkItems,
+  StyledWorkDate,
+  StyledWorkDateItem,
+  StyledWorkName,
+  StyledWorkImage,
+  StyledWorkPosition,
+  StyledWorkDescription,
+  StyledWorkCellItem
 } from "./styles";
-import {ContentTitle} from "../styles";
+import {StyledContentTitle} from "../styles";
 
+/** Раздел "Опыт работы" */
 export const Work = () => {
   return (
-    <WorkBlock>
-      <ContentTitle>
+    <StyledWorkBlock className="qa-work-block">
+      <StyledContentTitle className="qa-work-block-title">
         Опыт работы
-      </ContentTitle>
-      <WorkItems>
+      </StyledContentTitle>
+      <StyledWorkItems className="qa-work-block-items">
         {workBase
           .slice(0)
           .reverse()
           .map((work, index) => {
             return (
-              <WorkItem key={index}>
-                <WorkDate>
-                  <WorkDateItem>
+              <StyledWorkItem key={index} className={`qa-work-block-item-${index}`}>
+                <StyledWorkDate className="qa-work-block-item-date">
+                  <StyledWorkDateItem>
                     <b>Начало:</b> {work.date.from}
-                  </WorkDateItem>
-                  <WorkDateItem>
+                  </StyledWorkDateItem>
+                  <StyledWorkDateItem>
                     <b>Конец:</b> {work.date.to}
-                  </WorkDateItem>
-                </WorkDate>
-                <WorkName>
+                  </StyledWorkDateItem>
+                </StyledWorkDate>
+                <StyledWorkName className="qa-work-block-item-name">
                   <div>{work.name}</div>
-                </WorkName>
-                <WorkImage>
+                </StyledWorkName>
+                <StyledWorkImage className="qa-work-block-item-image">
                   <img src={work.img} alt="" />
-                </WorkImage>
-                <WorkPosition>
+                </StyledWorkImage>
+                <StyledWorkPosition className="qa-work-block-item-position">
                   {work.position}
-                </WorkPosition>
-                <WorkDescription>
+                </StyledWorkPosition>
+                <StyledWorkDescription className="qa-work-block-item-description">
                   {work.description.map((duty, index) => {
                     return (
-                      <WorkCellItem key={index}>
-                        {duty}{" "}
-                      </WorkCellItem>
+                      <StyledWorkCellItem
+                        key={index}
+                        className="qa-work-block-item-description-item"
+                      >
+                        {duty}
+                      </StyledWorkCellItem>
                     );
                   })}
-                </WorkDescription>
-              </WorkItem>
+                </StyledWorkDescription>
+              </StyledWorkItem>
             );
           })}
-      </WorkItems>
-    </WorkBlock>
+      </StyledWorkItems>
+    </StyledWorkBlock>
   );
 };

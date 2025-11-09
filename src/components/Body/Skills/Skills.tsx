@@ -1,28 +1,29 @@
-import {ContentTitle, SkillCellItem} from "../styles";
+import {StyledContentTitle, StyledSkillCellItem} from "../styles";
 import {skillsList} from "./skillsList";
-import {SkillsBlock, SkillsText} from "./styles";
+import {StyledSkillsBlock, StyledSkillsItems} from "./styles";
 
+/** Раздел "Мои навыки" */
 export const Skills = () => {
-
   return (
-     <SkillsBlock>
-      <ContentTitle>
+     <StyledSkillsBlock className="qa-skills-block">
+      <StyledContentTitle className="qa-skills-block-title">
         Мои навыки
-      </ContentTitle>
-      <SkillsText>
+      </StyledContentTitle>
+      <StyledSkillsItems className="qa-skills-block-items">
         {skillsList.map((skill, index) => {
           return (
-            <SkillCellItem
+            <StyledSkillCellItem
+              className={`qa-skills-block-item-${index}`}
               href={"https://www.google.com/search?q=" + skill}
               target="_blank"
               key={index}
               rel="noreferrer"
             >
-              {skill}{" "}
-            </SkillCellItem>
+              {skill}
+            </StyledSkillCellItem>
           );
         })}
-      </SkillsText>
-    </SkillsBlock>
+      </StyledSkillsItems>
+    </StyledSkillsBlock>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutBlock = styled.section`
+export const StyledAboutBlock = styled.section`
     in-height: 400px;
     background-color: var(--main-color);
     border-radius: 10px;
@@ -8,15 +8,17 @@ export const AboutBlock = styled.section`
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const AboutText = styled.div`
+export const StylesAboutContent = styled.div`
     background-color: var(--secondary-background-color);
     border-radius: 10px;
     padding: 10px 10px 10px 10px;
     min-height: 356px;
+
     p {
         font-size: 18px;
         line-height: 22px;
     }
+
     b {
         color: var(--main-color);
     }

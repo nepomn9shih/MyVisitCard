@@ -1,10 +1,10 @@
-import {FooterBlock} from "./styles";
+import {StyledFooterBlock} from "./styles";
 
+/** Подвал */
 export const Footer = () => {
-    
     return (
-        <FooterBlock>
+        <StyledFooterBlock className="qa-footer">
             <div>Непомнящих Александр &copy; 2025</div>
-        </FooterBlock>
+        </StyledFooterBlock>
     )
 }

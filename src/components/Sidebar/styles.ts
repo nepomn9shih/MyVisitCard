@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
 
-export const SidebarBlock = styled.aside`
+export const StyledSidebarBlock = styled.aside`
 	background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 30px 30px 15px 30px;
@@ -15,14 +15,14 @@ export const SidebarBlock = styled.aside`
     }
 `;
 
-export const SidebarList = styled.ul`
+export const StyledSidebarList = styled.ul`
     li{
         margin: 0px 0px 15px 0px;
         font-size: 18px;
     }
 `;
 
-export const SidebarLink = styled(NavLink)`
+export const StyledSidebarLink = styled(NavLink)`
     color: var(--main-text-color);
     font-size: 20px;
     margin: 5px 0px 5px 5px;

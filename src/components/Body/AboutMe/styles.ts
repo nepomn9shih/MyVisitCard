@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import {ContentTitle} from "../styles";
+import {StyledContentTitle} from "../styles";
 
-export const AboutMeBlock = styled.section`
+export const StyledAboutMeBlock = styled.section`
 	background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
@@ -18,17 +18,17 @@ export const AboutMeBlock = styled.section`
 	}
 `;
 
-export const AboutMeTitle = styled(ContentTitle)`
+export const StyledAboutMeTitle = styled(StyledContentTitle)`
   grid-column: span 2;
 `;
 
-export const Hr = styled.hr`
+export const StyledHr = styled.hr`
     border-bottom: 2px solid var(--main-color);
     margin: 0px -15px 15px -15px;
 	box-sizing: border-box;
 `;
 
-export const AboutMeText = styled.div`
+export const StyledAboutMeText = styled.div`
 	font-size: 18px;
     line-height: 22px;
     background-color: var(--secondary-background-color);
@@ -38,7 +38,7 @@ export const AboutMeText = styled.div`
 	box-sizing: border-box;
 `;
 
-export const AboutMeImage = styled.div`
+export const StyledAboutMeImage = styled.div`
 	margin: 0 auto;
 	width: 100%;
 	border-radius: 10px;

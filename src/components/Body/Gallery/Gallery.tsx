@@ -4,10 +4,16 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import {galleryImages} from "./GalleryImages/galleryImages";
-import {GalleryBlock, GalleryItems, GalleryItem, GalleryDescription} from "./styles";
-import {ContentTitle} from "../styles";
+import {galleryImages} from "./assets/galleryImages";
+import {StyledContentTitle} from "../styles";
+import {
+    StyledGalleryBlock,
+    StyledGalleryItems,
+    StyledGalleryItem,
+    StyledGalleryDescription
+} from "./styles";
 
+/** Раздел "Галерея" */
 export const Gallery = () => {
     const [open, setOpen] = useState(false);
     const [imageIndex, setImageIndex] = useState(0);
@@ -30,35 +36,37 @@ export const Gallery = () => {
     }).sort((a, b) => a.year - b.year);
 
     return (
-        <GalleryBlock>
-        <ContentTitle>
-            Галерея
-        </ContentTitle>
-        <Lightbox
-            open={open}
-            close={() => setOpen(false)}
-            plugins={[Thumbnails]}
-            slides={imagesData}
-            index={imageIndex}
-        />
-        <GalleryItems>
-            {imagesData.map(({alt, src}, index) => {
-                let isBig = index === 0 || index % 7 === 0 || index % 10 === 0
+        <StyledGalleryBlock className="qa-gallery-block">
+            <StyledContentTitle className="qa-gallery-block-title">
+                Галерея
+            </StyledContentTitle>
+            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                plugins={[Thumbnails]}
+                slides={imagesData}
+                index={imageIndex}
+                className="qa-gallery-block-lightbox"
+            />
+            <StyledGalleryItems className="qa-gallery-block-photos">
+                {imagesData.map(({alt, src}, index) => {
+                    let isBig = index === 0 || index % 7 === 0 || index % 10 === 0
 
-                return (
-                    <GalleryItem
-                        isBig={isBig}
-                        key={index}
-                        onClick={() => onClick(index)}
-                    >
-                        <img src={src} alt={alt} />
-                        <GalleryDescription>
-                            {alt}
-                        </GalleryDescription>
-                    </GalleryItem>     
-                )
-            })}
-        </GalleryItems>
-    </GalleryBlock>  
+                    return (
+                        <StyledGalleryItem
+                            className={`qa-gallery-block-photo-${index}`}
+                            isBig={isBig}
+                            key={index}
+                            onClick={() => onClick(index)}
+                        >
+                            <img src={src} alt={alt} />
+                            <StyledGalleryDescription className={`qa-gallery-block-photo-description-${index}`}>
+                                {alt}
+                            </StyledGalleryDescription>
+                        </StyledGalleryItem>     
+                    );
+                })}
+            </StyledGalleryItems>
+        </StyledGalleryBlock>  
     )
 }

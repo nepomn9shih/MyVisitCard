@@ -1,4 +1,4 @@
-export const ABOUT_ME_TEXT_DATA = [
+export const ABOUT_ME_TEXT_DATA: string[] = [
     'Старший Frontend-разработчик в "Юмани", геймдизайнер',
     'Спикер HolyJS, Юмани Day. Ведущий фронтенд-митапов Frontend Mix',
     'Люблю и умею учиться, нравится быть в тренде, поэтому предпочитаю современные '

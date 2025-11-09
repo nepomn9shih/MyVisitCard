@@ -1,31 +1,33 @@
-import {Redirect, Route, Switch} from 'react-router-dom'
-import {About} from './About/About'
-import {AboutMe} from './AboutMe/AboutMe'
-import {Gallery} from './Gallery/Gallery'
-import {Projects} from './Projects/Projects'
-import {Sidebar} from '../Sidebar/Sidebar'
-import {Skills} from './Skills/Skills'
-import {Work} from './Work/Work'
-import {BodyContent, BodyMain} from './styles'
-import {Routes} from '../../enums/routes'
-import {Video} from './Video/Video'
+import {Redirect, Route, Switch} from 'react-router-dom';
 
+import {Routes} from '../../enums/routes';
+import {About} from './About/About';
+import {AboutMe} from './AboutMe/AboutMe';
+import {Gallery} from './Gallery/Gallery';
+import {Projects} from './Projects/Projects';
+import {Sidebar} from '../Sidebar/Sidebar';
+import {Skills} from './Skills/Skills';
+import {Work} from './Work/Work';
+import {Video} from './Video/Video';
+import {StyledBodyContent, StyledBodyMain} from './styles';
+
+/** Основной блок */
 export const Body = () => {
     return (
-        <BodyMain>
+        <StyledBodyMain className="qa-body">
             <Sidebar />
-            <BodyContent>
+            <StyledBodyContent className="qa-body-content">
                 <Switch>
-                <Redirect exact from="/" to={Routes.ABOUT_ME}/>
-                    <Route path={Routes.ABOUT_ME} render={() => {return <AboutMe />}}/>
-                    <Route path={Routes.SKILLS} render={() => {return <Skills />}}/>
-                    <Route path={Routes.WORK} render={() => {return <Work />}}/>
-                    <Route path={Routes.PROJECTS} render={() => {return <Projects />}}/>
-                    <Route path={Routes.GALLERY} render={() => {return <Gallery />}}/>
-                    <Route path={Routes.VIDEO} render={() => {return <Video />}}/>
-                    <Route path={Routes.ABOUT} render={() => {return <About />}}/>
+                    <Redirect exact from="/" to={Routes.ABOUT_ME}/>
+                    <Route path={Routes.ABOUT_ME} render={() => <AboutMe />}/>
+                    <Route path={Routes.SKILLS} render={() => <Skills />}/>
+                    <Route path={Routes.WORK} render={() => <Work />}/>
+                    <Route path={Routes.PROJECTS} render={() => <Projects />}/>
+                    <Route path={Routes.GALLERY} render={() => <Gallery />}/>
+                    <Route path={Routes.VIDEO} render={() => <Video />}/>
+                    <Route path={Routes.ABOUT} render={() => <About />}/>
                 </Switch>
-            </BodyContent>
-        </BodyMain>
+            </StyledBodyContent>
+        </StyledBodyMain>
     )
 }

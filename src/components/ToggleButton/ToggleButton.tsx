@@ -1,16 +1,30 @@
-import {ButtonContainer, Toggle, ToggleLabel} from './styles'
+import {
+  StyledButtonContainer,
+  StyledToggle,
+  StyledToggleLabel
+} from './styles'
 import {ToggleButtonProps} from './types';
 
 export const ToggleButton = ({
     buttonText = '',
     handlerOnChange = () => {}
   }: ToggleButtonProps) => {
-    
     return (
-        <ButtonContainer>
-        <Toggle type="checkbox" name="toggle" id="toggle-button" onChange={handlerOnChange}/>
-        <ToggleLabel htmlFor="toggle-button">{buttonText}</ToggleLabel>
-      </ButtonContainer>
+      <StyledButtonContainer className="qa-toggle-container">
+        <StyledToggle
+          className="qa-toggle-button"
+          type="checkbox"
+          name="toggle"
+          id="toggle-button"
+          onChange={handlerOnChange}
+        />
+        <StyledToggleLabel
+          className="qa-toggle-label"
+          htmlFor="toggle-button"
+        >
+          {buttonText}
+        </StyledToggleLabel>
+      </StyledButtonContainer>
     );
   };
   

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderBlock = styled.div`
+export const StyledHeaderBlock = styled.div`
   grid-area: header;
   padding: 15px;
   background-color: var(--main-color);
@@ -13,7 +13,7 @@ export const HeaderBlock = styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const HeaderList = styled.ul<{isOpen: boolean}>`
+export const StyledHeaderList = styled.ul<{isOpen: boolean}>`
   display: grid;
   grid-auto-flow: column;
   justify-items: end;
@@ -37,7 +37,7 @@ export const HeaderList = styled.ul<{isOpen: boolean}>`
     }
 `;
 
-export const HeaderLogo = styled.a`
+export const StyledHeaderLogo = styled.a`
   grid-column: 2 / 3;
 
   img {
@@ -54,12 +54,12 @@ export const HeaderLogo = styled.a`
   }
 `;
 
-export const HeaderName = styled.b`
+export const StyledHeaderName = styled.b`
   font-size: 30px;
   color: var(--main-text-color);
 `;
 
-export const HeaderMenu = styled.nav`
+export const StyledHeaderMenu = styled.nav`
   grid-column: 4 / 5;
   @media (max-width: 992px) {
     & {
@@ -70,7 +70,7 @@ export const HeaderMenu = styled.nav`
   }
 `;
 
-export const HeaderLink = styled.a`
+export const StyledHeaderLink = styled.a`
   color: var(--main-text-color);
   font-size: 18px;
   padding: 3px 5px 5px 5px;
@@ -88,7 +88,7 @@ export const HeaderLink = styled.a`
   }
 `;
 
-export const HeaderBurger = styled.div<{active: boolean}>`
+export const StyledHeaderBurger = styled.div<{active: boolean}>`
   display: none;
   @media (max-width: 992px) {
     & {

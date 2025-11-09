@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const ButtonContainer = styled.div` 
+export const StyledButtonContainer = styled.div` 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 `;
 
-export const Toggle = styled.input` 
+export const StyledToggle = styled.input` 
     position: relative;
     width: 50px;
     height: 25px;
@@ -45,7 +45,7 @@ export const Toggle = styled.input`
 	}
 `;
 
-export const ToggleLabel = styled.label` 
+export const StyledToggleLabel = styled.label` 
     cursor: pointer;
     margin-left: 10px;
     color: var(--main-text-color);

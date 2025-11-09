@@ -1,13 +1,19 @@
 import * as React from 'react';
-import {Hr} from './styles';
+
+import {StyledHr} from './styles';
 import {AboutMeTextBlockProps} from './types';
 
-export const AboutMeTextBlock = ({text, isLast}: AboutMeTextBlockProps) => {
+/** Блок текста раздела "Обо мне" */
+export const AboutMeTextBlock = ({
+    text,
+    isLast,
+    className
+}: AboutMeTextBlockProps) => {
     return (
-        <>
+        <div className={className}>
             <p>{text}</p>
             <br/>
-            {!isLast && <Hr />}
-        </>
-    )
+            {!isLast && <StyledHr />}
+        </div>
+    );
 };

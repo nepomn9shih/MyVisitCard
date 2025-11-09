@@ -1,71 +1,79 @@
-import {ContentTitle, SkillCellItem} from "../styles";
-import {projectsData} from "./ProjectsData/projectsData";
+import {StyledContentTitle, StyledSkillCellItem} from "../styles";
+import {projectsData} from "./assets/projectsData";
 import {
-  ProjectsBlock,
-  ProjectsItems,
-  ProjectsItem,
-  ProjectsImage,
-  ProjectsName,
-  ProjectsTechnologies,
-  ProjectsDescription,
-  ProjectsButton
+  StyledProjectsBlock,
+  StyledProjectsItems,
+  StyledProjectsItem,
+  StyledProjectsImage,
+  StyledProjectsName,
+  StyledProjectsTechnologies,
+  StyledProjectsDescription,
+  StyledProjectsButton
 } from "./styles";
 
+/** Раздел "Мои проекты" */
 export const Projects = () => {
   return (
-    <ProjectsBlock>
-      <ContentTitle>
+    <StyledProjectsBlock className="qa-projects-block">
+      <StyledContentTitle className="qa-projects-block-title">
         Мои проекты
-      </ContentTitle>
-      <ProjectsItems>
+      </StyledContentTitle>
+      <StyledProjectsItems className="qa-projects-block-items">
         {projectsData
           .slice(0)
           .reverse()
           .map((project, index) => {
             return (
-              <ProjectsItem key={index}>
-                <ProjectsImage
+              <StyledProjectsItem
+                key={index}
+                className={`qa-projects-block-item-${index}`}
+              >
+                <StyledProjectsImage
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
+                  className='qa-projects-block-item-image'
                 >
                   <img src={project.img} alt="" />
-                </ProjectsImage>
-                <ProjectsName
+                </StyledProjectsImage>
+                <StyledProjectsName
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
+                  className='qa-projects-block-item-name'
                 >
                   {project.name}
-                </ProjectsName>
-                <ProjectsTechnologies>
+                </StyledProjectsName>
+                <StyledProjectsTechnologies className='qa-projects-block-item-technologies'>
                   {project.technologies.map((tech, index) => {
                     return (
-                      <SkillCellItem
+                      <StyledSkillCellItem
                         href={"https://www.google.com/search?q=" + tech}
                         target="_blank"
                         rel="noreferrer"
                         key={index}
+                        className={`qa-projects-block-item-technology-${index}`}
                       >
-                        {tech}{" "}
-                      </SkillCellItem>
+                        {tech}
+                      </StyledSkillCellItem>
                     );
                   })}
-                </ProjectsTechnologies>
-                <ProjectsDescription>
+                </StyledProjectsTechnologies>
+                <StyledProjectsDescription className='qa-projects-block-item-description'>
                   {project.description}
-                </ProjectsDescription>
-                <ProjectsButton
+                </StyledProjectsDescription>
+                <StyledProjectsButton
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
+                  className='qa-projects-block-item-link'
                 >
                   Ссылка
-                </ProjectsButton>
-              </ProjectsItem>
+                </StyledProjectsButton>
+              </StyledProjectsItem>
             );
           })}
-      </ProjectsItems>
-    </ProjectsBlock>
+      </StyledProjectsItems>
+    </StyledProjectsBlock>
   );
 };

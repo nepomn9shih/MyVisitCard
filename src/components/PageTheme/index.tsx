@@ -3,6 +3,7 @@ import {createGlobalStyle} from 'styled-components';
 
 import {ThemeNames} from '../../enums/ThemeNames';
 
+/** Светлая тема */
 const LightTheme = createGlobalStyle`
     body {
         --main-color: indigo;
@@ -17,6 +18,7 @@ const LightTheme = createGlobalStyle`
     }
 `;
 
+/** Темная тема */
 const DarkTheme = createGlobalStyle`
     body {
         --main-color: #191A1E;
@@ -36,6 +38,7 @@ const THEMES: Record<ThemeNames, React.NamedExoticComponent> = {
     [ThemeNames.DARK]: DarkTheme
 };
 
+/** Тема страницы */
 export const PageTheme = ({chosenTheme}: {chosenTheme: ThemeNames}) => {
     const Theme = THEMES[chosenTheme];
 

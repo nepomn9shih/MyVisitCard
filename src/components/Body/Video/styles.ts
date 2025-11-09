@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const VideoBlock = styled.div`
+export const StyledVideoBlock = styled.div`
   min-height: 476px;
   background-color: var(--main-color);
   border-radius: 10px;
@@ -8,7 +8,7 @@ export const VideoBlock = styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
-export const VideoContent = styled.div`
+export const StyledVideoContent = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

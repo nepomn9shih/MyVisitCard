@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterBlock = styled.div`
+export const StyledFooterBlock = styled.div`
     color: var(--item-color);
     grid-area: footer;
     background-color: var(--main-color);

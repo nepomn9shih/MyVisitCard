@@ -4,16 +4,17 @@ import {NavLink} from "react-router-dom";
 import ya from "../../images/ya.png";
 import {ToggleButton} from "../ToggleButton/ToggleButton";
 import {
-  HeaderBlock,
-  HeaderBurger,
-  HeaderLink,
-  HeaderList,
-  HeaderLogo,
-  HeaderMenu,
-  HeaderName
+  StyledHeaderBlock,
+  StyledHeaderBurger,
+  StyledHeaderLink,
+  StyledHeaderList,
+  StyledHeaderLogo,
+  StyledHeaderMenu,
+  StyledHeaderName
 } from "./styles";
 import {HeaderProps} from "./types";
 
+/** Шапка */
 export const Header = ({handlerToggle}: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,48 +23,53 @@ export const Header = ({handlerToggle}: HeaderProps) => {
   };
 
   return (
-    <HeaderBlock>
-      <HeaderLogo
+    <StyledHeaderBlock className="qa-header">
+      <StyledHeaderLogo
+        className="qa-header-logo"
         href="https://github.com/nepomn9shih"
         target="_blank"
         rel="noreferrer"
       >
         <img src={ya} alt="" />
-      </HeaderLogo>
-      <HeaderName>МОЯ\\\<br/>ВИЗИТКА</HeaderName>
-      <HeaderMenu>
-        <HeaderList isOpen={isMenuOpen ? true : false}>
+      </StyledHeaderLogo>
+      <StyledHeaderName className="qa-header-name">
+        МОЯ\\\
+        <br/>
+        ВИЗИТКА
+      </StyledHeaderName>
+      <StyledHeaderMenu className="qa-header-menu">
+        <StyledHeaderList isOpen={isMenuOpen ? true : false}>
           <li>
-            <HeaderLink
+            <StyledHeaderLink
               href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763"
               target="_blank"
               rel="noreferrer"
             >
               HH
-            </HeaderLink>
+            </StyledHeaderLink>
           </li>
           <li>
-            <HeaderLink
+            <StyledHeaderLink
               href="https://github.com/nepomn9shih"
               target="_blank"
               rel="noreferrer"
             >
               GitHub
-            </HeaderLink>
+            </StyledHeaderLink>
           </li>
           <li>
-            <HeaderLink
+            <StyledHeaderLink
               href="https://www.linkedin.com/in/alexander-nepomnyashchikh/"
               target="_blank"
               rel="noreferrer"
             >
               LinkedIn
-            </HeaderLink>
+            </StyledHeaderLink>
           </li>
           <li>
-            <HeaderLink as={NavLink} to="/about">
+            <StyledHeaderLink as={NavLink} to="/about">
                 О сайте
-            </HeaderLink>
+            </StyledHeaderLink>
           </li>
           <li>
             <ToggleButton
@@ -71,14 +77,15 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               handlerOnChange={handlerToggle}
             />
           </li>
-        </HeaderList>
-        <HeaderBurger
+        </StyledHeaderList>
+        <StyledHeaderBurger
+          className="qa-header-burger"
           onClick={handleClick}
           active={isMenuOpen ? true : false}
         >
           <span></span>
-        </HeaderBurger>
-      </HeaderMenu>
-    </HeaderBlock>
+        </StyledHeaderBurger>
+      </StyledHeaderMenu>
+    </StyledHeaderBlock>
   );
 };

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeaderBlock = styled.div`
   grid-area: header;
+  box-sizing: border-box;
   padding: 15px;
   background-color: var(--main-color);
   display: grid;
@@ -54,11 +55,6 @@ export const StyledHeaderLogo = styled.a`
   }
 `;
 
-export const StyledHeaderName = styled.b`
-  font-size: 30px;
-  color: var(--main-text-color);
-`;
-
 export const StyledHeaderMenu = styled.nav`
   grid-column: 4 / 5;
   @media (max-width: 992px) {
@@ -72,7 +68,6 @@ export const StyledHeaderMenu = styled.nav`
 
 export const StyledHeaderLink = styled.a`
   color: var(--main-text-color);
-  font-size: 18px;
   padding: 3px 5px 5px 5px;
   margin: 5px 0px;
   border-radius: 10px;

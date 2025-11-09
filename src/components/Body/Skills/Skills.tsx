@@ -1,4 +1,6 @@
-import {StyledContentTitle, StyledSkillCellItem} from "../styles";
+import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
+import {Text} from "../../../ui-kit/components/Text";
+import {StyledSkillCellItem} from "../styles";
 import {skillsList} from "./skillsList";
 import {StyledSkillsBlock, StyledSkillsItems} from "./styles";
 
@@ -6,9 +8,7 @@ import {StyledSkillsBlock, StyledSkillsItems} from "./styles";
 export const Skills = () => {
   return (
      <StyledSkillsBlock className="qa-skills-block">
-      <StyledContentTitle className="qa-skills-block-title">
-        Мои навыки
-      </StyledContentTitle>
+      <ContentTitleBlock text='Мои навыки' />
       <StyledSkillsItems className="qa-skills-block-items">
         {skillsList.map((skill, index) => {
           return (
@@ -19,7 +19,7 @@ export const Skills = () => {
               key={index}
               rel="noreferrer"
             >
-              {skill}
+              <Text variation='descriptionL' text={skill} />
             </StyledSkillCellItem>
           );
         })}

@@ -10,12 +10,13 @@ import myPhoto0 from "./assets/myPhoto0.jpg";
 import myPhoto1 from "./assets/myPhoto1.jpg";
 import myPhoto2 from "./assets/myPhoto2.jpg";
 
+import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
 import {
   StyledAboutMeBlock,
-  StyledAboutMeTitle,
   StyledAboutMeText,
   StyledAboutMeImage,
-  StyledSwiperImage
+  StyledSwiperImage,
+  StyledAboutMeBlockContent
 } from "./styles";
 import {ABOUT_ME_TEXT_DATA} from "./aboutMeBase/aboutMeText";
 import {AboutMeTextBlock} from "./AboutMeTextBlock";
@@ -40,33 +41,33 @@ const mySlides = myPhotos.map((photo, index) => {
 export const AboutMe = () => {
   return (
     <StyledAboutMeBlock className="qa-about-me-block">
-      <StyledAboutMeTitle className="qa-about-me-block-title">
-        Непомнящих Александр
-      </StyledAboutMeTitle>
-      <StyledAboutMeImage className="qa-about-me-block-image">
-        <Swiper
-          id="aboutMe"
-          navigation
-          pagination={{
-            clickable: true,
-          }}
-          speed={800}
-        >
-          {mySlides}
-        </Swiper>
-      </StyledAboutMeImage>
-      <StyledAboutMeText className="qa-about-me-block-text">
-        {ABOUT_ME_TEXT_DATA.map((text, index) => {
-          return (
-            <AboutMeTextBlock
-              key={index}
-              className="qa-about-me-block-text-item"
-              text={text}
-              isLast={index === ABOUT_ME_TEXT_DATA.length - 1}
-            />
-          )
-        })}
-      </StyledAboutMeText>
+      <ContentTitleBlock text='Непомнящих Александр' />
+      <StyledAboutMeBlockContent className="qa-about-me-block-content">
+        <StyledAboutMeImage className="qa-about-me-block-image">
+          <Swiper
+            id="aboutMe"
+            navigation
+            pagination={{
+              clickable: true,
+            }}
+            speed={800}
+          >
+            {mySlides}
+          </Swiper>
+        </StyledAboutMeImage>
+        <StyledAboutMeText className="qa-about-me-block-text">
+          {ABOUT_ME_TEXT_DATA.map((text, index) => {
+            return (
+              <AboutMeTextBlock
+                key={index}
+                className="qa-about-me-block-text-item"
+                text={text}
+                isLast={index === ABOUT_ME_TEXT_DATA.length - 1}
+              />
+            )
+          })}
+        </StyledAboutMeText>
+      </StyledAboutMeBlockContent>
     </StyledAboutMeBlock>
   );
 };

@@ -8,16 +8,11 @@ export const StyledAboutBlock = styled.section`
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const StylesAboutContent = styled.div`
+export const StyledAboutContent = styled.div`
     background-color: var(--secondary-background-color);
     border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    min-height: 356px;
-
-    p {
-        font-size: 18px;
-        line-height: 22px;
-    }
+    padding: 16px 16px 0;
+    display: flex;
 
     b {
         color: var(--main-color);
@@ -28,5 +23,4 @@ export const StyledImage = styled.img`
     width: 300px;
     height: 300px;
     object-fit: cover;
-    padding-bottom: 12px;
 `;

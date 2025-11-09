@@ -1,20 +1,18 @@
 import {Suspense} from 'react';
 import ReactPlayer from 'react-player';
 
+import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
 import {
   StyledVideoBlock,
   StyledVideoContent
 } from "./styles";
-import {StyledContentTitle} from '../styles';
 
 /** Раздел "Видео" */
 export const Video = () => {
   try {
     return (
       <StyledVideoBlock className="qa-video-block">
-        <StyledContentTitle className="qa-video-block-title">
-          Видео выступлений
-        </StyledContentTitle>
+        <ContentTitleBlock text='Видео выступлений' />
         <StyledVideoContent className="qa-video-block-content">
           <Suspense fallback={() => <div>Загружаю видео</div>}>
             <ReactPlayer

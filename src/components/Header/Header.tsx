@@ -1,16 +1,16 @@
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
 
+import {ToggleButton} from "../../ui-kit/components/ToggleButton";
+import {Text} from "../../ui-kit/components/Text";
 import ya from "../../images/ya.png";
-import {ToggleButton} from "../ToggleButton/ToggleButton";
 import {
   StyledHeaderBlock,
   StyledHeaderBurger,
   StyledHeaderLink,
   StyledHeaderList,
   StyledHeaderLogo,
-  StyledHeaderMenu,
-  StyledHeaderName
+  StyledHeaderMenu
 } from "./styles";
 import {HeaderProps} from "./types";
 
@@ -32,11 +32,11 @@ export const Header = ({handlerToggle}: HeaderProps) => {
       >
         <img src={ya} alt="" />
       </StyledHeaderLogo>
-      <StyledHeaderName className="qa-header-name">
-        МОЯ\\\
-        <br/>
-        ВИЗИТКА
-      </StyledHeaderName>
+      <Text
+        variation='titleL'
+        color = 'var(--main-text-color)'
+        text='МОЯ\\\\\<br/>ВИЗИТКА'
+      />
       <StyledHeaderMenu className="qa-header-menu">
         <StyledHeaderList isOpen={isMenuOpen ? true : false}>
           <li>
@@ -45,7 +45,10 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               target="_blank"
               rel="noreferrer"
             >
-              HH
+              <Text
+                variation='descriptionL'
+                text='HH'
+              />
             </StyledHeaderLink>
           </li>
           <li>
@@ -54,7 +57,10 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               target="_blank"
               rel="noreferrer"
             >
-              GitHub
+              <Text
+                variation='descriptionL'
+                text='GitHub'
+              />
             </StyledHeaderLink>
           </li>
           <li>
@@ -63,12 +69,18 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              <Text
+                variation='descriptionL'
+                text='LinkedIn'
+              />
             </StyledHeaderLink>
           </li>
           <li>
             <StyledHeaderLink as={NavLink} to="/about">
-                О сайте
+              <Text
+                variation='descriptionL'
+                text='О сайте'
+              />
             </StyledHeaderLink>
           </li>
           <li>

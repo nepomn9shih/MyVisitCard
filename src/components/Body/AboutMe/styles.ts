@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-import {StyledContentTitle} from "../styles";
-
 export const StyledAboutMeBlock = styled.section`
 	background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+`;
+
+export const StyledAboutMeBlockContent = styled.section`
     display: grid;
 	gap: 10px;
     grid-template: auto auto / minmax(200px, 500px) auto;
@@ -18,10 +19,6 @@ export const StyledAboutMeBlock = styled.section`
 	}
 `;
 
-export const StyledAboutMeTitle = styled(StyledContentTitle)`
-  grid-column: span 2;
-`;
-
 export const StyledHr = styled.hr`
     border-bottom: 2px solid var(--main-color);
     margin: 0px -15px 15px -15px;
@@ -29,8 +26,6 @@ export const StyledHr = styled.hr`
 `;
 
 export const StyledAboutMeText = styled.div`
-	font-size: 18px;
-    line-height: 22px;
     background-color: var(--secondary-background-color);
     border-radius: 10px;
     padding: 15px 15px 20px 15px;

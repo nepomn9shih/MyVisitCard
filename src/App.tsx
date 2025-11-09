@@ -5,7 +5,7 @@ import {Header} from './components/Header/Header';
 import {Body} from './components/Body/Body';
 import {Footer} from './components/Footer/Footer';
 import {StyledWrapper} from './components/StyledWrapper';
-import {PageTheme} from './components/PageTheme';
+import {PageTheme} from './ui-kit/components/PageTheme';
 import {ThemeNames} from './enums/ThemeNames';
 
 export const App = () => {

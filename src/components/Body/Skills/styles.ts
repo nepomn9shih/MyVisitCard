@@ -11,7 +11,6 @@ export const StyledSkillsBlock = styled.div`
 export const StyledSkillsItems = styled.div`
   display: flex;
   flex-wrap: wrap;
-  font-size: 20px;
 
   a {
     color: var(--main-color);

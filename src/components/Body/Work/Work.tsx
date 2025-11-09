@@ -1,3 +1,4 @@
+import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
 import {workBase} from "./workBase/workBase";
 import {
   StyledWorkBlock,
@@ -11,15 +12,12 @@ import {
   StyledWorkDescription,
   StyledWorkCellItem
 } from "./styles";
-import {StyledContentTitle} from "../styles";
 
 /** Раздел "Опыт работы" */
 export const Work = () => {
   return (
     <StyledWorkBlock className="qa-work-block">
-      <StyledContentTitle className="qa-work-block-title">
-        Опыт работы
-      </StyledContentTitle>
+      <ContentTitleBlock text='Опыт работы' />
       <StyledWorkItems className="qa-work-block-items">
         {workBase
           .slice(0)

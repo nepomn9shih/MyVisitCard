@@ -5,12 +5,10 @@ export const StyledBodyMain = styled.section`
     width: 100vw;
 
     @media (min-width: 992px) {
-    & {
-        grid-area: main;
-        display: grid;
-        grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
+      grid-area: main;
+      display: grid;
+      grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 950px) 1fr;
     }
-}
 `;
 
 export const StyledBodyContent = styled.section`
@@ -22,17 +20,6 @@ export const StyledBodyContent = styled.section`
         padding: 0px 0px 0px 30px;
     }
 }
-`;
-
-export const StyledContentTitle = styled.h1`
-  margin: 0px 0px 20px 0px;
-  padding: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  color: var(--main-text-color);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
 
 export const StyledSkillCellItem = styled.a`

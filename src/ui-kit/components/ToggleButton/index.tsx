@@ -1,3 +1,4 @@
+import {Text} from '../Text';
 import {
   StyledButtonContainer,
   StyledToggle,
@@ -22,7 +23,7 @@ export const ToggleButton = ({
           className="qa-toggle-label"
           htmlFor="toggle-button"
         >
-          {buttonText}
+          <Text variation='descriptionL' text={buttonText} />
         </StyledToggleLabel>
       </StyledButtonContainer>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
 
-import {ThemeNames} from '../../enums/ThemeNames';
+import {ThemeNames} from '../../../enums/ThemeNames';
 
 /** Светлая тема */
 const LightTheme = createGlobalStyle`

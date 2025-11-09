@@ -49,7 +49,6 @@ export const StyledToggleLabel = styled.label`
     cursor: pointer;
     margin-left: 10px;
     color: var(--main-text-color);
-    font-size: 18px;
 
     &:hover {
       color: var(--active-color);

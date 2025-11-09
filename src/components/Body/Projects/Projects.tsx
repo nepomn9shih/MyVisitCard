@@ -1,4 +1,6 @@
-import {StyledContentTitle, StyledSkillCellItem} from "../styles";
+import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
+import {Text} from "../../../ui-kit/components/Text";
+import {StyledSkillCellItem} from "../styles";
 import {projectsData} from "./assets/projectsData";
 import {
   StyledProjectsBlock,
@@ -15,9 +17,7 @@ import {
 export const Projects = () => {
   return (
     <StyledProjectsBlock className="qa-projects-block">
-      <StyledContentTitle className="qa-projects-block-title">
-        Мои проекты
-      </StyledContentTitle>
+      <ContentTitleBlock text='Мои проекты' />
       <StyledProjectsItems className="qa-projects-block-items">
         {projectsData
           .slice(0)
@@ -54,7 +54,7 @@ export const Projects = () => {
                         key={index}
                         className={`qa-projects-block-item-technology-${index}`}
                       >
-                        {tech}
+                        <Text variation='descriptionL' text={tech} />
                       </StyledSkillCellItem>
                     );
                   })}

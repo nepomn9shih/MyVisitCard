@@ -13,13 +13,13 @@ import myPhoto2 from "./assets/myPhoto2.jpg";
 import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
 import {
   StyledAboutMeBlock,
-  StyledAboutMeText,
   StyledAboutMeImage,
   StyledSwiperImage,
   StyledAboutMeBlockContent
 } from "./styles";
 import {ABOUT_ME_TEXT_DATA} from "./aboutMeBase/aboutMeText";
 import {AboutMeTextBlock} from "./AboutMeTextBlock";
+import { Box } from '../../../ui-kit/components/Box';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -55,7 +55,13 @@ export const AboutMe = () => {
             {mySlides}
           </Swiper>
         </StyledAboutMeImage>
-        <StyledAboutMeText className="qa-about-me-block-text">
+        <Box
+          className="qa-about-me-block-text"
+          bgColor='var(--secondary-background-color)'
+          borderRadius='10px'
+          p='15px 15px 20px'
+          boxShadow='5px 5px 10px rgba(0,0,0,0.5)'
+        >
           {ABOUT_ME_TEXT_DATA.map((text, index) => {
             return (
               <AboutMeTextBlock
@@ -66,7 +72,7 @@ export const AboutMe = () => {
               />
             )
           })}
-        </StyledAboutMeText>
+        </Box>
       </StyledAboutMeBlockContent>
     </StyledAboutMeBlock>
   );

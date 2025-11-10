@@ -4,14 +4,10 @@ import {
   StyledWorkBlock,
   StyledWorkItem,
   StyledWorkItems,
-  StyledWorkDate,
-  StyledWorkDateItem,
-  StyledWorkName,
-  StyledWorkImage,
-  StyledWorkPosition,
-  StyledWorkDescription,
-  StyledWorkCellItem
+  StyledWorkImage
 } from "./styles";
+import {Text} from "../../../ui-kit/components/Text";
+import {Box} from "../../../ui-kit/components/Box";
 
 /** Раздел "Опыт работы" */
 export const Work = () => {
@@ -25,35 +21,94 @@ export const Work = () => {
           .map((work, index) => {
             return (
               <StyledWorkItem key={index} className={`qa-work-block-item-${index}`}>
-                <StyledWorkDate className="qa-work-block-item-date">
-                  <StyledWorkDateItem>
-                    <b>Начало:</b> {work.date.from}
-                  </StyledWorkDateItem>
-                  <StyledWorkDateItem>
-                    <b>Конец:</b> {work.date.to}
-                  </StyledWorkDateItem>
-                </StyledWorkDate>
-                <StyledWorkName className="qa-work-block-item-name">
-                  <div>{work.name}</div>
-                </StyledWorkName>
+                <Box
+                  className="qa-work-block-item-date"
+                  display='flex'
+                  justifyContent='space-between'
+                  alignItems='center'
+                  p='8px'
+                >
+                  <Box
+                    color='var(--main-color)'
+                    bgColor='var(--item-color)'
+                    borderRadius='10px'
+                    m='2px'
+                    p='4px 5px'
+                  >
+                    <Text
+                      variation='descriptionS'
+                      text={`<b>Начало:</b> ${work.date.from}`}
+                    />
+                  </Box>
+                  <Box
+                    color='var(--main-color)'
+                    bgColor='var(--item-color)'
+                    borderRadius='10px'
+                    m='2px'
+                    p='4px 5px'
+                  >
+                    <Text
+                      variation='descriptionS'
+                      text={`<b>Конец:</b> ${work.date.to}`}
+                    />
+                  </Box>
+                </Box>
+                <Box
+                  className="qa-work-block-item-name"
+                  color='var(--main-text-color)'
+                  p='15px'
+                  bgColor='var(--secondary-color)'
+                  display='flex'
+                  alignItems='center'
+                  justifyContent='center'
+                >
+                  <Text
+                    variation='descriptionXL'
+                    text={work.name}
+                  />
+                </Box>
                 <StyledWorkImage className="qa-work-block-item-image">
                   <img src={work.img} alt="" />
                 </StyledWorkImage>
-                <StyledWorkPosition className="qa-work-block-item-position">
-                  {work.position}
-                </StyledWorkPosition>
-                <StyledWorkDescription className="qa-work-block-item-description">
+                <Box
+                  className="qa-work-block-item-position"
+                  color='var(--main-text-color)'
+                  p='15px'
+                  bgColor='var(--secondary-color)'
+                >
+                  <Text
+                    variation='descriptionM'
+                    text={work.position}
+                  />
+                </Box>
+                <Box
+                  className="qa-work-block-item-description"
+                  p='15px'
+                  bgColor='var(--background-color)'
+                  borderRadius='0 15px 15px'
+                  display='flex'
+                  flexDirection='column'
+                  flexWrap='wrap'
+                >
                   {work.description.map((duty, index) => {
                     return (
-                      <StyledWorkCellItem
+                      <Box
                         key={index}
                         className="qa-work-block-item-description-item"
+                        bgColor='var(--item-color)'
+                        borderRadius='10px'
+                        m='5px'
+                        p='4px 5px 6px'
+                        boxShadow='5px 5px 10px rgba(0, 0, 0, 0.5)'
                       >
-                        {duty}
-                      </StyledWorkCellItem>
+                        <Text
+                          variation='descriptionM'
+                          text={duty}
+                        />
+                      </Box>
                     );
                   })}
-                </StyledWorkDescription>
+                </Box>
               </StyledWorkItem>
             );
           })}

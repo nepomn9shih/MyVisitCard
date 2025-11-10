@@ -7,7 +7,7 @@ export const StyledAboutMeBlock = styled.section`
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
-export const StyledAboutMeBlockContent = styled.section`
+export const StyledAboutMeBlockContent = styled.div`
     display: grid;
 	gap: 10px;
     grid-template: auto auto / minmax(200px, 500px) auto;
@@ -22,14 +22,6 @@ export const StyledAboutMeBlockContent = styled.section`
 export const StyledHr = styled.hr`
     border-bottom: 2px solid var(--main-color);
     margin: 0px -15px 15px -15px;
-	box-sizing: border-box;
-`;
-
-export const StyledAboutMeText = styled.div`
-    background-color: var(--secondary-background-color);
-    border-radius: 10px;
-    padding: 15px 15px 20px 15px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 	box-sizing: border-box;
 `;
 

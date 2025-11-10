@@ -1,3 +1,4 @@
+import {Text} from "../../ui-kit/components/Text";
 import {StyledSidebarLink} from "./styles";
 
 export const SidebarItem = ({
@@ -9,10 +10,11 @@ export const SidebarItem = ({
 }) => {
 
     return (
-        <li className="qa-sidebar-item">
-            <StyledSidebarLink to={to}>
-                {title}
-            </StyledSidebarLink>
-        </li>
+        <StyledSidebarLink
+            className="qa-sidebar-item"
+            to={to}
+        >
+            <Text variation='descriptionXL' text={title} />
+        </StyledSidebarLink>
     );
 };

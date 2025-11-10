@@ -23,31 +23,6 @@ export const StyledWorkItem = styled.div`
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
 
-export const StyledWorkDate = styled.div`
-    display: grid;
-    grid-template: 1fr/ 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    padding: 2px 0px;
-`;
-
-export const StyledWorkDateItem = styled.div`
-    background-color: var(--item-color);
-    border-radius: 10px;
-    margin: 2px;
-    padding: 4px 5px 4px 5px;
-    color: var(--main-color);
-`;
-
-export const StyledWorkName = styled.div`
-    font-size: 20px;
-    color: var(--main-text-color);
-    padding: 15px;
-    background-color: var(--secondary-color);
-    display: grid;
-    align-items: center;
-`;
-
 export const StyledWorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
@@ -66,31 +41,4 @@ export const StyledWorkImage = styled.div`
             transition: 0.5s;
         }
     }
-`;
-
-export const StyledWorkPosition = styled.div`
-    font-size: 16px;
-    color: var(--main-text-color);
-    padding: 15px;
-    background-color: var(--secondary-color);
-`;
-
-export const StyledWorkDescription = styled.div`
-    font-size: 16px;
-    line-height: 20px;
-    padding: 15px;
-    background-color: var(--background-color);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-`;
-
-export const StyledWorkCellItem = styled.div`
-  background-color: var(--item-color);
-  border-radius: 10px;
-  margin: 5px;
-  padding: 4px 5px 6px 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;

@@ -1,13 +1,18 @@
+import {Box} from "../../ui-kit/components/Box";
 import {SIDEBAR_ITEMS_DATA} from "./constants";
 import {SidebarItem} from "./SidebarItem";
-import {StyledSidebarBlock, StyledSidebarList} from "./styles";
+import {StyledSidebarBlock} from "./styles";
 
 /** Меню страницы */
 export const Sidebar = () => {
     return (
         <StyledSidebarBlock className="qa-sidebar">
             <nav className="sidebar__menu">
-                <StyledSidebarList>
+                <Box
+                    display='flex'
+                    flexDirection='column'
+                    gap='8px'
+                >
                     {SIDEBAR_ITEMS_DATA.map(({to, title}, index) => {
                         return (
                             <SidebarItem
@@ -17,7 +22,7 @@ export const Sidebar = () => {
                             />
                         );
                     })}
-                </StyledSidebarList>
+                </Box>
             </nav>
         </StyledSidebarBlock>
     )

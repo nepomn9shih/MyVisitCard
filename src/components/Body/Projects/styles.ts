@@ -44,8 +44,6 @@ export const StyledProjectsImage = styled.a`
 `;
 
 export const StyledProjectsName = styled.a`
-    font-size: 20px;
-    font-weight: bold;
     color: var(--main-color);
     line-height: 30px;
     margin: 0px 0px 0px 0px;
@@ -56,31 +54,6 @@ export const StyledProjectsName = styled.a`
     &:hover {
         color: var(--secondary-color);
     }
-`;
-
-export const StyledProjectsTechnologies = styled.div`
-    font-size: 16px;
-    padding: 15px;
-    text-align: center;
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-wrap: wrap;
-
-    a {
-        color: var(--main-color);
-        &:visited {color: var(--main-color);}
-        &:visited:hover {color: var(--main-color);}
-    }
-`;
-
-export const StyledProjectsDescription = styled.div`
-    font-size: 16px;
-    line-height: 20px;
-    padding: 15px;
-    border-bottom-left-radius: 10px;
-    color: var(--description-text-color);
-    background-color: var(--item-color);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 `;
 
 export const StyledProjectsButton = styled.a`

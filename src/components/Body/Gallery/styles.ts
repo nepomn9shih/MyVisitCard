@@ -27,6 +27,7 @@ export const StyledGalleryItem = styled.div<{isBig: boolean}>`
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
         opacity: var(--opacity-value);
+
         &:hover {
             border: 5px solid transparent;
             transition: 0.5s;
@@ -35,10 +36,8 @@ export const StyledGalleryItem = styled.div<{isBig: boolean}>`
     }
 
     @media (min-width: 992px) {
-        & {
-            grid-column: ${({isBig}) => isBig ? "span 2" : ""};
-            grid-row: ${({isBig}) => isBig ? "span 2" : ""};
-        }
+        grid-column: ${({isBig}) => isBig ? "span 2" : ""};
+        grid-row: ${({isBig}) => isBig ? "span 2" : ""};
 
         :hover {
             cursor: pointer;

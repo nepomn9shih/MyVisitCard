@@ -1,10 +1,10 @@
 import {Suspense} from 'react';
 import ReactPlayer from 'react-player';
 
+import {Box} from '../../../ui-kit/components/Box';
 import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
 import {
-  StyledVideoBlock,
-  StyledVideoContent
+  StyledVideoBlock
 } from "./styles";
 
 /** Раздел "Видео" */
@@ -13,7 +13,13 @@ export const Video = () => {
     return (
       <StyledVideoBlock className="qa-video-block">
         <ContentTitleBlock text='Видео выступлений' />
-        <StyledVideoContent className="qa-video-block-content">
+        <Box
+          className="qa-video-block-content"
+          display='flex'
+          flexWrap='wrap'
+          justifyContent='center'
+          gap='20px'
+        >
           <Suspense fallback={() => <div>Загружаю видео</div>}>
             <ReactPlayer
               src='https://www.youtube.com/watch?v=mhJWbrMfNNo&list=PLIZR3nsCfy888mzTbQ-LwNExi7A1GYE21&index=4&t=11s'
@@ -34,7 +40,7 @@ export const Video = () => {
               className="qa-video-block-video"
             />
           </Suspense>
-        </StyledVideoContent>
+        </Box>
       </StyledVideoBlock>
     );
 } catch (error) {

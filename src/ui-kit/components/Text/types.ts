@@ -1,4 +1,5 @@
 export type TextVariations =
+| 'titleXS'
 | 'titleS'
 | 'titleM'
 | 'titleL'

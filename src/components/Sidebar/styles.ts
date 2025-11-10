@@ -9,23 +9,15 @@ export const StyledSidebarBlock = styled.aside`
     margin: 0px 0px 20px 0px;
 
     @media (min-width: 992px) {
-        & {
-            grid-column: 2 / 3;
-        }
-    }
-`;
-
-export const StyledSidebarList = styled.ul`
-    li{
-        margin: 0px 0px 15px 0px;
-        font-size: 18px;
+        grid-column: 2 / 3;
     }
 `;
 
 export const StyledSidebarLink = styled(NavLink)`
     color: var(--main-text-color);
-    font-size: 20px;
-    margin: 5px 0px 5px 5px;
+    margin: 5px 0px;
+    padding: 3px 5px 5px;
+    border-radius: 10px;
 
     &:hover {
         color: var(--main-text-color);
@@ -33,10 +25,7 @@ export const StyledSidebarLink = styled(NavLink)`
 
     &.active {
         color: var(--description-text-color);
-        background-color: var(--secondary-background-color);
-        padding: 3px 5px 5px 5px;
-        margin: 5px 0px;
-        border-radius: 10px;
+        background-color: var(--secondary-background-color); 
         box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     }
 `;

@@ -1,6 +1,11 @@
 import {TextVariations} from "./types";
 
 export const TEXT_STYLES: Record<TextVariations, React.CSSProperties> = {
+    titleXS: {
+        fontSize: '16px',
+        lineHeight: 1.4,
+        fontWeight: 'bold'
+    },
     titleS: {
         fontSize: '18px',
         lineHeight: 1.4,

@@ -3,28 +3,20 @@ import {BoxProps} from "./types";
 
 /** Блок-обертка */
 export const Box = ({
-    color,
-    bgColor,
-    m,
-    mt,
-    mb,
-    ml,
-    mr,
-    p,
-    pt,
-    pb,
-    pl,
-    pr,
-    display,
-    flexDirection,
-    alignItems,
-    justifyContent,
-    borderRadius,
+    height, width,
+    color, bgColor,
+    m, mt, mb, ml, mr,
+    p, pt, pb, pl, pr,
+    display, flexDirection, flexWrap,
+    gap, alignItems, justifyContent,
+    border, borderRadius,
     boxShadow,
     className,
     children
 }: BoxProps) => {
     const styles = omitUndefinedFields({
+        height,
+        width,
         color,
         backgroundColor: bgColor,
         margin: m,
@@ -41,8 +33,12 @@ export const Box = ({
         flexDirection,
         alignItems,
         justifyContent,
+        gap,
+        flexWrap,
+        border,
         borderRadius,
-        boxShadow
+        boxShadow,
+        boxSizing: 'border-box'
     });
 
     return (

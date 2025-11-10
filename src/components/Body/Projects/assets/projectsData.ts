@@ -18,7 +18,7 @@ export const projectsData: ProjectData[] = [
         img: project2, 
         name: "Социальная сеть", 
         description: "Учебный проект. Социальная сеть использует сторонний серверный API с базой пользователей. Возможности: логин/логаут пользователя, изменение имени, информации, аватара, добавление/удаление поста, отправка сообщения тестовым пользователям, просмотр всех пользователей, информации о выбранном пользователе, подписка/отписка от пользователя.",
-        technologies: ["HTML", "CSS", "JavaScript", "React", "React-router-dom", "Redux", "Redux-thunk", "Redux-form", "Axios", "Bootstrap"],
+        technologies: ["HTML", "CSS", "JavaScript", "React", "Redux", "Redux-form", "Axios", "Bootstrap"],
         link: "https://nepomn9shih.github.io/CatNet/",
     }, 
     {
@@ -32,14 +32,14 @@ export const projectsData: ProjectData[] = [
         img: project4, 
         name: "Страница yoomoney.ru", 
         description: "Стартовая страница сайта yoomoney.ru, которую видят незалогиненные пользователи. На ней представлено краткое описание основных сервисов ЮMoney",
-        technologies: ["React", "Nest.js", "JavaScript", "Styled-components", "TypeScript", "Grid", "Material UI"],
+        technologies: ["React", "Nest.js", "JavaScript", "Styled-components", "Grid", "TypeScript", "Material UI"],
         link: "https://yoomoney.ru",
     },
     {
         img: project5, 
         name: "Игра ЮVillage", 
         description: "Гемификация ЮMoney, маркетинговая игра основанная на принципе градостроительного симулятора. Необходимо выполнять различные платежные и не платежные задания - в награду получаем внутриигровую валюту для покупки различных зданий и украшений для игровой карты и опыт для развития уровня своего города. В здания, которые мы строим на карте, встроены различные мини-игры и активности.",
-        technologies: ["React", "Nest.js", "JavaScript", "Emotion", "TypeScript", "Redux Toolkit", "Grid", "Phaser.js", "Three.js", "Material UI"],
+        technologies: ["React", "Nest.js", "JavaScript", "Emotion", "TypeScript", "Redux Toolkit", "Phaser.js", "Grid", "Three.js", "Material UI"],
         link: "https://yoomoney.ru/yoovillage",
     },
     {

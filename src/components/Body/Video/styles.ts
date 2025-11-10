@@ -7,10 +7,3 @@ export const StyledVideoBlock = styled.div`
   padding: 10px 10px 20px 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 `;
-
-export const StyledVideoContent = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-`;

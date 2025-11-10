@@ -1,20 +1,26 @@
+import {Box} from "../../../ui-kit/components/Box";
 import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
 import {Text} from "../../../ui-kit/components/Text";
+import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
 import {StyledSkillCellItem} from "../styles";
 import {skillsList} from "./skillsList";
-import {StyledSkillsBlock, StyledSkillsItems} from "./styles";
+import {StyledSkillsBlock} from "./styles";
 
 /** Раздел "Мои навыки" */
 export const Skills = () => {
   return (
      <StyledSkillsBlock className="qa-skills-block">
       <ContentTitleBlock text='Мои навыки' />
-      <StyledSkillsItems className="qa-skills-block-items">
+      <Box
+        className="qa-skills-block-items"
+        display='flex'
+        flexWrap='wrap'
+      >
         {skillsList.map((skill, index) => {
           return (
             <StyledSkillCellItem
               className={`qa-skills-block-item-${index}`}
-              href={"https://www.google.com/search?q=" + skill}
+              href={getSearchUrl(skill)}
               target="_blank"
               key={index}
               rel="noreferrer"
@@ -23,7 +29,7 @@ export const Skills = () => {
             </StyledSkillCellItem>
           );
         })}
-      </StyledSkillsItems>
+      </Box>
     </StyledSkillsBlock>
   );
 };

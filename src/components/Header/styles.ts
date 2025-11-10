@@ -68,7 +68,7 @@ export const StyledHeaderMenu = styled.nav`
 
 export const StyledHeaderLink = styled.a`
   color: var(--main-text-color);
-  padding: 3px 5px 5px 5px;
+  padding: 3px 5px 5px;
   margin: 5px 0px;
   border-radius: 10px;
 

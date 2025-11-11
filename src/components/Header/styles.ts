@@ -11,7 +11,7 @@ export const StyledHeaderBlock = styled.div`
       1100px
     ) 1fr;
   align-items: center;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow);
 `;
 
 export const StyledHeaderList = styled.ul<{isOpen: boolean}>`
@@ -30,7 +30,7 @@ export const StyledHeaderList = styled.ul<{isOpen: boolean}>`
       background-color: var(--main-color);
       padding: 19px;
       border-radius: 10px;
-      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      box-shadow: var(--box-shadow);
 
       li {
         padding: 15px;
@@ -46,7 +46,7 @@ export const StyledHeaderLogo = styled.a`
     height: 70px;
     opacity: var(--opacity-value);
     border-radius: 50%;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: var(--box-shadow);
 
     &:hover {
       transform: scale(1.1);
@@ -79,7 +79,7 @@ export const StyledHeaderLink = styled.a`
   &.active {
     color: var(--description-text-color);
     background-color: var(--secondary-background-color); 
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow);
   }
 `;
 

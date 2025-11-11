@@ -46,7 +46,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               rel="noreferrer"
             >
               <Text
-                variation='descriptionL'
+                variation='descriptionXL'
                 text='HH'
               />
             </StyledHeaderLink>
@@ -58,7 +58,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               rel="noreferrer"
             >
               <Text
-                variation='descriptionL'
+                variation='descriptionXL'
                 text='GitHub'
               />
             </StyledHeaderLink>
@@ -70,7 +70,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
               rel="noreferrer"
             >
               <Text
-                variation='descriptionL'
+                variation='descriptionXL'
                 text='LinkedIn'
               />
             </StyledHeaderLink>
@@ -78,7 +78,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
           <li>
             <StyledHeaderLink as={NavLink} to="/about">
               <Text
-                variation='descriptionL'
+                variation='descriptionXL'
                 text='О сайте'
               />
             </StyledHeaderLink>

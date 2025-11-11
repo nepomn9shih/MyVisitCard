@@ -8,5 +8,5 @@ export const StyledFooterBlock = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow));
 `;

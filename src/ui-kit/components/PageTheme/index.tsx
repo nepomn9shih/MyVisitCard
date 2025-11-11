@@ -15,6 +15,8 @@ const LightTheme = createGlobalStyle`
         --main-text-color: white;
         --description-text-color: black;
         --opacity-value: 100%;
+        --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        --box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
 `;
 
@@ -29,7 +31,9 @@ const DarkTheme = createGlobalStyle`
         --item-color: #85858F;
         --main-text-color: ivory;
         --description-text-color: black;
-        --opacity-value: 80%;
+        --opacity-value: 90%;
+        --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        --box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
 `;
 

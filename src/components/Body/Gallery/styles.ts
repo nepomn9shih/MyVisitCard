@@ -4,7 +4,7 @@ export const StyledGalleryBlock = styled.section`
     background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow);
 `;
 
 export const StyledGalleryItems = styled.div`
@@ -25,7 +25,7 @@ export const StyledGalleryItem = styled.div<{isBig: boolean}>`
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        box-shadow: var(--box-shadow);
         opacity: var(--opacity-value);
 
         &:hover {

@@ -74,7 +74,7 @@ export const Projects = () => {
                   borderRadius='0 0 0 10px'
                   color='var(--description-text-color)'
                   bgColor='var(--item-color)'
-                  boxShadow='5px 5px 10px rgba(0,0,0,0.5)'
+                  boxShadow='var(--box-shadow)'
                 >
                   <Text variation='descriptionM' text={project.description} />
                 </Box>

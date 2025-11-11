@@ -28,12 +28,12 @@ export const StyledSkillCellItem = styled.a`
   border-radius: 10px;
   margin: 5px;
   padding: 4px 5px 6px 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow);
 
   &:hover {
     transition: 0.5s;
     background-color: var(--active-color);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow-hover);
     color: var(--main-color);
   }
   &:visited {color: var(--main-color);}

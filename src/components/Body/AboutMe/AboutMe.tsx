@@ -60,7 +60,7 @@ export const AboutMe = () => {
           bgColor='var(--secondary-background-color)'
           borderRadius='10px'
           p='15px 15px 20px'
-          boxShadow='5px 5px 10px rgba(0,0,0,0.5)'
+          boxShadow='var(--box-shadow)'
         >
           {ABOUT_ME_TEXT_DATA.map((text, index) => {
             return (

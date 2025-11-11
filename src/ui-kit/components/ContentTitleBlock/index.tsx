@@ -7,7 +7,7 @@ export const ContentTitleBlock = ({
     text,
     color = 'var(--main-text-color)',
     bgColor = 'var(--secondary-color)',
-    variation = 'titleL',
+    variation = 'titleXL',
     mb = '16px',
     p = '20px'
 }: ContentTitleBlockProps) => {
@@ -19,7 +19,7 @@ export const ContentTitleBlock = ({
             mb={mb}
             p={p}
             borderRadius='10px'
-            boxShadow="5px 5px 10px rgba(0, 0, 0, 0.5)"
+            boxShadow="var(--box-shadow)"
         >
             <Text
                 variation={variation}

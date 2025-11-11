@@ -4,7 +4,7 @@ export const StyledProjectsBlock = styled.section`
     background-color: var(--main-color);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow);
 `;
 
 export const StyledProjectsItems = styled.div`
@@ -63,10 +63,10 @@ export const StyledProjectsButton = styled.a`
     border-bottom-right-radius: 10px;
     padding: 15px;
     justify-self: end;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: var(--box-shadow);
 
     &:hover {
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        box-shadow: var(--box-shadow-hover);
         transition: 0.5s;
         color: var(--main-text-color);
     }

@@ -4,7 +4,7 @@ export const StyledHeaderBlock = styled.div`
   grid-area: header;
   box-sizing: border-box;
   padding: 15px;
-  background-color: var(--main-color);
+  background-color: var(--header-bg-color);
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(
       auto,
@@ -67,7 +67,7 @@ export const StyledHeaderMenu = styled.nav`
 `;
 
 export const StyledHeaderLink = styled.a`
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   padding: 3px 5px 5px;
   margin: 5px 0px;
   border-radius: 10px;
@@ -77,8 +77,8 @@ export const StyledHeaderLink = styled.a`
   }
 
   &.active {
-    color: var(--description-text-color);
-    background-color: var(--secondary-background-color); 
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-bg-color); 
     box-shadow: var(--box-shadow);
   }
 `;

@@ -1,11 +1,10 @@
-import { Box } from "../../../ui-kit/components/Box";
-import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
+import {Box} from "../../../ui-kit/components/Box";
+import {Section} from "../../../ui-kit/components/Section";
 import {Text} from "../../../ui-kit/components/Text";
 import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
 import {StyledSkillCellItem} from "../styles";
 import {projectsData} from "./assets/projectsData";
 import {
-  StyledProjectsBlock,
   StyledProjectsItems,
   StyledProjectsItem,
   StyledProjectsImage,
@@ -16,8 +15,10 @@ import {
 /** Раздел "Мои проекты" */
 export const Projects = () => {
   return (
-    <StyledProjectsBlock className="qa-projects-block">
-      <ContentTitleBlock text='Мои проекты' />
+    <Section
+      className="qa-projects-block"
+      text='Мои проекты'
+    >
       <StyledProjectsItems className="qa-projects-block-items">
         {projectsData
           .slice(0)
@@ -72,7 +73,7 @@ export const Projects = () => {
                   className='qa-projects-block-item-description'
                   p='15px'
                   borderRadius='0 0 0 10px'
-                  color='var(--description-text-color)'
+                  color='var(--secondary-text-color)'
                   bgColor='var(--item-color)'
                   boxShadow='var(--box-shadow)'
                 >
@@ -90,6 +91,6 @@ export const Projects = () => {
             );
           })}
       </StyledProjectsItems>
-    </StyledProjectsBlock>
+    </Section>
   );
 };

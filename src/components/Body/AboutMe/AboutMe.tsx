@@ -10,16 +10,15 @@ import myPhoto0 from "./assets/myPhoto0.jpg";
 import myPhoto1 from "./assets/myPhoto1.jpg";
 import myPhoto2 from "./assets/myPhoto2.jpg";
 
-import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
+import {Box} from '../../../ui-kit/components/Box';
+import {Section} from '../../../ui-kit/components/Section';
 import {
-  StyledAboutMeBlock,
   StyledAboutMeImage,
   StyledSwiperImage,
   StyledAboutMeBlockContent
 } from "./styles";
 import {ABOUT_ME_TEXT_DATA} from "./aboutMeBase/aboutMeText";
 import {AboutMeTextBlock} from "./AboutMeTextBlock";
-import { Box } from '../../../ui-kit/components/Box';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -40,8 +39,10 @@ const mySlides = myPhotos.map((photo, index) => {
 /** Раздел "Обо мне" */
 export const AboutMe = () => {
   return (
-    <StyledAboutMeBlock className="qa-about-me-block">
-      <ContentTitleBlock text='Непомнящих Александр' />
+    <Section
+      className="qa-about-me-block"
+      text='Непомнящих Александр'
+    >
       <StyledAboutMeBlockContent className="qa-about-me-block-content">
         <StyledAboutMeImage className="qa-about-me-block-image">
           <Swiper
@@ -57,7 +58,7 @@ export const AboutMe = () => {
         </StyledAboutMeImage>
         <Box
           className="qa-about-me-block-text"
-          bgColor='var(--secondary-background-color)'
+          bgColor='var(--secondary-bg-color)'
           borderRadius='10px'
           p='15px 15px 20px'
           boxShadow='var(--box-shadow)'
@@ -74,6 +75,6 @@ export const AboutMe = () => {
           })}
         </Box>
       </StyledAboutMeBlockContent>
-    </StyledAboutMeBlock>
+    </Section>
   );
 };

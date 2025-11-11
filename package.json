@@ -1,6 +1,7 @@
 {
   "name": "my-visit-card",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "Nepomniashchikh Aleksandr",
   "homepage": "https://nepomn9shih.github.io/MyVisitCard",
   "private": true,
   "dependencies": {

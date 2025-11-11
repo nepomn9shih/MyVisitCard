@@ -1,19 +1,20 @@
-import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
 import {workBase} from "./workBase/workBase";
 import {
-  StyledWorkBlock,
   StyledWorkItem,
   StyledWorkItems,
   StyledWorkImage
 } from "./styles";
 import {Text} from "../../../ui-kit/components/Text";
 import {Box} from "../../../ui-kit/components/Box";
+import {Section} from "../../../ui-kit/components/Section";
 
 /** Раздел "Опыт работы" */
 export const Work = () => {
   return (
-    <StyledWorkBlock className="qa-work-block">
-      <ContentTitleBlock text='Опыт работы' />
+    <Section
+      className="qa-work-block"
+      text='Опыт работы'
+    >
       <StyledWorkItems className="qa-work-block-items">
         {workBase
           .slice(0)
@@ -55,7 +56,7 @@ export const Work = () => {
                 </Box>
                 <Box
                   className="qa-work-block-item-name"
-                  color='var(--main-text-color)'
+                  color='var(--primary-text-color)'
                   p='15px'
                   bgColor='var(--secondary-color)'
                   display='flex'
@@ -72,7 +73,7 @@ export const Work = () => {
                 </StyledWorkImage>
                 <Box
                   className="qa-work-block-item-position"
-                  color='var(--main-text-color)'
+                  color='var(--primary-text-color)'
                   p='15px'
                   bgColor='var(--secondary-color)'
                 >
@@ -84,7 +85,7 @@ export const Work = () => {
                 <Box
                   className="qa-work-block-item-description"
                   p='15px'
-                  bgColor='var(--background-color)'
+                  bgColor='var(--primary-bg-color)'
                   borderRadius='0 15px 15px'
                   display='flex'
                   flexDirection='column'
@@ -113,6 +114,6 @@ export const Work = () => {
             );
           })}
       </StyledWorkItems>
-    </StyledWorkBlock>
+    </Section>
   );
 };

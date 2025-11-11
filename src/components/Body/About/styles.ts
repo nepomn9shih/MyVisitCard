@@ -1,15 +1,7 @@
 import styled from "styled-components";
 
-export const StyledAboutBlock = styled.section`
-    in-height: 400px;
-    background-color: var(--main-color);
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: var(--box-shadow);
-`;
-
 export const StyledAboutContent = styled.div`
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 16px 16px 0;
     display: flex;

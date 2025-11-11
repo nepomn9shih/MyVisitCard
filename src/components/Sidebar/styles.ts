@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledSidebarBlock = styled.aside`
-	background-color: var(--secondary-color);
+	background-color: var(--sidebar-bg-color);
     border-radius: 10px;
     padding: 30px 30px 15px 30px;
     box-shadow: var(--box-shadow);
@@ -14,18 +14,18 @@ export const StyledSidebarBlock = styled.aside`
 `;
 
 export const StyledSidebarLink = styled(NavLink)`
-    color: var(--main-text-color);
+    color: var(--primary-text-color);
     margin: 5px 0px;
     padding: 3px 5px 5px;
     border-radius: 10px;
 
     &:hover {
-        color: var(--main-text-color);
+        color: var(--primary-text-color);
     }
 
     &.active {
-        color: var(--description-text-color);
-        background-color: var(--secondary-background-color); 
+        color: var(--secondary-text-color);
+        background-color: var(--secondary-bg-color); 
         box-shadow: var(--box-shadow);
     }
 `;

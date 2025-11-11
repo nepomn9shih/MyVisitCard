@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const StyledAboutMeBlock = styled.section`
-	background-color: var(--main-color);
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: var(--box-shadow);
-`;
-
 export const StyledAboutMeBlockContent = styled.div`
     display: grid;
 	gap: 10px;

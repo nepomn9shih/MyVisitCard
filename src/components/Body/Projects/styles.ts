@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const StyledProjectsBlock = styled.section`
-    background-color: var(--main-color);
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: var(--box-shadow);
-`;
-
 export const StyledProjectsItems = styled.div`
     display: grid;
     column-gap: 20px;
@@ -47,7 +40,7 @@ export const StyledProjectsName = styled.a`
     color: var(--main-color);
     line-height: 30px;
     margin: 0px 0px 0px 0px;
-    background-color: var(--background-color);
+    background-color: var(--primary-bg-color);
     padding: 15px;
     text-align: center;
 
@@ -57,7 +50,7 @@ export const StyledProjectsName = styled.a`
 `;
 
 export const StyledProjectsButton = styled.a`
-    color: var(--main-text-color);
+    color: var(--primary-text-color);
     background-color: var(--secondary-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -68,6 +61,6 @@ export const StyledProjectsButton = styled.a`
     &:hover {
         box-shadow: var(--box-shadow-hover);
         transition: 0.5s;
-        color: var(--main-text-color);
+        color: var(--primary-text-color);
     }
 `;

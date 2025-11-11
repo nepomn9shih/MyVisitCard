@@ -1,16 +1,16 @@
 import {Box} from "../Box";
 import {Text} from "../Text";
-import {ContentTitleBlockProps} from "./types";
+import {SectionTitleProps} from "./types";
 
-/** Блок с заголовком раздела */
-export const ContentTitleBlock = ({
+/** Заголовок раздела */
+export const SectionTitle = ({
     text,
-    color = 'var(--main-text-color)',
-    bgColor = 'var(--secondary-color)',
+    color = 'var(--primary-text-color)',
+    bgColor = 'var(--section-title-bg-color)',
     variation = 'titleXL',
     mb = '16px',
     p = '20px'
-}: ContentTitleBlockProps) => {
+}: SectionTitleProps) => {
     return (
         <Box
             className="qa-content-title-block"

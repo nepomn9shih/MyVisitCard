@@ -2,17 +2,16 @@ import {Suspense} from 'react';
 import ReactPlayer from 'react-player';
 
 import {Box} from '../../../ui-kit/components/Box';
-import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
-import {
-  StyledVideoBlock
-} from "./styles";
+import {Section} from '../../../ui-kit/components/Section';
 
 /** Раздел "Видео" */
 export const Video = () => {
   try {
     return (
-      <StyledVideoBlock className="qa-video-block">
-        <ContentTitleBlock text='Видео выступлений' />
+      <Section
+        className="qa-video-block"
+        text='Видео выступлений'
+      >
         <Box
           className="qa-video-block-content"
           display='flex'
@@ -41,7 +40,7 @@ export const Video = () => {
             />
           </Suspense>
         </Box>
-      </StyledVideoBlock>
+      </Section>
     );
 } catch (error) {
     console.log(error);

@@ -5,7 +5,11 @@ import {StyledFooterBlock} from "./styles";
 export const Footer = () => {
     return (
         <StyledFooterBlock className="qa-footer">
-            <Text variation="descriptionM" text='Непомнящих Александр &copy; 2025' />
+            <Text
+                color='var(--item-color)'
+                variation="descriptionM"
+                text='Непомнящих Александр &copy; 2025'
+            />
         </StyledFooterBlock>
     )
 }

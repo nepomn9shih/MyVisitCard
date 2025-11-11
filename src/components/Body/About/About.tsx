@@ -1,15 +1,17 @@
 import * as React from 'react';
 
-import {ContentTitleBlock} from '../../../ui-kit/components/ContentTitleBlock';
-import {StyledAboutBlock, StyledAboutContent, StyledImage} from "./styles";
+import {Text} from '../../../ui-kit/components/Text';
+import {Section} from '../../../ui-kit/components/Section';
+import {StyledAboutContent, StyledImage} from "./styles";
 import samurai from "../../../images/samurai.png";
-import { Text } from '../../../ui-kit/components/Text';
 
 /** Раздел "О сайте" */
 export const About = () => {
   return (
-    <StyledAboutBlock className="qa-about-block">
-      <ContentTitleBlock text='О сайте' />
+    <Section
+      className="qa-about-block"
+      text='О сайте'
+    >
       <StyledAboutContent className="qa-about-block-content">
         <div>
           <Text variation='descriptionL' text={
@@ -25,6 +27,6 @@ export const About = () => {
           src={samurai}
         />
       </StyledAboutContent>
-    </StyledAboutBlock>
+    </Section>
   );
 };

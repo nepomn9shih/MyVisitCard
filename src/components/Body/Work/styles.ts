@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const StyledWorkBlock = styled.section`
-    background-color: var(--main-color);
-    border-radius: 10px;
-    padding: 10px 10px 20px 10px;
-    box-shadow: var(--box-shadow);
-`;
-
 export const StyledWorkItems = styled.div`
     display: grid;
     column-gap: 20px;
@@ -18,7 +11,7 @@ export const StyledWorkItem = styled.div`
     display: grid;
     grid-auto-flow: row;
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--primary-bg-color);
     border-radius: 15px;
     grid-template: 50px 70px 200px 50px 1fr/ 1fr;
 `;
@@ -26,7 +19,7 @@ export const StyledWorkItem = styled.div`
 export const StyledWorkImage = styled.div`
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: var(--secondary-background-color);
+    background-color: var(--secondary-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;

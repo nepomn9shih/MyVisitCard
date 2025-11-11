@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const StyledGalleryBlock = styled.section`
-    background-color: var(--main-color);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: var(--box-shadow);
-`;
-
 export const StyledGalleryItems = styled.div`
     display: grid;
     gap: 10px;

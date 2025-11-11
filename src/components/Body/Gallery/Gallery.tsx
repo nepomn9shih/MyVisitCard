@@ -4,14 +4,13 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import {ContentTitleBlock} from "../../../ui-kit/components/ContentTitleBlock";
 import {galleryImages} from "./assets/galleryImages";
 import {
-    StyledGalleryBlock,
     StyledGalleryItems,
     StyledGalleryItem,
     StyledGalleryDescription
 } from "./styles";
+import { Section } from "../../../ui-kit/components/Section";
 
 /** Раздел "Галерея" */
 export const Gallery = () => {
@@ -36,8 +35,10 @@ export const Gallery = () => {
     }).sort((a, b) => a.year - b.year);
 
     return (
-        <StyledGalleryBlock className="qa-gallery-block">
-            <ContentTitleBlock text='Галерея' />
+        <Section
+            className="qa-gallery-block"
+            text='Галерея'
+        >
             <Lightbox
                 open={open}
                 close={() => setOpen(false)}
@@ -65,6 +66,6 @@ export const Gallery = () => {
                     );
                 })}
             </StyledGalleryItems>
-        </StyledGalleryBlock>  
+        </Section>  
     )
 }

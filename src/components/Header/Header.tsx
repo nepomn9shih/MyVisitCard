@@ -34,7 +34,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
       </StyledHeaderLogo>
       <Text
         variation='titleL'
-        color = 'var(--main-text-color)'
+        color = 'var(--primary-text-color)'
         text='МОЯ\\\\\<br/>ВИЗИТКА'
       />
       <StyledHeaderMenu className="qa-header-menu">

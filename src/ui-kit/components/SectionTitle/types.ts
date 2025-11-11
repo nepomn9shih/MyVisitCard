@@ -1,6 +1,6 @@
 import {TextVariations} from "../Text/types";
 
-export type ContentTitleBlockProps = {
+export type SectionTitleProps = {
     text: string;
     color?: React.CSSProperties['color'];
     bgColor?: React.CSSProperties['backgroundColor'];

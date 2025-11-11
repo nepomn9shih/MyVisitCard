@@ -9,11 +9,20 @@ const LightTheme = createGlobalStyle`
         --main-color: indigo;
         --secondary-color: darkorchid;
         --active-color: goldenrod;
-        --background-color: grey;
-        --secondary-background-color: white;
+        --page-bg-color: grey;
+        --primary-bg-color: grey;
+        --secondary-bg-color: white;
         --item-color: ivory;
-        --main-text-color: white;
-        --description-text-color: black;
+
+        --header-bg-color: var(--main-color);
+        --footer-bg-color: var(--main-color);
+        --sidebar-bg-color: var(--secondary-color);
+        --section-bg-color: var(--main-color);
+        --section-title-bg-color: var(--secondary-color);
+
+        --primary-text-color: white;
+        --secondary-text-color: black;
+
         --opacity-value: 100%;
         --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         --box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -26,11 +35,20 @@ const DarkTheme = createGlobalStyle`
         --main-color: #191A1E;
         --secondary-color: #82625A;
         --active-color: goldenrod;
-        --background-color: #61353B;
-        --secondary-background-color: ivory;
+        --page-bg-color: #61353B;
+        --primary-bg-color: #61353B;
+        --secondary-bg-color: ivory;
         --item-color: #85858F;
-        --main-text-color: ivory;
-        --description-text-color: black;
+
+        --header-bg-color: var(--main-color);
+        --footer-bg-color: var(--main-color);
+        --sidebar-bg-color: var(--secondary-color);
+        --section-bg-color: var(--main-color);
+        --section-title-bg-color: var(--secondary-color);
+
+        --primary-text-color: ivory;
+        --secondary-text-color: black;
+
         --opacity-value: 90%;
         --box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         --box-shadow-hover: 5px 5px 10px rgba(0, 0, 0, 0.2);

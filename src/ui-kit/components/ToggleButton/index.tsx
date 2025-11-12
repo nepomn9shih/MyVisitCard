@@ -1,3 +1,5 @@
+import { ThemeNames } from '../../../enums/ThemeNames';
+import {getTheme} from '../../utils/getValueFromLocalStorage';
 import {Text} from '../Text';
 import {
   StyledButtonContainer,
@@ -10,6 +12,8 @@ export const ToggleButton = ({
     buttonText = '',
     handlerOnChange = () => {}
   }: ToggleButtonProps) => {
+    const theme = getTheme();
+
     return (
       <StyledButtonContainer className="qa-toggle-container">
         <StyledToggle
@@ -17,6 +21,7 @@ export const ToggleButton = ({
           type="checkbox"
           name="toggle"
           id="toggle-button"
+          checked={theme === ThemeNames.DARK}
           onChange={handlerOnChange}
         />
         <StyledToggleLabel

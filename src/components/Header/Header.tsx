@@ -38,7 +38,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
         text='МОЯ\\\\\<br/>ВИЗИТКА'
       />
       <StyledHeaderMenu className="qa-header-menu">
-        <StyledHeaderList isOpen={isMenuOpen ? true : false}>
+        <StyledHeaderList open={isMenuOpen ? true : false}>
           <li>
             <StyledHeaderLink
               href="https://spb.hh.ru/resume/fbff5b2aff088f6fc80039ed1f52676d427763"
@@ -93,7 +93,7 @@ export const Header = ({handlerToggle}: HeaderProps) => {
         <StyledHeaderBurger
           className="qa-header-burger"
           onClick={handleClick}
-          active={isMenuOpen ? true : false}
+          $active={isMenuOpen}
         >
           <span></span>
         </StyledHeaderBurger>

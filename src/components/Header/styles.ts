@@ -14,7 +14,7 @@ export const StyledHeaderBlock = styled.div`
   box-shadow: var(--box-shadow);
 `;
 
-export const StyledHeaderList = styled.ul<{isOpen: boolean}>`
+export const StyledHeaderList = styled.ul<{open: boolean}>`
   display: grid;
   grid-auto-flow: column;
   justify-items: end;
@@ -24,7 +24,7 @@ export const StyledHeaderList = styled.ul<{isOpen: boolean}>`
   }
 
   @media (max-width: 992px) {
-      display: ${({isOpen}) => isOpen ? "block" : "none"};
+      display: ${({open}) => open ? "block" : "none"};
       position: absolute;
       top: 90px;
       background-color: var(--main-color);
@@ -57,12 +57,11 @@ export const StyledHeaderLogo = styled.a`
 
 export const StyledHeaderMenu = styled.nav`
   grid-column: 4 / 5;
+
   @media (max-width: 992px) {
-    & {
-      display: grid;
-      justify-items: end;
-      position: relative;
-    }
+    display: grid;
+    justify-items: end;
+    position: relative;
   }
 `;
 
@@ -73,7 +72,7 @@ export const StyledHeaderLink = styled.a`
   border-radius: 10px;
 
   &:hover {
-    color: var(--active-color);
+    color: var(--accent-color);
   }
 
   &.active {
@@ -83,10 +82,10 @@ export const StyledHeaderLink = styled.a`
   }
 `;
 
-export const StyledHeaderBurger = styled.div<{active: boolean}>`
+export const StyledHeaderBurger = styled.div<{$active: boolean}>`
   display: none;
+
   @media (max-width: 992px) {
-    & {
       width: 30px;
       height: 20px;
       color: var(--item-color);
@@ -120,18 +119,17 @@ export const StyledHeaderBurger = styled.div<{active: boolean}>`
         width: 100%;
         height: 2px;
         left: 0;
-        display: ${({active}) => active ? "none" : ""};
+        display: ${({$active}) => $active ? "none" : ""};
       }
 
       &:before {
-        transform: ${({active}) => active ? "rotate(45deg)" : ""};
-        top: ${({active}) => active ? "8px" : ""};
+        transform: ${({$active}) => $active ? "rotate(45deg)" : ""};
+        top: ${({$active}) => $active ? "8px" : ""};
       }
 
       &:after {
-        transform: ${({active}) => active ? "rotate(-45deg)" : ""};
-        bottom: ${({active}) => active ? "9px" : ""};
+        transform: ${({$active}) => $active ? "rotate(-45deg)" : ""};
+        bottom: ${({$active}) => $active ? "9px" : ""};
       }
     }
-  }
 `;

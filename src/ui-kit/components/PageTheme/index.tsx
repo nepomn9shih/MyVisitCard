@@ -8,12 +8,12 @@ const LightTheme = createGlobalStyle`
     body {
         --main-color: indigo;
         --secondary-color: darkorchid;
-        --active-color: goldenrod;
-        --page-bg-color: grey;
+        --accent-color: goldenrod;
         --primary-bg-color: grey;
         --secondary-bg-color: white;
         --item-color: ivory;
 
+        --page-bg-color: grey;
         --header-bg-color: var(--main-color);
         --footer-bg-color: var(--main-color);
         --sidebar-bg-color: var(--secondary-color);
@@ -34,12 +34,12 @@ const DarkTheme = createGlobalStyle`
     body {
         --main-color: #191A1E;
         --secondary-color: #82625A;
-        --active-color: goldenrod;
-        --page-bg-color: #61353B;
+        --accent-color: goldenrod;
         --primary-bg-color: #61353B;
         --secondary-bg-color: ivory;
         --item-color: #85858F;
 
+        --page-bg-color: #61353B;
         --header-bg-color: var(--main-color);
         --footer-bg-color: var(--main-color);
         --sidebar-bg-color: var(--secondary-color);

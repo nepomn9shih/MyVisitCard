@@ -32,7 +32,7 @@ export const StyledSkillCellItem = styled.a`
 
   &:hover {
     transition: 0.5s;
-    background-color: var(--active-color);
+    background-color: var(--accent-color);
     box-shadow: var(--box-shadow-hover);
     color: var(--main-color);
   }

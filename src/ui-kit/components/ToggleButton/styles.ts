@@ -37,11 +37,6 @@ export const StyledToggle = styled.input`
 
 	&:checked:after {
 	    transform: translateX(100%);
-	    background-color: var(--secondary-color);
-	}
-
-	&:checked {
-	    background-color: var(--secondary-bg-color);
 	}
 `;
 
@@ -51,6 +46,6 @@ export const StyledToggleLabel = styled.label`
     color: var(--primary-text-color);
 
     &:hover {
-        color: var(--active-color);
+        color: var(--accent-color);
     }
 `;

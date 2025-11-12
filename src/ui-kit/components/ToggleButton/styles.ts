@@ -13,7 +13,7 @@ export const StyledToggle = styled.input`
     height: 25px;
     margin: 0;
     vertical-align: top;
-    background: var(--item-color);
+    background: var(--toggle-bg-color);
     border-radius: 30px;
     outline: none;
     cursor: pointer;
@@ -29,7 +29,7 @@ export const StyledToggle = styled.input`
         top: 0.75px;
         width: 23.5px;
         height: 23.5px;
-        background-color: var(--secondary-color);
+        background-color: var(--toggle-color);
         border-radius: 50%;
         transform: translateX(0);
         transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);

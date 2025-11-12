@@ -19,6 +19,8 @@ const LightTheme = createGlobalStyle`
         --sidebar-bg-color: var(--secondary-color);
         --section-bg-color: var(--main-color);
         --section-title-bg-color: var(--secondary-color);
+        --toggle-color: var(--secondary-color);
+        --toggle-bg-color: var(--secondary-bg-color);
 
         --primary-text-color: white;
         --secondary-text-color: black;
@@ -45,6 +47,8 @@ const DarkTheme = createGlobalStyle`
         --sidebar-bg-color: var(--secondary-color);
         --section-bg-color: var(--main-color);
         --section-title-bg-color: var(--secondary-color);
+        --toggle-color: var(--secondary-color);
+        --toggle-bg-color: var(--secondary-bg-color);
 
         --primary-text-color: ivory;
         --secondary-text-color: black;

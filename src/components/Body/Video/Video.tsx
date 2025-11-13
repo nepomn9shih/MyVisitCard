@@ -1,8 +1,7 @@
-import {Suspense} from 'react';
-import ReactPlayer from 'react-player';
-
 import {Box} from '../../../ui-kit/components/Box';
 import {Section} from '../../../ui-kit/components/Section';
+import {VideoBox} from '../../../ui-kit/components/VideoBox';
+import {VIDEO_DATA} from './constants';
 
 /** Раздел "Видео" */
 export const Video = () => {
@@ -19,26 +18,9 @@ export const Video = () => {
           justifyContent='center'
           gap='20px'
         >
-          <Suspense fallback={() => <div>Загружаю видео</div>}>
-            <ReactPlayer
-              src='https://www.youtube.com/watch?v=mhJWbrMfNNo&list=PLIZR3nsCfy888mzTbQ-LwNExi7A1GYE21&index=4&t=11s'
-              controls={true}
-              style={{
-                width: '400px',
-                height: '250px'
-              }}
-              className="qa-video-block-video"
-            />
-            <ReactPlayer
-              src='https://www.youtube.com/watch?v=DmU0gDp9pYQ'
-              controls={true}
-              style={{
-                width: '400px',
-                height: '250px'
-              }}
-              className="qa-video-block-video"
-            />
-          </Suspense>
+          {VIDEO_DATA.map((props, index) => {
+            return <VideoBox key={index} {...props} />
+          })}
         </Box>
       </Section>
     );

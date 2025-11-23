@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const StyledHeaderBlock = styled.div`
-  grid-area: header;
+export const StyledHeaderBlock = styled.div<{
+  $bgColor: React.CSSProperties['backgroundColor'];
+}>`
   box-sizing: border-box;
   padding: 15px;
-  background-color: var(--header-bg-color);
+  background-color: ${({$bgColor}) => $bgColor};
   display: grid;
   grid-template: 1fr / 1fr minmax(auto, 100px) minmax(auto, 150px) minmax(
       auto,
@@ -14,27 +15,23 @@ export const StyledHeaderBlock = styled.div`
   box-shadow: var(--box-shadow);
 `;
 
-export const StyledHeaderList = styled.ul<{open: boolean}>`
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: end;
-
-  li {
-    align-self: center;
-  }
+export const StyledHeaderList = styled.div<{
+  open: boolean;
+  $bgColor: React.CSSProperties['backgroundColor']
+}>`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
   @media (max-width: 992px) {
-      display: ${({open}) => open ? "block" : "none"};
+      display: ${({open}) => open ? "flex" : "none"};
+      flex-direction: column;
       position: absolute;
       top: 90px;
-      background-color: var(--main-color);
+      background-color: ${({$bgColor}) => $bgColor};
       padding: 19px;
       border-radius: 10px;
       box-shadow: var(--box-shadow);
-
-      li {
-        padding: 15px;
-      }
     }
 `;
 
@@ -65,30 +62,38 @@ export const StyledHeaderMenu = styled.nav`
   }
 `;
 
-export const StyledHeaderLink = styled.a`
-  color: var(--header-text-color);
+export const StyledHeaderLink = styled.a<{
+  $textColor: React.CSSProperties['color'];
+  $textHoverColor: React.CSSProperties['color'];
+  $textActiveColor: React.CSSProperties['color'];
+  $activeBgColor: React.CSSProperties['backgroundColor'];
+}>`
+  color: ${({$textColor}) => $textColor};
   padding: 3px 5px 5px;
   margin: 5px 0px;
   border-radius: 10px;
 
   &:hover {
-    color: var(--header-text-hover-color);
+    color: ${({$textHoverColor}) => $textHoverColor};
   }
 
   &.active {
-    color: var(--header-text-active-color);
-    background-color: var(--secondary-bg-color); 
+    color: ${({$textActiveColor}) => $textActiveColor};
+    background-color: ${({$activeBgColor}) => $activeBgColor}; 
     box-shadow: var(--box-shadow);
   }
 `;
 
-export const StyledHeaderBurger = styled.div<{$active: boolean}>`
+export const StyledHeaderBurger = styled.div<{
+  $active: boolean;
+  $textColor: React.CSSProperties['color'];
+}>`
   display: none;
 
   @media (max-width: 992px) {
       width: 30px;
       height: 20px;
-      color: var(--header-text-color);
+      color: ${({$textColor}) => $textColor};
       display: grid;
       align-items: center;
       grid-template: repeat(3, 8px) / 1fr;
@@ -97,7 +102,7 @@ export const StyledHeaderBurger = styled.div<{$active: boolean}>`
       &:before,
       &:after {
         content: "";
-        background-color: var(--header-text-color);
+        background-color: ${({$textColor}) => $textColor};
         position: absolute;
         width: 100%;
         height: 3px;
@@ -114,7 +119,7 @@ export const StyledHeaderBurger = styled.div<{$active: boolean}>`
       }
 
       span {
-        background-color: var(--item-color);
+        background-color: ${({$textColor}) => $textColor};
         position: absolute;
         width: 100%;
         height: 2px;

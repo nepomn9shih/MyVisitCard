@@ -43,9 +43,9 @@ export const StyledToggle = styled.input`
 export const StyledToggleLabel = styled.label` 
     cursor: pointer;
     margin-left: 10px;
-    color: var(--primary-text-color);
+    color: var(--toggle-text-color);
 
     &:hover {
-        color: var(--accent-color);
+        color: var(--toggle-text-hover-color);
     }
 `;

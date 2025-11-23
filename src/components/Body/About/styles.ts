@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAboutContent = styled.div`
+    color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 16px 16px 0;

@@ -37,7 +37,7 @@ export const StyledProjectsImage = styled.a`
 `;
 
 export const StyledProjectsName = styled.a`
-    color: var(--main-color);
+    color: var(--primary-text-color);
     line-height: 30px;
     margin: 0px 0px 0px 0px;
     background-color: var(--primary-bg-color);
@@ -45,7 +45,7 @@ export const StyledProjectsName = styled.a`
     text-align: center;
 
     &:hover {
-        color: var(--secondary-color);
+        color: var(--primary-text-hover-color);
     }
 `;
 

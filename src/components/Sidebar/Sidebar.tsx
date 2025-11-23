@@ -11,7 +11,6 @@ export const Sidebar = () => {
                 <Box
                     display='flex'
                     flexDirection='column'
-                    gap='8px'
                 >
                     {SIDEBAR_ITEMS_DATA.map(({to, title}, index) => {
                         return (

@@ -12,7 +12,11 @@ export const AboutMeTextBlock = ({
 }: AboutMeTextBlockProps) => {
     return (
         <div className={className}>
-            <Text variation='descriptionL' text={text} />
+            <Text
+                variation='descriptionL'
+                color='var(--secondary-text-color)'
+                text={text}
+            />
             <br/><br/>
             {!isLast && <StyledHr />}
         </div>

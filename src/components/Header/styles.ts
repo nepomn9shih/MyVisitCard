@@ -46,7 +46,7 @@ export const StyledHeaderLogo = styled.a`
     height: 70px;
     opacity: var(--opacity-value);
     border-radius: 50%;
-	box-shadow: var(--box-shadow);
+	  box-shadow: var(--box-shadow);
 
     &:hover {
       transform: scale(1.1);
@@ -66,17 +66,17 @@ export const StyledHeaderMenu = styled.nav`
 `;
 
 export const StyledHeaderLink = styled.a`
-  color: var(--primary-text-color);
+  color: var(--header-text-color);
   padding: 3px 5px 5px;
   margin: 5px 0px;
   border-radius: 10px;
 
   &:hover {
-    color: var(--accent-color);
+    color: var(--header-text-hover-color);
   }
 
   &.active {
-    color: var(--secondary-text-color);
+    color: var(--header-text-active-color);
     background-color: var(--secondary-bg-color); 
     box-shadow: var(--box-shadow);
   }
@@ -88,7 +88,7 @@ export const StyledHeaderBurger = styled.div<{$active: boolean}>`
   @media (max-width: 992px) {
       width: 30px;
       height: 20px;
-      color: var(--item-color);
+      color: var(--header-text-color);
       display: grid;
       align-items: center;
       grid-template: repeat(3, 8px) / 1fr;
@@ -97,7 +97,7 @@ export const StyledHeaderBurger = styled.div<{$active: boolean}>`
       &:before,
       &:after {
         content: "";
-        background-color: var(--item-color);
+        background-color: var(--header-text-color);
         position: absolute;
         width: 100%;
         height: 3px;

@@ -5,10 +5,13 @@ import {PageTheme} from './ui-kit/components/PageTheme';
 import {getTheme} from './ui-kit/utils/getValueFromLocalStorage';
 import {saveTheme} from './ui-kit/utils/saveInLocalStorage';
 import {Header} from './components/Header/Header';
-import {Body} from './components/Body/Body';
-import {Footer} from './components/Footer/Footer';
 import {StyledWrapper} from './components/StyledWrapper';
 import {ThemeNames} from './enums/ThemeNames';
+import {PageFooter} from './ui-kit/components/PageFooter';
+import {FOOTER_TEXT} from './constants';
+import {PageBody} from './ui-kit/components/PageBody';
+import {getPages} from './constants/pages';
+import {SIDEBAR_ITEMS_DATA} from './constants/sidebar';
 
 export const App = () => {
   const [chosenTheme, setChosenTheme] = useState(getTheme());
@@ -28,8 +31,11 @@ export const App = () => {
       <HashRouter>
         <StyledWrapper>
             <Header handlerToggle={handlerToggle} />
-            <Body />
-            <Footer />
+            <PageBody
+              pages={getPages()}
+              sidebarItems={SIDEBAR_ITEMS_DATA}
+            />
+            <PageFooter text={FOOTER_TEXT} />
         </StyledWrapper>
       </HashRouter>
     </>

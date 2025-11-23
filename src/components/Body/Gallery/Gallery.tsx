@@ -10,7 +10,7 @@ import {
     StyledGalleryItem,
     StyledGalleryDescription
 } from "./styles";
-import { Section } from "../../../ui-kit/components/Section";
+import {Section} from "../../../ui-kit/components/Section";
 
 /** Раздел "Галерея" */
 export const Gallery = () => {

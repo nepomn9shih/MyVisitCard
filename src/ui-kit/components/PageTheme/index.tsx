@@ -35,6 +35,7 @@ const LightTheme = createGlobalStyle`
         --header-text-active-color: var(--primary-text-active-color);
 
         --footer-bg-color: var(--main-color);
+        --footer-text-color: var(--primary-text-color);
 
         --sidebar-bg-color: var(--secondary-color);
         --sidebar-text-color: var(--primary-text-color);
@@ -84,6 +85,7 @@ const DarkTheme = createGlobalStyle`
         --header-text-active-color: var(--primary-text-active-color);
 
         --footer-bg-color: var(--main-color);
+        --footer-text-color: var(--primary-text-color);
 
         --sidebar-bg-color: var(--main-color);
         --sidebar-text-color: var(--primary-text-color);

@@ -1,0 +1,1 @@
+export const FOOTER_TEXT = 'Непомнящих Александр &copy; 2025';

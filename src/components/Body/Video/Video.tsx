@@ -1,7 +1,7 @@
+import {VIDEO_DATA} from '../../../constants/videos';
 import {Box} from '../../../ui-kit/components/Box';
 import {Section} from '../../../ui-kit/components/Section';
 import {VideoBox} from '../../../ui-kit/components/VideoBox';
-import {VIDEO_DATA} from './constants';
 
 /** Раздел "Видео" */
 export const Video = () => {

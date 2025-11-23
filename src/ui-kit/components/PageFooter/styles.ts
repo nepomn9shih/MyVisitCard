@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const StyledFooterBlock = styled.div`
+export const StyledFooterBlock = styled.div<{
+    $bgColor: React.CSSProperties['backgroundColor'];
+}>`
     grid-area: footer;
-    background-color: var(--footer-bg-color);
+    background-color: ${({$bgColor}) => $bgColor};
     padding: 15px;
     display: grid;
     align-items: center;

@@ -10,6 +10,38 @@ import {Skills} from './Skills/Skills';
 import {Work} from './Work/Work';
 import {Video} from './Video/Video';
 import {StyledBodyContent, StyledBodyMain} from './styles';
+import {PageProps} from './types';
+
+const PAGES: PageProps[] = [
+    {
+        path: Routes.ABOUT_ME,
+        component: AboutMe
+    },
+    {
+        path: Routes.SKILLS,
+        component: Skills
+    },
+    {
+        path: Routes.WORK,
+        component: Work
+    },
+    {
+        path: Routes.PROJECTS,
+        component: Projects
+    },
+    {
+        path: Routes.GALLERY,
+        component: Gallery
+    },
+    {
+        path: Routes.VIDEO,
+        component: Video
+    },
+    {
+        path: Routes.ABOUT,
+        component: About
+    }
+];
 
 /** Основной блок */
 export const Body = () => {
@@ -18,16 +50,18 @@ export const Body = () => {
             <PageSidebar />
             <StyledBodyContent className="qa-body-content">
                 <Switch>
-                    <Redirect exact from="/" to={Routes.ABOUT_ME}/>
-                    <Route path={Routes.ABOUT_ME} render={() => <AboutMe />}/>
-                    <Route path={Routes.SKILLS} render={() => <Skills />}/>
-                    <Route path={Routes.WORK} render={() => <Work />}/>
-                    <Route path={Routes.PROJECTS} render={() => <Projects />}/>
-                    <Route path={Routes.GALLERY} render={() => <Gallery />}/>
-                    <Route path={Routes.VIDEO} render={() => <Video />}/>
-                    <Route path={Routes.ABOUT} render={() => <About />}/>
+                    <Redirect exact from="/" to={PAGES[0].path}/>
+                    {PAGES.map(({path, component}, index) => {
+                        return (
+                            <Route
+                                key={index}
+                                path={path}
+                                render={component}
+                            />
+                        );
+                    })}
                 </Switch>
             </StyledBodyContent>
         </StyledBodyMain>
-    )
-}
+    );
+};

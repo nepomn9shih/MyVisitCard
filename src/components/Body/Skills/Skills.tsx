@@ -1,8 +1,7 @@
+import { Badge } from "../../../ui-kit/components/Badge";
 import {Box} from "../../../ui-kit/components/Box";
 import {Section} from "../../../ui-kit/components/Section";
-import {Text} from "../../../ui-kit/components/Text";
 import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
-import {StyledSkillCellItem} from "../styles";
 import {skillsList} from "./skillsList";
 
 /** Раздел "Мои навыки" */
@@ -19,15 +18,11 @@ export const Skills = () => {
       >
         {skillsList.map((skill, index) => {
           return (
-            <StyledSkillCellItem
-              className={`qa-skills-block-item-${index}`}
-              href={getSearchUrl(skill)}
-              target="_blank"
+            <Badge
               key={index}
-              rel="noreferrer"
-            >
-              <Text variation='descriptionL' text={skill} />
-            </StyledSkillCellItem>
+              url={getSearchUrl(skill)}
+              text={skill}
+            />
           );
         })}
       </Box>

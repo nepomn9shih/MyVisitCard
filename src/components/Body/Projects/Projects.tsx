@@ -1,8 +1,8 @@
+import {Badge} from "../../../ui-kit/components/Badge";
 import {Box} from "../../../ui-kit/components/Box";
 import {Section} from "../../../ui-kit/components/Section";
 import {Text} from "../../../ui-kit/components/Text";
 import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
-import {StyledSkillCellItem} from "../styles";
 import {projectsData} from "./assets/projectsData";
 import {
   StyledProjectsItems,
@@ -57,15 +57,11 @@ export const Projects = () => {
                 >
                   {project.technologies.map((tech, index) => {
                     return (
-                      <StyledSkillCellItem
-                        href={getSearchUrl(tech)}
-                        target="_blank"
-                        rel="noreferrer"
+                      <Badge
                         key={index}
-                        className={`qa-projects-block-item-technology-${index}`}
-                      >
-                        <Text variation='descriptionL' text={tech} />
-                      </StyledSkillCellItem>
+                        url={getSearchUrl(tech)}
+                        text={tech}
+                      />
                     );
                   })}
                 </Box>

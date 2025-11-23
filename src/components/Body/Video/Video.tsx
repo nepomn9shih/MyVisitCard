@@ -5,7 +5,6 @@ import {VIDEO_DATA} from './constants';
 
 /** Раздел "Видео" */
 export const Video = () => {
-  try {
     return (
       <Section
         className="qa-video-block"
@@ -24,9 +23,4 @@ export const Video = () => {
         </Box>
       </Section>
     );
-} catch (error) {
-    console.log(error);
-
-    return null;
-  }
 };

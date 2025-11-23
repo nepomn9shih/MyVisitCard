@@ -21,21 +21,3 @@ export const StyledBodyContent = styled.section`
     }
 }
 `;
-
-export const StyledSkillCellItem = styled.a`
-  color: var(--main-color);
-  background-color: var(--item-color);
-  border-radius: 10px;
-  margin: 5px;
-  padding: 4px 5px 6px 5px;
-  box-shadow: var(--box-shadow);
-
-  &:hover {
-    transition: 0.5s;
-    background-color: var(--accent-color);
-    box-shadow: var(--box-shadow-hover);
-    color: var(--main-color);
-  }
-  &:visited {color: var(--main-color);}
-  &:visited:hover {color: var(--main-color);}
-`;

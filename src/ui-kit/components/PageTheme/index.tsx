@@ -40,6 +40,7 @@ const LightTheme = createGlobalStyle`
         --sidebar-text-color: var(--primary-text-color);
         --sidebar-text-hover-color: var(--primary-text-hover-color);
         --sidebar-text-active-color: var(--primary-text-active-color);
+        --sidebar-item-active-color: var(--secondary-bg-color);
 
         --section-bg-color: var(--main-color);
         --section-title-bg-color: var(--secondary-color);
@@ -88,6 +89,7 @@ const DarkTheme = createGlobalStyle`
         --sidebar-text-color: var(--primary-text-color);
         --sidebar-text-hover-color: var(--primary-text-hover-color);
         --sidebar-text-active-color: var(--primary-text-active-color);
+        --sidebar-item-active-color: var(--secondary-bg-color);
 
         --section-bg-color: var(--main-color);
         --section-title-bg-color: var(--secondary-color);

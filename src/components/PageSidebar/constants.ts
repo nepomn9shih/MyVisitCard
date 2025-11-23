@@ -1,9 +1,7 @@
 import {Routes} from "../../enums/routes";
+import {SidebarItem} from "../../ui-kit/components/Sidebar/types";
 
-export const SIDEBAR_ITEMS_DATA: {
-    to: string;
-    title: string;
-}[] = [
+export const SIDEBAR_ITEMS_DATA: SidebarItem[] = [
     {
         to: Routes.ABOUT_ME,
         title: "Обо мне"

@@ -1,11 +1,11 @@
 import {Redirect, Route, Switch} from 'react-router-dom';
 
 import {Routes} from '../../enums/routes';
+import {PageSidebar} from '../PageSidebar';
 import {About} from './About/About';
 import {AboutMe} from './AboutMe/AboutMe';
 import {Gallery} from './Gallery/Gallery';
 import {Projects} from './Projects/Projects';
-import {Sidebar} from '../Sidebar/Sidebar';
 import {Skills} from './Skills/Skills';
 import {Work} from './Work/Work';
 import {Video} from './Video/Video';
@@ -15,7 +15,7 @@ import {StyledBodyContent, StyledBodyMain} from './styles';
 export const Body = () => {
     return (
         <StyledBodyMain className="qa-body">
-            <Sidebar />
+            <PageSidebar />
             <StyledBodyContent className="qa-body-content">
                 <Switch>
                     <Redirect exact from="/" to={Routes.ABOUT_ME}/>

@@ -3,7 +3,7 @@ import {Routes} from "../enums/routes";
 import {About} from '../components/Body/About/About';
 import {AboutMe} from '../components/Body/AboutMe/AboutMe';
 import {Gallery} from '../components/Body/Gallery/Gallery';
-import {Projects} from '../components/Body/Projects/Projects';
+import {Projects} from '../components/Body/Projects';
 import {Skills} from '../components/Body/Skills/Skills';
 import {Work} from '../components/Body/Work/Work';
 import {Video} from '../components/Body/Video/Video';

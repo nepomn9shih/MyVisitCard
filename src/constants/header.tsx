@@ -1,4 +1,4 @@
-import {PageHeaderLinkProps} from "../ui-kit/components/PageHeader/types";
+import type {PageHeaderLinkProps} from "../ui-kit/components/PageHeader/types";
 
 export const HEADER_LINKS_DATA: PageHeaderLinkProps[] = [
     {

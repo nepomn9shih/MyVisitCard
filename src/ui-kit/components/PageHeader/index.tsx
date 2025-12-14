@@ -2,7 +2,6 @@ import {useState} from "react";
 
 import {ToggleButton} from "../ToggleButton";
 import {Text} from "../Text";
-
 import {
   StyledHeaderBlock,
   StyledHeaderBurger,
@@ -10,9 +9,9 @@ import {
   StyledHeaderLogo,
   StyledHeaderMenu
 } from "./styles";
-import {PageHeaderProps} from "./types";
+import type {PageHeaderProps} from "./types";
 import {PageHeaderLink} from "./PageHeaderLink";
-import { Box } from "../Box";
+import {Box} from "../Box";
 
 /** Шапка */
 export const PageHeader = ({

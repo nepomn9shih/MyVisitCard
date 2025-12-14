@@ -1,4 +1,4 @@
-import { WorkPlaceDataType } from "../types";
+import type {WorkPlaceDataType} from "../types";
 import work0 from "./combo.png";
 import work1 from "./NBCom.png";
 import work2 from "./ya.png";

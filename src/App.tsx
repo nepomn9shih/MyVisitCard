@@ -1,4 +1,4 @@
-import {HashRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router';
 import {useState} from 'react';
 
 import {PageTheme} from './ui-kit/components/PageTheme';
@@ -17,42 +17,40 @@ import headerLogo from "./images/ya.png";
 import {Routes} from './enums/routes';
 
 export const App = () => {
-  const [chosenTheme, setChosenTheme] = useState(getTheme());
+	const [chosenTheme, setChosenTheme] = useState(getTheme());
 
-  const handlerToggle = () => {
-    const newTheme = chosenTheme === ThemeNames.LIGHT
-        ? ThemeNames.DARK
-        : ThemeNames.LIGHT;
-    setChosenTheme(newTheme);
+	const handlerToggle = () => {
+		const newTheme = chosenTheme === ThemeNames.LIGHT
+			? ThemeNames.DARK
+			: ThemeNames.LIGHT;
+		setChosenTheme(newTheme);
 
-    saveTheme(newTheme);
-  }
+		saveTheme(newTheme);
+	}
 
-  return (
-    <>
-      <PageTheme chosenTheme={chosenTheme} />
-      <HashRouter>
-        <PageWrapper
-          header={
-            <PageHeader
-              handlerToggle={handlerToggle}
-              links={HEADER_LINKS_DATA}
-              logo={headerLogo}
-              logoUrl={Routes.ABOUT_ME}
-              title={HEADER_TITLE}
-            />
-          }
-          body={
-            <PageBody
-              pages={getPages()}
-              sidebarItems={SIDEBAR_ITEMS_DATA}
-            />
-          }
-          footer={
-            <PageFooter text={FOOTER_TEXT} />
-          }
-        />
-      </HashRouter>
-    </>
-  );
-}
+	return (
+		<>
+			<PageTheme chosenTheme={chosenTheme} />
+			<HashRouter>
+				<PageWrapper
+				header={
+					<PageHeader
+						handlerToggle={handlerToggle}
+						links={HEADER_LINKS_DATA}
+						logo={headerLogo}
+						logoUrl={Routes.ABOUT_ME}
+						title={HEADER_TITLE}
+					/>
+				}
+				body={
+					<PageBody
+						pages={getPages()}
+						sidebarItems={SIDEBAR_ITEMS_DATA}
+					/>
+				}
+				footer={<PageFooter text={FOOTER_TEXT} />}
+				/>
+			</HashRouter>
+		</>
+	);
+};

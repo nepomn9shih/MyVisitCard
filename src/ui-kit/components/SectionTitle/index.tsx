@@ -1,6 +1,6 @@
 import {Box} from "../Box";
 import {Text} from "../Text";
-import {SectionTitleProps} from "./types";
+import type {SectionTitleProps} from "./types";
 
 /** Заголовок раздела */
 export const SectionTitle = ({

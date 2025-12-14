@@ -7,7 +7,7 @@ import {Projects} from '../components/Body/Projects';
 import {Skills} from '../components/Body/Skills/Skills';
 import {Work} from '../components/Body/Work/Work';
 import {Video} from '../components/Body/Video/Video';
-import {PageProps} from "../ui-kit/components/PageBody/types";
+import type {PageProps} from "../ui-kit/components/PageBody/types";
 
 /** Набор данных для страниц сайта */
 export const getPages = (): PageProps[] => [

@@ -1,6 +1,6 @@
 import {Text} from "../Text";
 import {StyledSidebarLink} from "./styles";
-import {SidebarItemProps} from "./types";
+import type {SidebarItemProps} from "./types";
 
 export const SidebarItem = ({
     to,

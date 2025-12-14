@@ -9,7 +9,7 @@ import {
   StyledProjectsButton,
   StyledProjectsImageLink
 } from "./styles";
-import {ProjectItemProps} from "./types";
+import type {ProjectItemProps} from "./types";
 
 /** Компонент отдельного проекта */
 export const ProjectItem = ({project, index}: ProjectItemProps) => (

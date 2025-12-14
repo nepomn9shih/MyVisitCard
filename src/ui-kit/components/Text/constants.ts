@@ -1,4 +1,4 @@
-import {TextVariations} from "./types";
+import type {TextVariations} from "./types";
 
 export const TEXT_STYLES: Record<TextVariations, React.CSSProperties> = {
     titleXS: {

@@ -1,6 +1,6 @@
 import {Box} from "../Box";
 import {StyledLoader} from "./styles";
-import {LoaderProps} from "./types";
+import type {LoaderProps} from "./types";
 
 export const Loader = ({
     size = '60px',

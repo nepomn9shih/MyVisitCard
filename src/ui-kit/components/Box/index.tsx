@@ -1,5 +1,5 @@
 import {omitUndefinedFields} from "../../utils/omitUndefinedFields";
-import {BoxProps} from "./types";
+import type {BoxProps} from "./types";
 
 /** Блок-обертка */
 export const Box = ({

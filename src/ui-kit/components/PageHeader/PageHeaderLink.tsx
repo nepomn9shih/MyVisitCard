@@ -1,7 +1,7 @@
-import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router";
 import {Text} from "../Text";
 import {StyledHeaderLink} from "./styles";
-import {PageHeaderLinkProps} from "./types";
+import type {PageHeaderLinkProps} from "./types";
 
 /** Ссылка в шапке */
 export const PageHeaderLink = ({

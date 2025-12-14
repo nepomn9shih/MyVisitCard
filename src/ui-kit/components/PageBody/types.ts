@@ -1,12 +1,14 @@
-import {SidebarItem} from "../Sidebar/types";
+import type {ReactNode} from "react";
+
+import type {SidebarItem} from "../Sidebar/types";
 
 export type PageProps = {
     path: string;
-    component: () => JSX.Element;
+    component: () => ReactNode;
 };
 
 export type PageBodyProps = {
     pages: PageProps[];
     sidebarItems?: SidebarItem[];
-    sidebar?: JSX.Element;
+    sidebar?: ReactNode;
 };

@@ -1,4 +1,4 @@
-import {TextVariations} from "../Text/types";
+import type {TextVariations} from "../Text/types";
 
 export type BadgeProps = {
     url?: string;

@@ -1,8 +1,8 @@
-import {Redirect, Route, Switch} from 'react-router-dom';
+import {Navigate, Route, Routes} from 'react-router';
 
 import {Sidebar} from '../Sidebar';
 import {StyledPageBodyContent, StyledPageBodyMain} from './styles';
-import {PageBodyProps} from './types';
+import type {PageBodyProps} from './types';
 
 /** Основной блок */
 export const PageBody = ({
@@ -14,18 +14,18 @@ export const PageBody = ({
         <StyledPageBodyMain className="qa-body">
             {sidebar}
             <StyledPageBodyContent className="qa-body-content">
-                <Switch>
-                    <Redirect exact from="/" to={pages[0].path}/>
+                <Routes>
+                    <Route path="/" element={<Navigate to={pages[0].path} replace />} />
                     {pages.map(({path, component}, index) => {
                         return (
                             <Route
                                 key={index}
                                 path={path}
-                                render={component}
+                                element={component()}
                             />
                         );
                     })}
-                </Switch>
+                </Routes>
             </StyledPageBodyContent>
         </StyledPageBodyMain>
     );

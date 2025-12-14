@@ -1,5 +1,10 @@
-import {StyledBodyWrapper, StyledFooterWrapper, StyledHeaderWrapper, StyledPageWrapper} from "./styles";
-import {PageWrapperProps} from "./types";
+import {
+    StyledBodyWrapper,
+    StyledFooterWrapper,
+    StyledHeaderWrapper,
+    StyledPageWrapper
+} from "./styles";
+import type {PageWrapperProps} from "./types";
 
 /** Обертка всей страницы */
 export const PageWrapper = ({

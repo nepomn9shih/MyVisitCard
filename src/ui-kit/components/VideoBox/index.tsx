@@ -1,6 +1,6 @@
 import {Suspense, lazy} from 'react';
 
-import {VideoBoxProps} from './types';
+import type {VideoBoxProps} from './types';
 import {Box} from '../Box';
 import {Text} from '../Text';
 import {Loader} from '../Loader';

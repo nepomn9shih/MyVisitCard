@@ -1,6 +1,6 @@
 import {Text} from "../Text";
 import {StyledFooterBlock} from "./styles";
-import {PageFooterProps} from "./types";
+import type {PageFooterProps} from "./types";
 
 /** Подвал страницы */
 export const PageFooter = ({

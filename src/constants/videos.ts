@@ -1,4 +1,4 @@
-import {VideoData} from "../types/VideoData";
+import type {VideoData} from "../types/VideoData";
 
 export const VIDEO_DATA: VideoData[] = [
     {

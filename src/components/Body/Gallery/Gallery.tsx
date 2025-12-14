@@ -4,7 +4,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import {galleryImages} from "./assets/galleryImages";
+import {galleryImagesData} from "./assets/galleryImagesData";
 import {
     StyledGalleryItems,
     StyledGalleryItem,
@@ -22,17 +22,7 @@ export const Gallery = () => {
         setImageIndex(index);
     };
 
-    const imagesData = Object.keys(galleryImages).map((key, index) => {
-        const data = key.split('_');
-        const year = parseInt(data[1]);
-        const description = data[0];
-
-        return {
-            year,
-            alt: `${description} ${year}`,
-            src: Object.values(galleryImages)[index]
-        }
-    }).sort((a, b) => a.year - b.year);
+    const slides = [...galleryImagesData].sort((a, b) => a.year - b.year);
 
     return (
         <Section
@@ -43,13 +33,13 @@ export const Gallery = () => {
                 open={open}
                 close={() => setOpen(false)}
                 plugins={[Thumbnails]}
-                slides={imagesData}
+                slides={slides}
                 index={imageIndex}
                 className="qa-gallery-block-lightbox"
             />
             <StyledGalleryItems className="qa-gallery-block-photos">
-                {imagesData.map(({alt, src}, index) => {
-                    let isBig = index === 0 || index % 7 === 0 || index % 10 === 0
+                {slides.map(({alt, src}, index) => {
+                    const isBig = index === 0 || index % 7 === 0 || index % 10 === 0
 
                     return (
                         <StyledGalleryItem

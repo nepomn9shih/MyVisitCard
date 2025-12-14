@@ -1,6 +1,6 @@
 import {Text} from "../Text";
 import {StyledBadge} from "./styled";
-import {BadgeProps} from "./types";
+import type {BadgeProps} from "./types";
 
 /** Бейдж */
 export const Badge = ({

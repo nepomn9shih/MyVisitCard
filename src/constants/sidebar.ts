@@ -1,5 +1,5 @@
 import {Routes} from "../enums/routes";
-import {SidebarItem} from "../ui-kit/components/Sidebar/types";
+import type {SidebarItem} from "../ui-kit/components/Sidebar/types";
 
 /** Набор данных для кнопок сайдбара */
 export const SIDEBAR_ITEMS_DATA: SidebarItem[] = [

@@ -1,8 +1,6 @@
-import * as React from 'react';
-
 import {StyledHr} from './styles';
-import {AboutMeTextBlockProps} from './types';
-import { Text } from '../../../ui-kit/components/Text';
+import type {AboutMeTextBlockProps} from './types';
+import {Text} from '../../../ui-kit/components/Text';
 
 /** Блок текста раздела "Обо мне" */
 export const AboutMeTextBlock = ({

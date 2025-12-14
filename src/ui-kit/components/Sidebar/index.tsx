@@ -1,6 +1,6 @@
 import {SidebarItem} from "./SidebarItem";
 import {StyledSidebarBlock} from "./styles";
-import {SidebarProps} from "./types";
+import type {SidebarProps} from "./types";
 
 /** Меню страницы */
 export const Sidebar = ({

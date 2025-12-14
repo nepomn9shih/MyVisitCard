@@ -1,7 +1,7 @@
 import xss from "xss";
 
 import {TEXT_STYLES} from "./constants";
-import {TextProps} from "./types";
+import type {TextProps} from "./types";
 
 /** Обертка над текстом */
 export const Text = ({

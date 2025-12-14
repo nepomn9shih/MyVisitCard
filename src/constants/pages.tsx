@@ -1,12 +1,13 @@
 import {Routes} from "../enums/routes";
 
-import {About} from '../components/Body/About/About';
-import {AboutMe} from '../components/Body/AboutMe/AboutMe';
-import {Gallery} from '../components/Body/Gallery/Gallery';
-import {Projects} from '../components/Body/Projects';
-import {Skills} from '../components/Body/Skills/Skills';
-import {Work} from '../components/Body/Work/Work';
-import {Video} from '../components/Body/Video/Video';
+import {About} from '../components/About';
+import {AboutMe} from '../components/AboutMe';
+import {Gallery} from '../components/Gallery';
+import {Projects} from '../components/Projects';
+import {Skills} from '../components/Skills';
+import {Work} from '../components/Work';
+import {Video} from '../components/Video';
+
 import type {PageProps} from "../ui-kit/components/PageBody/types";
 
 /** Набор данных для страниц сайта */

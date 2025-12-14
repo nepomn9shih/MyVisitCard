@@ -5,8 +5,8 @@ import myPhoto0 from "./assets/myPhoto0.jpg";
 import myPhoto1 from "./assets/myPhoto1.jpg";
 import myPhoto2 from "./assets/myPhoto2.jpg";
 
-import {Box} from '../../../ui-kit/components/Box';
-import {Section} from '../../../ui-kit/components/Section';
+import {Box} from '../../ui-kit/components/Box';
+import {Section} from '../../ui-kit/components/Section';
 import {
   StyledAboutMeImage,
   StyledSwiperImage,

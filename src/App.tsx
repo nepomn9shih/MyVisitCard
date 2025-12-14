@@ -13,7 +13,7 @@ import {SIDEBAR_ITEMS_DATA} from './constants/sidebar';
 import {PageHeader} from './ui-kit/components/PageHeader';
 import {PageWrapper} from './ui-kit/components/PageWrapper';
 import {HEADER_LINKS_DATA, HEADER_TITLE} from './constants/header';
-import headerLogo from "./images/ya.png";
+import headerLogo from "./assets/ya.png";
 import {Routes} from './enums/routes';
 
 export const App = () => {

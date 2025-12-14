@@ -1,7 +1,7 @@
-import {Badge} from "../../../ui-kit/components/Badge";
-import {Box} from "../../../ui-kit/components/Box";
-import {Text} from "../../../ui-kit/components/Text";
-import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
+import {Badge} from "../../ui-kit/components/Badge";
+import {Box} from "../../ui-kit/components/Box";
+import {Text} from "../../ui-kit/components/Text";
+import {getSearchUrl} from "../../ui-kit/utils/getSearchUrl";
 import {
   StyledProjectsItem,
   StyledProjectsImage,

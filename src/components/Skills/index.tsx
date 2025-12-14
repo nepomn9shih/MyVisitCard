@@ -1,7 +1,7 @@
-import {Badge} from "../../../ui-kit/components/Badge";
-import {Box} from "../../../ui-kit/components/Box";
-import {Section} from "../../../ui-kit/components/Section";
-import {getSearchUrl} from "../../../ui-kit/utils/getSearchUrl";
+import {Badge} from "../../ui-kit/components/Badge";
+import {Box} from "../../ui-kit/components/Box";
+import {Section} from "../../ui-kit/components/Section";
+import {getSearchUrl} from "../../ui-kit/utils/getSearchUrl";
 import {skillsList} from "./skillsList";
 
 /** Раздел "Мои навыки" */

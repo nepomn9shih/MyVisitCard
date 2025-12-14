@@ -1,4 +1,4 @@
-import {Section} from "../../../ui-kit/components/Section";
+import {Section} from "../../ui-kit/components/Section";
 import {projectsData} from "./assets/projectsData";
 import {ProjectItem} from "./ProjectItem";
 import {StyledProjectsItems,} from "./styles";

@@ -1,7 +1,7 @@
-import {Text} from '../../../ui-kit/components/Text';
-import {Section} from '../../../ui-kit/components/Section';
+import {Text} from '../../ui-kit/components/Text';
+import {Section} from '../../ui-kit/components/Section';
 import {StyledAboutContent, StyledImage} from "./styles";
-import samurai from "../../../images/samurai.png";
+import samurai from "./assets/samurai.png";
 
 /** Раздел "О сайте" */
 export const About = () => {
